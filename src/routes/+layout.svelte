@@ -10,6 +10,4 @@
 	<slot />
 </main>
 
-<div class="">
-	<Footer />
-</div>
+<Footer />

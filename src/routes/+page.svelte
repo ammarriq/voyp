@@ -11,63 +11,6 @@
 		['hOe werkt het', 'what is hat'],
 		['what is dat', 'wat heb ik nOdig']
 	];
-
-	let cards: Array<{ name: string; desc: string; content: string }> = [
-		{
-			name: 'Rick Jelier',
-			desc: 'Holland Shielding Systems B.V.',
-			content:
-				'Voyp is een bedrijf met hele fijne dienstverlening, ze denken goed mee waar ze kunnen en zijn vriendelijk. Ook de prijs waarvoor je alles kunt krijgen is voordelig tot zeer laag. Met maximaal 1 storing over de afgelopen 2 jaar mag ik zeggen dat wij zeer tevreden zijn. Hoe wij Voyp omschrijven in 1 woord is ontzorgend!'
-		},
-		{
-			name: 'Michel Sabella',
-			desc: 'Brauer Groep Belfeld',
-			content:
-				'Zeer behulpzaam bij het opzetten van je VOIP plan bij overzetten van analoge telefonie naar VOIP. Goede en kundige technische knowhow en hulp om speciale wensen in gebruik te kunnen nemen! Zeer snel in afhandeling vragen. Tot nu zeeeeer tevreden met Voyp! Zeker een aanrader mocht je naar een VOIP aanbieder zoeken.'
-		},
-		{
-			name: 'J.G. van der Wal',
-			desc: 'TSS Group',
-			content:
-				'Met een complexe structuur met bedrijven in Engeland en New York tot een overzichtelijke totaal oplossing gekomen. Vanuit de diverse lokaties kunnen we op een eenvoudige manier beheren waar welk gesprek binnenkomt. Een snelle response van de helpdesk maakt het verder prettig om als er een probleem is het snel op te lossen.'
-		},
-		{
-			name: 'P. van der Mijn',
-			desc: 'Alhra',
-			content:
-				'De services is jullie grootste kracht daar zijn wij dan ook meer dan tevreden over. De sporadische storingen, welke overigens minimaal zijn, lossen jullie adequaat op met een terug melding naar ons. Dat stellen wij zeer op prijs.'
-		},
-		{
-			name: 'Ton van Rijswijk',
-			desc: 'Adviesbureau COMTON',
-			content:
-				'Inmiddels nu bijna 2 jaar cliënt bij Voyp. Onze ervaring is dat snel en adequaat gereageerd wordt, niets teveel is en dat medewerkers gedreven zijn om je vragen/klacht/opmerking op korte termijn beantwoorden en oplossen. Afspraken worden netjes en correct nagekomen en de persoonlijke contacten zijn heel prettig.'
-		},
-		{
-			name: 'Wesley Hoeve',
-			desc: 'TWM Makelaardij',
-			content:
-				'Fantastische service, even bellen en ze staan voor je klaar. De werknemers van Voyp nemen de tijd voor je en leggen je alles duidelijk uit, ook over hoe ze werken. Wij hebben onze vaste contactpersoon en hij is altijd erg behulpzaam. Veranderingen worden per direct doorgevoerd en een stapje extra vanuit hun kant is standaard. Topbedrijf.'
-		},
-		{
-			name: 'Martijn',
-			desc: 'FlyCatcher',
-			content:
-				'Wij zijn overgestapt met ISDN naar Voyp. Bijzonder goede support. Altijd medewerkers aan de lijn met verstand van zaken.De telefoons konden we gewoon inprikken en het werkte. Daarna hebben ze alle instellingen tot in de kleinste details op maat voor ons geconfigureerd.Niets anders dan lof voor deze partij!'
-		},
-		{
-			name: 'Jeroen van der Hek',
-			desc: 'Brooklands Horeca BV',
-			content:
-				'Uitstekende service en professionele aanpak kenmerkt het team van VOYP. Gecombineerd met een hoge betrouwbaarheid en scherpe tarieven maakt het de perfecte partner voor onze (telefonische-) bereikbaarheid!'
-		},
-		{
-			name: 'Bram Koster',
-			desc: 'BladeWP',
-			content:
-				'Top provider! Overgestapt van Voys naar Voyp vanwege hun pakketten. Nu heb ik standaard professionele ingesproken meldingen samen met een keuzemenu. Dit geeft mij meer vrijheid voor veel minder geld. Een besparing, inclusief eenmalige kosten, van ruim 300 euro dit jaar. Ook de gesprekskosten per minuut liggen lager.'
-		}
-	];
 </script>
 
 <div class="bg-primary">
@@ -77,10 +20,8 @@
 	>
 		<div>
 			<h1 class="inline-block text-5xl lg:text-7xl sm:px-0 pb-8">
-				Bellen zoals <br class="block sm:hidden" /><Display
-					class=" text-5xl lg:text-6xl"
-					words={words[0]}
-				/>
+				Bellen zoals <br class="block sm:hidden" />
+				<Display class="text-5xl lg:text-6xl" words={words[0]} />
 			</h1>
 			<p class="pb-5">
 				Bellen zonder gedoe, dat is onze missie. Welkom bij Voyp. Geen addertjes onder het gras,
@@ -113,35 +54,35 @@
 			<span
 				class="flex gap-2 flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
 			>
-				<img src="./certainties/betaalbaar.png" alt="Betaalbaar" class="w-20 pb-4" />
+				<img src="/certainties/betaalbaar.webp" alt="Betaalbaar" class="w-20 pb-4" />
 				<p>Betaalbaar</p>
 			</span>
 
 			<span
 				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
 			>
-				<img src="./certainties/dagelijks.png" alt="Dagelijks opzegbaar" class="w-20 pb-4" />
+				<img src="/certainties/dagelijks.webp" alt="Dagelijks opzegbaar" class="w-20 pb-4" />
 				<p>Dagelijks opzegbaar</p>
 			</span>
 
 			<span
 				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
 			>
-				<img src="./certainties/betrouwbaar.png" alt="Betrouwbaar" class="w-20 pb-4" />
+				<img src="/certainties/betrouwbaar.webp" alt="Betrouwbaar" class="w-20 pb-4" />
 				<p>Betrouwbaar</p>
 			</span>
 
 			<span
 				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
 			>
-				<img src="./certainties/persoonlijke.png" alt="Persoonlijke service" class="w-20 pb-4" />
+				<img src="/certainties/persoonlijke.webp" alt="Persoonlijke service" class="w-20 pb-4" />
 				<p>Persoonlijke service</p>
 			</span>
 
 			<span
 				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
 			>
-				<img src="./certainties/flexibel.png" alt="Flexibel" class="w-20 pb-4" />
+				<img src="/certainties/flexibel.webp" alt="Flexibel" class="w-20 pb-4" />
 				<p>Flexibel</p>
 			</span>
 		</div>
@@ -156,11 +97,12 @@
 		<img
 			src="./homepage/voyptotaalpakket.png"
 			alt="voyptotaalpakket"
-			class="w-52 lg:w-full mx-auto pb-12 md:pb-0"
+			class="w-52 lg:w-80 mx-auto pb-12 md:pb-0"
 		/>
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
-				Totaalpakket <br class="block" /><Display class="text-3xl lg:text-5xl" words={words[1]} />
+				Totaalpakket <br class="block" />
+				<Display words={words[1]} class="text-3xl lg:text-5xl" />
 			</h2>
 			<p class="pb-5">
 				Of je nu een eenpitter bent die alleen mobiel bereikbaar wilt zijn of een multinational met
@@ -171,11 +113,11 @@
 				juiste afdeling doorverbinden.
 			</p>
 			<p>
-				Bij <span class="underline hover:no-underline">andere aanbieders</span> betaal je al snel
+				Bij <a href="/" class="underline hover:no-underline">andere aanbieders</a> betaal je al snel
 				tientallen euro’s per maand voor openingstijden, meldingen, keuzemenu’s, wachtrijen, faxen
 				of gespreksopnames.
-				<span class="font-semibold underline hover:no-underline">Niet bij ons</span>. Bij ons betaal
-				je alleen voor nummers en toestellen. Voor € 12,- per maand krijg je in ons Voyp
+				<a href="/" class="font-semibold underline hover:no-underline">Niet bij ons</a>. Bij ons
+				betaal je alleen voor nummers en toestellen. Voor € 12,- per maand krijg je in ons Voyp
 				totaalpakket alle mogelijkheden inclusief kosteloze support. Eenvoudig, eerlijk en
 				transparant, zoals het hoort.
 			</p>
@@ -196,6 +138,7 @@
 				</p>
 				<img src="./homepage/overstappenstap1.png" alt="overstappenstap1" class="max-w-[12rem]" />
 			</div>
+
 			<div class="flex flex-col items-center">
 				<img
 					src="./homepage/overstappenstap2.png"
@@ -214,6 +157,7 @@
 					class="block md:hidden max-w-[12rem]"
 				/>
 			</div>
+
 			<div class="flex flex-col items-center">
 				<h3 class="text-[1.35rem] font-semibold pb-3">Oplevering</h3>
 				<p class="md:leading-7 md:text-sm lg:text-base lg:leading-8">
@@ -262,7 +206,7 @@
 		<img
 			src="./homepage/voypmobiel.png"
 			alt="voypmobiel"
-			class="w-52 lg:w-full mx-auto pt-12 md:pt-0"
+			class="w-52 lg:w-80 mx-auto pt-12 md:pt-0"
 		/>
 	</section>
 </div>
@@ -295,7 +239,7 @@
 		<div class="border border-primary" />
 
 		<div class="pt-5">
-			<Carousel {cards} />
+			<Carousel />
 		</div>
 	</section>
 </div>
@@ -305,7 +249,7 @@
 		class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 md:flex gap-10 lg:gap-20 text-center
 		 md:text-start items-center justify-between"
 	>
-		<img src="./homepage/voip1.png" alt="voip1" class="w-52 lg:w-full mx-auto pb-12 md:pb-0" />
+		<img src="/homepage/voip1.png" alt="voip1" class="w-52 lg:w-80 mx-auto pb-12 md:pb-0" />
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
 				Voice over IP <br class="block" /><Display class="text-3xl lg:text-5xl" words={words[3]} />
@@ -356,7 +300,8 @@
 
 <div class="bg-secondary">
 	<section
-		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24 text-sm leading-8 md:grid grid-cols-3 gap-4 items-start"
+		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24 text-sm leading-8 md:grid grid-cols-3 gap-4
+		items-start"
 	>
 		<div class="col-span-1">
 			<h3 class="font-semibold pb-5 text-base">Laatste Voyp updates</h3>

@@ -4,4 +4,4 @@
 	export { clazz as class };
 </script>
 
-<img src="./voyp.png" alt="voyp" class={clazz} />
+<img src="/voyp.png" alt="voyp" class={clazz} />
