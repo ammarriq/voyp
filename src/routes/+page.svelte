@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
-	import Display from './Display.svelte';
+	import Display from '$components/Display.svelte';
 	import Button from '$components/Button.svelte';
 	import Carousel from '$components/Carousel.svelte';
 
@@ -280,17 +280,17 @@
 		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
 
 		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<img src="./homepage/marmerbehandelen.png" alt="marmerbehandelen" />
-			<img src="./homepage/ITWizzard.png" alt="ITWizzard" />
-			<img src="./homepage/themag.png" alt="themag" />
-			<img src="./homepage/moventes.png" alt="moventes" />
-			<img src="./homepage/viwecom.png" alt="viwecom" />
-			<img src="./homepage/tallgrass.png" alt="tallgrass" />
-			<img src="./homepage/timeprofit.png" alt="timeprofit" />
-			<img src="./homepage/boomkwekerij.png" alt="boomkwekerij" />
-			<img src="./homepage/guidato.png" alt="guidato" />
+			<img src="logos/marmerbehandelen.png" alt="marmerbehandelen" />
+			<img src="logos/ITWizzard.png" alt="ITWizzard" />
+			<img src="logos/themag.png" alt="themag" />
+			<img src="logos/moventes.png" alt="moventes" />
+			<img src="logos/viwecom.png" alt="viwecom" />
+			<img src="logos/tallgrass.png" alt="tallgrass" />
+			<img src="logos/timeprofit.png" alt="timeprofit" />
+			<img src="logos/boomkwekerij.png" alt="boomkwekerij" />
+			<img src="logos/guidato.png" alt="guidato" />
 			<img
-				src="./homepage/theokooptjeauto.png"
+				src="logos/theokooptjeauto.png"
 				alt="theokooptjeauto"
 				class=" mx-auto col-auto sm:col-span-full md:col-auto"
 			/>
