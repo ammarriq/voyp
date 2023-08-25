@@ -9,11 +9,11 @@
 >
 	<div class="text-white md:px-20 lg:px-28">
 		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-12">
-			Voyp Mobiel
+			App desktop / mobiel
 		</h1>
 		<p>
-			Vast mobiel integratie zoals het hoort. Met een SIM-kaart van Voyp in je mobiele telefoon bel
-			je overal eenvoudig met je mobiele én zakelijke telefoonnummer.
+			Soms wil je geen vast toestel, maar gewoon bellen vanaf je laptop of desktop. Dat kan
+			natuurlijk! Ook kun je met een app op je mobiel gebruik maken van Voyp zonder onze SIM-kaart.
 		</p>
 	</div>
 	<div
@@ -23,9 +23,7 @@
 
 <div class="bg-white">
 	<section class="container mx-auto px-6 py-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-16">
-			Mobiele telefonie met de kwaliteit van Voyp
-		</h2>
+		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Geen vast toestel, wel bellen met Voyp</h2>
 
 		<div
 			class="md:grid grid-cols-5 gap-6 lg:gap-10 text-sm md:text-[0.734rem] leading-7 lg:text-base
@@ -36,17 +34,19 @@
 			>
 				<h3 class="font-semibold text-lg pb-4">Hoe werkt het</h3>
 				<p class="pb-5">
-					Vast-Mobiel integratie: je hoort er vaak over. Het is namelijk ideaal: met je mobiele
-					telefoon zakelijk bereikbaar, zoals op kantoor. Alleen is het bij de meeste aanbieders
-					niet écht zoals op kantoor. Door middel van een doorschakeling of een app op je mobiel ben
-					je weliswaar bereikbaar, maar kun je niet alles wat je op kantoor kunt.
+					You can of course be reached by your business customers by forwarding your fixed number to
+					your mobile. You can also choose to go for full fixed-mobile integration with
+					<a href="./voyp-mobiel" class="font-semibold"> Voyp Mobiel </a> . A third option is to use
+					the Voyp platform via an app on your mobile phone. This app is also available for your laptop
+					or desktop. No landline phone, still make business calls!
 				</p>
 				<p>
-					Met <span class="font-semibold">Voyp Mobiel</span> komt daar verandering in! Met onze SIM-kaart
-					kun je bellen zoals je gewend ben, met volledige integratie in je Voyp belplan. Je collega’s
-					kunnen zien of je in gesprek bent of zelfs je gesprek voor je aannemen als je in bespreking
-					bent. Je belt makkelijk met je eigen 06 nummer óf het nummer van je bedrijf en schakelt eenvoudig
-					intern naar collega’s door.
+					Met je VoIP-account zorgt de app er voor dat het toestel of de computer werkt zoals een
+					écht vast toestel. Dus bellen zoals je gewend bent, met volledige integratie in je Voyp
+					belplan. Je collega’s kunnen zien of je in gesprek bent of zelfs je gesprek voor je
+					aannemen als je in bespreking bent. Je belt makkelijk met het nummer van je bedrijf,
+					schakelt eenvoudig intern naar collega’s door en gebruikt verder de telefoon precies zoals
+					je gewend bent.
 				</p>
 			</div>
 
@@ -55,18 +55,17 @@
         col-span-2 lg:space-y-0.1"
 			>
 				<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">De voordelen</h3>
-				<p>✓ Uitbellen met mobiel én vast numer</p>
-				<p>✓ Eenvoudig je 06 nummer behouden</p>
-				<p>✓ Geen doorschakelkosten s</p>
-				<p>✓ Niet afhankelijk van data-netwerk</p>
-				<p>✓ Geen batterijslurpende app</p>
-				<p>✓ Ook in het buitenland geldig</p>
-				<p>✓ Via het betrouwbare T-Mobile netwerk</p>
-				<p>✓ Bellen zoals op kantoor: intern bellen, in de wacht en doorverbinden</p>
-				<p>
-					✓ Ook ideaal voor ZZP'ers: zakelijke bereikbaarheid zoals het hoort, mobiele vrijheid
-					zoals je bent gewend
-				</p>
+				<p>✓ Geen investering in hardware</p>
+				<p>✓ Gebruik maken van Voyp waar je bent</p>
+				<p>✓ Alle functies beschikbaar</p>
+				<p>✓ <span class="font-semibold">Gratis</span> voor mobiele telefoons</p>
+				<p>✓ Slechts € 5,- per maand voor desktops</p>
+				<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center pt-8">De nadelen</h3>
+				<p>✗ Onbereikbaar als je computer of mobiele telefoon uit staat</p>
+				<p>✗ Accu sneller leeg</p>
+				<p>✗ Afhankelijk van je internetverbinding.</p>
+				<p>✗ Werkt niet op WiFi op mobiel (wel over 4G/5G)</p>
+				<p>✗ Licentiekosten desktop</p>
 			</div>
 		</div>
 	</section>
@@ -81,30 +80,32 @@
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
 				Wat moet ik kiezen
 			</h2>
-			<p class="pb-5">
-				Simpel mobiel bereikbaar zijn kun je regelen met een doorschakeling. Wij schakelen dan het
-				gesprek door naar je mobiele telefoon. Dit kost 7,5 cent per minuut en je kunt niet
-				uitbellen met je vaste nummer. Je kunt ook kiezen voor de app. Je hebt dan geen
-				doorschakelkosten en kunt ook uitbellen met je vaste nummer. Hiervoor moet het internet
-				stabiel zijn op je mobiele telefoon. Ook moet de app altijd aanstaan, wat een negatieve
-				invloed heeft op je batterij.
+			<p>
+				<span class="font-semibold">Een vast toestel</span> heeft als voordeel dat je een apart
+				toestel op je bureau hebt staan. Hier kun je ook makkelijk een professionele headset op
+				aansluiten. <span class="font-semibold">Bellen via je desktop</span> is goedkoper omdat je geen
+				hardware hoeft aan te schaffen. Wel betaal je voor de software maandelijks € 5,- per maand. Installeer
+				je de app op je laptop, dan heb je je telefoon altijd bij je, waar je ook bent.
+			</p>
+			<p class="py-5">
+				Wil je onderweg mobiel bereikbaar zijn? Dan zorgen we ervoor dat je mobiele telefoon in je
+				belplan wordt opgenomen. Wordt je weinig gebeld en vind je het niet belangrijk om met je
+				vaste nummer uit te kunnen bellen? Kies dan voor een doorschakeling naar je mobiel. Dit kost
+				7,5 cent per minuut. Word je vaker gebeld dan verwacht, denk dan na over Voyp Mobiel of kies
+				voor de mobiele app.
 			</p>
 			<p>
-				Een SIM-kaart heeft geen afhankelijkheid van je internetverbinding én je hebt geen
-				doorschakelkosten. Met Voyp Mobiel heb je dus de optimale integratie van je vaste telefonie
-				in je mobiele telefoon.
-				<a href="/" class="font-semibold underline">
-					Dit kan al vanaf € 15,- per maand per simkaart.
-				</a>
-				Sluit daarnaast nog een databundel (2GB, 6Gb of 10GB) af die in heel Europa geldig is en je ziet
-				het: Voyp Mobiel is dé oplossing voor de ondernemer die ook onderweg goed bereikbaar wil zijn.
-				Of je nu eenpitter bent of een totaal-oplossing zoekt voor al je medewerkers waarbij vaste telefonie
-				en mobiele telefonie gecombineerd worden, bij Voyp zit je goed.
+				Met de mobiele app maak je eenvoudig en voordelig je mobiele telefoon onderdeel van je
+				bedrijfs-telefonie. Ontvang zakelijke gesprekken, bel met collega’s, verbind klanten door
+				naar een andere afdeling of zie wie er in gesprek is, met de mobiele app is het allemaal
+				mogelijk. Het enige wat je nodig hebt is een extra account, de app krijg je van ons gratis.
+				Uiteraard kun je ook kiezen <a href="./voyp-mobiel" class="font-semibold">Voyp Mobiel</a>,
+				zodat je ook je mobiele gesprekken via Voyp laat lopen.
 			</p>
 		</div>
 
 		<div class="flex flex-col items-center mt-9 md:mt-0">
-			<img src="/hero/voypmobiel.png" alt="voypmobiel" class="max-w-[17rem] mx-auto" />
+			<img src="/hero/briamobiel.png" alt="briamobiel" class="max-w-[17rem] lg:max-w-xs mx-auto" />
 
 			<Button
 				class="bg-primary mt-10 text-white hover:bg-white hover:text-primary border
@@ -125,7 +126,7 @@
 			rounded-[3rem] shadow-xl"
 		>
 			<div class="px-6 py-10 md:py-6 lg:py-12 text-start space-y-2">
-				<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">Doorschakelen</h3>
+				<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">Doorschakelen naar mobiel</h3>
 				<Clickable>
 					<span slot="label">✗ Gebeld worden kost 7,5 ct p.m.</span>
 					<span slot="content">
@@ -193,7 +194,6 @@
 						Collega's kunnen met BLF eenvoudig zien of je in gesprek bent of niet.
 					</span>
 				</Clickable>
-				<span class="cursor-pointer">✓ Dagelijks opzegbaar</span>
 			</div>
 
 			<div class="border px-6 py-10 md:py-6 lg:py-12 shadow-md text-start space-y-2">
@@ -207,10 +207,9 @@
 					</span>
 				</Clickable>
 				<Clickable>
-					<span slot="label">✓ Geen extra account nodig</span>
+					<span slot="label">✗ Extra account nodig</span>
 					<span slot="content">
-						Een doorschakeling naar een of meerdere mobiele nummers is inbegrepen in het
-						Voyp-abonnement
+						Per extra toestel heb je een VoIP-account nodig. Bij Voyp Mobiel is dit inbegrepen
 					</span>
 				</Clickable>
 				<Clickable>
@@ -265,7 +264,6 @@
 						Collega's kunnen met BLF eenvoudig zien of je in gesprek bent of niet.
 					</span>
 				</Clickable>
-				<p class="cursor-pointer">✓ Dagelijks opzegbaar</p>
 			</div>
 
 			<div class="px-6 py-10 md:py-6 lg:py-12 text-start space-y-2">
@@ -297,10 +295,11 @@
 					</span>
 				</Clickable>
 				<Clickable>
-					<span slot="label">✗ Afhankelijk van internet</span>
+					<span slot="label">✗ Werkt op mobiel soms slecht over WiFi</span>
 					<span slot="content">
-						We schakelen via het GSM netwerk door. Je bent dus alleen afhankelijk van je dekking van
-						je mobiele provider.
+						De app functioneert soms slecht over WiFi. Hier kunnen wij geen support op leveren. Ons
+						advies is om dan WiFi te deactiveren of gebruik te maken van doorschakeling en/of
+						SIM-kaart en/of een vast toestel.
 					</span>
 				</Clickable>
 				<Clickable>
@@ -337,7 +336,6 @@
 						Collega's kunnen met BLF eenvoudig zien of je in gesprek bent of niet.
 					</span>
 				</Clickable>
-				<p class="cursor-pointer">✓ Dagelijks opzegbaar</p>
 			</div>
 		</div>
 	</section>
@@ -377,7 +375,7 @@
 				Met onze persoonlijke service zorgen wij ervoor dat je flexibel en betaalbaar optimaal
 				bereikbaar bent. Dit doen we inmiddels ruim 4 jaar naar volle tevredenheid van onze klanten.
 				<a href="/" class="font-semibold">Don’t take our word for it, take theirs</a> en ga ook bellen
-				zonder gedoe!
+				zoals het hoort. Welkom bij Voyp.
 			</p>
 		</div>
 	</section>
@@ -385,60 +383,50 @@
 
 <div class="bg-white">
 	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-3.5">Een greep uit onze tevreden klanten</h2>
-
-		<div class="flex items-center justify-center gap-3 pb-14">
-			<span>9.4</span>
-			<span class="flex">
-				{#each Array(4) as _, i (i)}
-					<span class="icon-[mdi--star] text-yellow-400 w-7 h-7 space-x-0" />
-				{/each}
-				<span class="icon-[mdi--star-half] text-yellow-400 w-7 h-7" />
-			</span>
-
-			<span>65 reviews</span>
-			<span class="icon-[mdi--comment-multiple-outline] text-cyan-500 w-6 h-6" />
-		</div>
+		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
 
 		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<a href="https://sieboldnijenhuisarchitect.nl/">
-				<img src="/logos/sieboldnijenhuis.png" alt="sieboldnijenhuis" />
+			<a href="https://www.bladewp.com/">
+				<img src="/logos/bladewp.png" alt="bladewp" />
 			</a>
 
-			<a href="https://www.bts-bv.nl/">
-				<img src="/logos/BTS.png" alt="BTS" />
+			<a href="https://moventes.nl/">
+				<img src="/logos/moventes.png" alt="moventes" />
 			</a>
 
-			<a href="https://www.misterb.com.nl/">
-				<img src="/logos/misterb.png" alt="misterb" />
+			<a href="https://www.voordekunst.nl/">
+				<img src="/logos/voordekunst.png" alt="voordekunst" />
 			</a>
 
-			<a href="https://www.raket.online/">
-				<img src="/logos/raket.png" alt="raket" />
-			</a>
-
-			<a href="https://dentalsupplies.nl/">
+			<a href="https://mr-dentalsupplies.nl/">
 				<img src="/logos/mrdental.png" alt="mrdental" />
 			</a>
 
-			<a href="https://www.vankleeftechniek.nl/">
-				<img src="/logos/vankleeftechniek.png" alt="vankleeftechniek" />
+			<a href="https://www.cavari.nl/">
+				<img src="/logos/cavari.png" alt="cavari" />
 			</a>
 
-			<a href="https://www.eldecollege.nl/">
-				<img src="/logos/eldecollege.png" alt="eldecollege" />
+			<a href="https://www.renefriso.online/">
+				<img src="/logos/renefriso.png" alt="renefriso" />
 			</a>
 
-			<a href="https://www.bladewp.com/">
-				<img src="/logos/bladewp.png" alt="bladewp" />
+			<a href="https://www.sunwood.nl/">
+				<img src="/logos/sunwood.png" alt="sunwood" />
 			</a>
 
 			<a href="https://marmerbehandelen.nl/">
 				<img src="/logos/marmerbehandelen.png" alt="marmerbehandelen" />
 			</a>
 
-			<a href="https://www.econe.nl/" class="mx-auto col-auto sm:col-span-full md:col-auto">
-				<img src="/logos/econe.png" alt="econe" />
+			<a href="https://www.heemlanden.nl/">
+				<img src="/logos/collegedeheemlanden.png" alt="collegedeheemlanden" />
+			</a>
+
+			<a
+				href="https://www.boomkwekerijheijmans.nl/"
+				class="mx-auto col-auto sm:col-span-full md:col-auto"
+			>
+				<img src="/logos/boomkwekerij.png" alt="boomkwekerij" />
 			</a>
 		</div>
 	</section>

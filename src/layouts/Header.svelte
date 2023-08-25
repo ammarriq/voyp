@@ -62,7 +62,7 @@
 	];
 </script>
 
-<header class="fixed z-20 inset-x-0 bg-white" class:scroll-header={scrolled}>
+<header class="fixed z-30 inset-x-0 bg-white" class:scroll-header={scrolled}>
 	<section class="container h-20 lg:h-[6.5rem] flex lg:justify-between items-center">
 		<div class="block lg:hidden">
 			<span class="icon-[mdi--menu] w-8 h-8" />

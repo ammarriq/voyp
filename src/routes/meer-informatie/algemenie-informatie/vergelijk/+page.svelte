@@ -37,7 +37,7 @@
 		</div>
 
 		<img
-			src="/vijf-zekerheden/vijf-zekerheden.png"
+			src="/hero/vijf-zekerheden.png"
 			alt="Vijf-zekerheden"
 			class="mx-auto max-w-xs lg:max-w-[28rem] py-14"
 		/>
@@ -289,7 +289,7 @@
 			leading-6"
 		>
 			<section>
-				<img src="/vergelijk/kpn.webp" alt="kpn" class="w-80 lg:w-full mx-auto" />
+				<img src="/logos/kpn.webp" alt="kpn" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
 					<h4 class="font-semibold">Accounts</h4>
@@ -333,7 +333,7 @@
 			</section>
 
 			<section>
-				<img src="/vergelijk/voipzeker.webp" alt="voipzeker" class="w-80 lg:w-full mx-auto" />
+				<img src="/logos/voipzeker.webp" alt="voipzeker" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
 					<h4 class="font-semibold">Accounts</h4>
@@ -390,7 +390,7 @@
 			</section>
 
 			<section>
-				<img src="/vergelijk/voyp.webp" alt="voyp" class="w-80 lg:w-full mx-auto" />
+				<img src="/logos/voyp.webp" alt="voyp" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
 					<h4 class="font-semibold">Accounts</h4>
@@ -457,7 +457,7 @@
 			</section>
 
 			<section>
-				<img src="/vergelijk/verbonden.webp" alt="verbonden" class="w-80 lg:w-full mx-auto" />
+				<img src="/logos/verbonden.webp" alt="verbonden" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
 					<h4 class="font-semibold">Accounts</h4>

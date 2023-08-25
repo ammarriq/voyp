@@ -38,7 +38,7 @@
 			</Button>
 		</div>
 
-		<img src="/tarieven/tarieven.webp" alt="tarieven" class="mx-auto max-w-xs lg:max-w-[28rem]" />
+		<img src=" /hero/tarieven.webp" alt="tarieven" class="mx-auto max-w-xs lg:max-w-[28rem]" />
 	</section>
 </div>
 

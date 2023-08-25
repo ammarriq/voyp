@@ -135,7 +135,7 @@
 		</div>
 
 		<img
-			src="/vijf-zekerheden/vijf-zekerheden.png"
+			src="/hero/vijf-zekerheden.png"
 			alt="Vijf-zekerheden"
 			class="mx-auto max-w-xs lg:max-w-[28rem] py-14"
 		/>
@@ -183,12 +183,8 @@
 				<img src="/logos/hethoutens.png" alt="hethoutens" />
 			</a>
 
-			<a href="https://www.arbec.nl/">
-				<img
-					src="/logos/arbec.png"
-					alt="arbec"
-					class=" mx-auto col-auto sm:col-span-full md:col-auto"
-				/>
+			<a href="https://www.arbec.nl/" class=" mx-auto col-auto sm:col-span-full md:col-auto">
+				<img src="/logos/arbec.png" alt="arbec" />
 			</a>
 		</div>
 	</section>

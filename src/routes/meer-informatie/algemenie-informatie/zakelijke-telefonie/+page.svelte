@@ -36,7 +36,7 @@
 		</div>
 
 		<img
-			src="/vijf-zekerheden/vijf-zekerheden.png"
+			src="/hero/vijf-zekerheden.png"
 			alt="Vijf-zekerheden"
 			class="mx-auto max-w-xs lg:max-w-[28rem] py-14"
 		/>

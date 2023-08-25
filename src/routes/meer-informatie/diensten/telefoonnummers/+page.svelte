@@ -134,7 +134,7 @@
 		</div>
 
 		<img
-			src="/vijf-zekerheden/vijf-zekerheden.png"
+			src="/hero/vijf-zekerheden.png"
 			alt="Vijf-zekerheden"
 			class="mx-auto max-w-xs lg:max-w-[28rem] py-14"
 		/>
@@ -182,12 +182,8 @@
 				<img src="/logos/schimmeltechniek.png" alt="schimmeltechniek" />
 			</a>
 
-			<a href="https://www.cuentas.nl/">
-				<img
-					src="/logos/cuentas.png"
-					alt="cuentas"
-					class=" mx-auto col-auto sm:col-span-full md:col-auto"
-				/>
+			<a href="https://www.cuentas.nl/" class=" mx-auto col-auto sm:col-span-full md:col-auto">
+				<img src="/logos/cuentas.png" alt="cuentas" />
 			</a>
 		</div>
 	</section>

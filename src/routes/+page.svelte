@@ -37,7 +37,7 @@
 				Bekijk ons aanbod
 			</Button>
 		</div>
-		<img src="./homepage/vlogo.png" alt="vlogo" class="mx-auto lg:mx-0 w-60 lg:w-80" />
+		<img src="/hero/vlogo.png" alt="vlogo" class="mx-auto lg:mx-0 w-60 lg:w-80" />
 	</section>
 </div>
 
@@ -95,7 +95,7 @@
 		 md:text-start items-center justify-between"
 	>
 		<img
-			src="./homepage/voyptotaalpakket.png"
+			src="/hero/voyptotaalpakket.png"
 			alt="voyptotaalpakket"
 			class="w-52 lg:w-80 mx-auto pb-12 md:pb-0"
 		/>
@@ -136,12 +136,16 @@
 					en mogelijkheden. We denken graag met je mee over een goede invulling van jullie telefonie
 					wensen.
 				</p>
-				<img src="./homepage/overstappenstap1.png" alt="overstappenstap1" class="max-w-[12rem]" />
+				<img
+					src="/overstappen/overstappenstap1.webp"
+					alt="overstappenstap1"
+					class="max-w-[12rem]"
+				/>
 			</div>
 
 			<div class="flex flex-col items-center">
 				<img
-					src="./homepage/overstappenstap2.png"
+					src="/overstappen/overstappenstap2.webp"
 					alt="overstappenstap2"
 					class="hidden md:block max-w-[12rem]"
 				/>
@@ -152,7 +156,7 @@
 					platform.
 				</p>
 				<img
-					src="./homepage/overstappenstap2.png"
+					src="/overstappen/overstappenstap2.webp"
 					alt="overstappenstap2"
 					class="block md:hidden max-w-[12rem]"
 				/>
@@ -165,7 +169,11 @@
 					afgesproken porteermoment gaan je nieuwe toestelen over en start ook jij met bellen zonder
 					gedoe.
 				</p>
-				<img src="./homepage/overstappenstap3.png" alt="overstappenstap3" class="max-w-[12rem]" />
+				<img
+					src="/overstappen/overstappenstap3.webp"
+					alt="overstappenstap3"
+					class="max-w-[12rem]"
+				/>
 			</div>
 		</div>
 		<Button
@@ -203,11 +211,7 @@
 				wil zijn.
 			</p>
 		</div>
-		<img
-			src="./homepage/voypmobiel.png"
-			alt="voypmobiel"
-			class="w-52 lg:w-80 mx-auto pt-12 md:pt-0"
-		/>
+		<img src="./hero/voypmobiel.png" alt="voypmobiel" class="w-52 lg:w-80 mx-auto pt-12 md:pt-0" />
 	</section>
 </div>
 
@@ -249,7 +253,7 @@
 		class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 md:flex gap-10 lg:gap-20 text-center
 		 md:text-start items-center justify-between"
 	>
-		<img src="/homepage/voip1.png" alt="voip1" class="w-52 lg:w-80 mx-auto pb-12 md:pb-0" />
+		<img src="/hero/voip1.png" alt="voip1" class="w-52 lg:w-80 mx-auto pb-12 md:pb-0" />
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
 				Voice over IP <br class="block" /><Display class="text-3xl lg:text-5xl" words={words[3]} />

@@ -32,7 +32,7 @@
 			</p>
 		</div>
 
-		<img src="/homepage/voip1.png" alt="VoIP" class="mx-auto max-w-xs lg:max-w-sm py-14" />
+		<img src="/hero/voip1.png" alt="VoIP" class="mx-auto max-w-xs lg:max-w-sm py-14" />
 	</section>
 </div>
 
@@ -151,7 +151,7 @@
 	>
 		<div class="flex flex-col items-center">
 			<img
-				src="/vijf-zekerheden/vijf-zekerheden.png"
+				src="/hero/vijf-zekerheden.png"
 				alt=""
 				class="max-w-xs md:max-w-[18.63rem] lg:max-w-sm mx-auto"
 			/>
