@@ -29,44 +29,57 @@
 			class="md:grid grid-cols-5 gap-6 lg:gap-10 text-sm md:text-[0.734rem] leading-7 lg:text-base
       lg:leading-8 space-y-10 md:space-y-0"
 		>
-			<div
-				class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl shadow-md col-span-3"
-			>
-				<p>
-					Bij Voyp zijn we gespecialiseerd in VoIP. Alleen: voor internetbellen zijn we natuurlijk
-					wel van één ding enorm afhankelijk. Jouw internetverbinding. Is deze niet snel genoeg, wil
-					je een aparte lijn voor je telefonie of wil je door kunnen werken als je bestaande
-					internet-verbinding tijdelijk uitvalt, dan helpen wij je daar graag bij.
-				</p>
-				<p class="py-5">
-					<span class="font-semibold">Vanaf € 60,- per maand</span> ontvang je een stabiele glasvezel-
-					of ADSL verbinding met vaste IP adressen. Deze maximale snelheid is afhankelijk van je locatie.
-					Uiteraard communiceren we vooraf welke snelheid we verwachten te halen. Wij installeren op
-					locatie, inclusief modem, router, switches en/of WiFi, afhankelijk van jouw wensen.
-				</p>
-				<p>
-					Neem daarom vooral contact met ons op voor meer informatie. Wij leggen je graag de
-					voordelen van Voyp Internet uit.
-				</p>
+			<div class="relative group col-span-3">
+				<div
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				  opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+				/>
+				<div
+					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			    rounded-3xl"
+				>
+					<p>
+						Bij Voyp zijn we gespecialiseerd in VoIP. Alleen: voor internetbellen zijn we natuurlijk
+						wel van één ding enorm afhankelijk. Jouw internetverbinding. Is deze niet snel genoeg,
+						wil je een aparte lijn voor je telefonie of wil je door kunnen werken als je bestaande
+						internet-verbinding tijdelijk uitvalt, dan helpen wij je daar graag bij.
+					</p>
+					<p class="py-5">
+						<span class="font-semibold">Vanaf € 60,- per maand</span> ontvang je een stabiele glasvezel-
+						of ADSL verbinding met vaste IP adressen. Deze maximale snelheid is afhankelijk van je locatie.
+						Uiteraard communiceren we vooraf welke snelheid we verwachten te halen. Wij installeren op
+						locatie, inclusief modem, router, switches en/of WiFi, afhankelijk van jouw wensen.
+					</p>
+					<p>
+						Neem daarom vooral contact met ons op voor meer informatie. Wij leggen je graag de
+						voordelen van Voyp Internet uit.
+					</p>
+				</div>
 			</div>
 
-			<div
-				class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl shadow-md text-start
-        col-span-2 lg:space-y-0.1"
-			>
-				<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">De voordelen</h3>
-				<p>✓ Betaalbaar, stabiel internet van Voyp</p>
-				<p>✓ Vast IP-adres</p>
-				<p>✓ 1 contactpersoon voor telecom én internet</p>
-				<p>✓ Automatische backup lijn mogelijk</p>
-				<p>✓ Optimalisatie voor je telefonie</p>
-				<p>✓ Installatie op locatie</p>
-				<p>✓ Configuratie en optimalisatie op afstand</p>
-				<p>
-					✓ Of je nu alleen een extra verbinding wilt of je hele netwerk onder de loep wilt nemen,
-					bij Voyp krijg je eerlijk en professioneel advies, een scherpe prijs en een stabiele
-					oplossing waar je jaren mee vooruit kan!
-				</p>
+			<div class="relative group col-span-2">
+				<div
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				  opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+				/>
+				<div
+					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			    rounded-3xl text-start"
+				>
+					<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">De voordelen</h3>
+					<p>✓ Betaalbaar, stabiel internet van Voyp</p>
+					<p>✓ Vast IP-adres</p>
+					<p>✓ 1 contactpersoon voor telecom én internet</p>
+					<p>✓ Automatische backup lijn mogelijk</p>
+					<p>✓ Optimalisatie voor je telefonie</p>
+					<p>✓ Installatie op locatie</p>
+					<p>✓ Configuratie en optimalisatie op afstand</p>
+					<p>
+						✓ Of je nu alleen een extra verbinding wilt of je hele netwerk onder de loep wilt nemen,
+						bij Voyp krijg je eerlijk en professioneel advies, een scherpe prijs en een stabiele
+						oplossing waar je jaren mee vooruit kan!
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -119,44 +132,57 @@
 			class="md:grid grid-cols-5 gap-6 lg:gap-10 text-sm md:text-[0.734rem] leading-7 lg:text-base
       lg:leading-8 space-y-10 md:space-y-0"
 		>
-			<div
-				class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl shadow-md text-start
-        col-span-2 lg:space-y-0.1"
-			>
-				<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">Wat leveren wij</h3>
-				<p>✓ VDSL verbindingen tot 100mbit</p>
-				<p>✓ Glasvezelverbinding tot 1gbps</p>
-				<p>✓ Routers & switches</p>
-				<p>✓ Inpandige bekabeling</p>
-				<p>✓ Draadloos internet</p>
-				<p>✓ Gastnetwerken inclusief authenticatie</p>
-				<p>✓ Multicell DECT-oplossingen</p>
-				<p>✓ Volledige configuratie en optimalisatie op afstand</p>
-				<p>✓ Support op afstand inbegrepen</p>
-				<p>✓ Support op locatie € 80,- per uur</p>
+			<div class="relative group col-span-2">
+				<div
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				  opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+				/>
+				<div
+					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			    rounded-3xl text-start"
+				>
+					<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">Wat leveren wij</h3>
+					<p>✓ VDSL verbindingen tot 100mbit</p>
+					<p>✓ Glasvezelverbinding tot 1gbps</p>
+					<p>✓ Routers & switches</p>
+					<p>✓ Inpandige bekabeling</p>
+					<p>✓ Draadloos internet</p>
+					<p>✓ Gastnetwerken inclusief authenticatie</p>
+					<p>✓ Multicell DECT-oplossingen</p>
+					<p>✓ Volledige configuratie en optimalisatie op afstand</p>
+					<p>✓ Support op afstand inbegrepen</p>
+					<p>✓ Support op locatie € 80,- per uur</p>
+				</div>
 			</div>
 
-			<div
-				class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl shadow-md col-span-3"
-			>
-				<p>
-					VoIP valt of staat met de kwaliteit van je internet-verbinding. Is deze niet stabiel
-					genoeg, dan krijg je problemen met bellen. En dat wil je natuurlijk niet. Je telefonie
-					hoort het namelijk goed én stabiel te doen.
-				</p>
-				<p class="py-5">
-					Soms is de oplossing simpel. Samen met jou denken we eerst mee om binnen je huidige
-					verbinding de telefonie stabiel te krijgen. Maar soms kan ons advies ook zijn om een extra
-					internet-verbinding af te sluiten, of om je huidige verbinding te vervangen. Met Voyp
-					Internet kies je voor een stabiele glasvezel of ADSL verbinding.
-				</p>
-				<p>
-					Uiteindelijk hebben wij maar één doel en dat is ervoor zorgen dat jouw telefonie optimaal
-					functioneert. Wij stellen alles in het werk ervoor te zorgen dat je zorgeloos kunt bellen.
-					Dus ondervind je problemen met je telefonie of met je internet en wil je graag in gesprek
-					om dit goed, betaalbaar en professioneel op te pakken?
-					<span class="font-semibold"> Voyp’s the word </span>.
-				</p>
+			<div class="relative group col-span-3">
+				<div
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				  opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+				/>
+				<div
+					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			    rounded-3xl"
+				>
+					<p>
+						VoIP valt of staat met de kwaliteit van je internet-verbinding. Is deze niet stabiel
+						genoeg, dan krijg je problemen met bellen. En dat wil je natuurlijk niet. Je telefonie
+						hoort het namelijk goed én stabiel te doen.
+					</p>
+					<p class="py-5">
+						Soms is de oplossing simpel. Samen met jou denken we eerst mee om binnen je huidige
+						verbinding de telefonie stabiel te krijgen. Maar soms kan ons advies ook zijn om een
+						extra internet-verbinding af te sluiten, of om je huidige verbinding te vervangen. Met
+						Voyp Internet kies je voor een stabiele glasvezel of ADSL verbinding.
+					</p>
+					<p>
+						Uiteindelijk hebben wij maar één doel en dat is ervoor zorgen dat jouw telefonie
+						optimaal functioneert. Wij stellen alles in het werk ervoor te zorgen dat je zorgeloos
+						kunt bellen. Dus ondervind je problemen met je telefonie of met je internet en wil je
+						graag in gesprek om dit goed, betaalbaar en professioneel op te pakken?
+						<span class="font-semibold"> Voyp’s the word </span>.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>

@@ -29,7 +29,7 @@
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
-				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.75rem] lg:text-sm">
+				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.73rem] lg:text-sm">
 					<span class="shrink-0">Direct berekenen of overstappen</span>
 					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
 				</div>
@@ -235,12 +235,16 @@
 					en mogelijkheden. We denken graag met je mee over een goede invulling van jullie telefonie
 					wensen.
 				</p>
-				<img src="/homepage/overstappenstap1.png" alt="overstappenstap1" class="max-w-[12rem]" />
+				<img
+					src="/overstappen/overstappenstap1.webp"
+					alt="overstappenstap1"
+					class="max-w-[12rem]"
+				/>
 			</div>
 
 			<div class="flex flex-col items-center">
 				<img
-					src="/homepage/overstappenstap2.png"
+					src="/overstappen/overstappenstap2.webp"
 					alt="overstappenstap2"
 					class="hidden md:block max-w-[12rem]"
 				/>
@@ -251,7 +255,7 @@
 					platform.
 				</p>
 				<img
-					src="/homepage/overstappenstap2.png"
+					src="/overstappen/overstappenstap2.webp"
 					alt="overstappenstap2"
 					class="block md:hidden max-w-[12rem]"
 				/>
@@ -264,7 +268,11 @@
 					afgesproken porteermoment gaan je nieuwe toestelen over en start ook jij met bellen zonder
 					gedoe.
 				</p>
-				<img src="/homepage/overstappenstap3.png" alt="overstappenstap3" class="max-w-[12rem]" />
+				<img
+					src="/overstappen/overstappenstap3.webp"
+					alt="overstappenstap3"
+					class="max-w-[12rem]"
+				/>
 			</div>
 		</div>
 		<Button
@@ -537,20 +545,49 @@
 		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
 
 		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<img src="/logos/advocatenkantoorjansen.png" alt="advocatenkantoorjansen" />
-			<img src="/logos/toprow.png" alt="toprow" />
-			<img src="/logos/sunwood.png" alt="sunwood" />
-			<img src="/logos/eldecollege.png" alt="eldecollege" />
-			<img src="/logos/timeprofit.png" alt="timeprofit" />
-			<img src="/logos/mediamansion.png" alt="mediamansion" />
-			<img src="/logos/lawspot.png" alt="lawspot" />
-			<img src="/logos/cuentas.png" alt="cuentas" />
-			<img src="/logos/bladewp.png" alt="bladewp" />
-			<img
-				src="/logos/tallgrass.png"
-				alt="tallgrass"
-				class=" mx-auto col-auto sm:col-span-full md:col-auto"
-			/>
+			<a href="https://advocatenkantoorjansen.nl/">
+				<img src="/logos/advocatenkantoorjansen.png" alt="advocatenkantoorjansen" />
+			</a>
+
+			<a href="https://toprow.com/">
+				<img src="/logos/toprow.png" alt="toprow" />
+			</a>
+
+			<a href="https://sunwood.nl/">
+				<img src="/logos/sunwood.png" alt="sunwood" />
+			</a>
+
+			<a href="https://eldecollege.nl/">
+				<img src="/logos/eldecollege.png" alt="eldecollege" />
+			</a>
+
+			<a href="https://timeprofit.nl/">
+				<img src="/logos/timeprofit.png" alt="timeprofit" />
+			</a>
+
+			<a href="https://mediamansion.nl/">
+				<img src="/logos/mediamansion.png" alt="mediamansion" />
+			</a>
+
+			<a href="https://lawspot.nl/">
+				<img src="/logos/lawspot.png" alt="lawspot" />
+			</a>
+
+			<a href="https://cuentas.nl/">
+				<img src="/logos/cuentas.png" alt="cuentas" />
+			</a>
+
+			<a href="https://bladewp.com/">
+				<img src="/logos/bladewp.png" alt="bladewp" />
+			</a>
+
+			<a href="https://tallgrass.nl/">
+				<img
+					src="/logos/tallgrass.png"
+					alt="tallgrass"
+					class=" mx-auto col-auto sm:col-span-full md:col-auto"
+				/>
+			</a>
 		</div>
 	</section>
 </div>

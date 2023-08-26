@@ -25,7 +25,7 @@
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
-				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.75rem] lg:text-sm">
+				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.73rem] lg:text-sm">
 					<span class="shrink-0">Offerte aanvragen of direct bestellen</span>
 					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
 				</div>

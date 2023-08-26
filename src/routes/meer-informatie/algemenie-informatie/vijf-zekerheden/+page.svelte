@@ -30,7 +30,7 @@
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
-				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.75rem] lg:text-sm">
+				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.73rem] lg:text-sm">
 					<span class="shrink-0">Offerte aanvragen of direct bestellen</span>
 					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
 				</div>
@@ -95,103 +95,137 @@
 
 <div class="bg-white">
 	<section
-		class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center md:grid grid-cols-6
+		class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center md:grid grid-cols-4 lg:grid-cols-6
 		gap-6 lg:gap-8 text-sm leading-7 lg:text-base lg:leading-8 space-y-10 md:space-y-0"
 	>
-		<div
-			class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl col-span-2 shadow-md"
-		>
-			<img
-				src="/certainties/betaalbaar.webp"
-				alt="Betaalbaar"
-				class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+		<div class="relative group col-span-2">
+			<div
+				class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 			/>
-			<p class="font-semibold text-lg">Betaalbaar</p>
-			<p class="pt-2 pb-3.5 lg:pb-5">
-				In ons standaard Voyp abonnement krijg je alle mogelijkheden die je nodig hebt. Zo hoef je
-				bij ons niet maandelijks extra te betalen als je je telefonie wilt uitbreiden.
-			</p>
-			<p>
-				Voor extra telefoonnummers en extra VoIP-accounts hanteren we eerlijke en scherpe tarieven.
-				Daarnaast krijg je extra korting als je meer afneemt.
-			</p>
+			<div
+				class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			  rounded-3xl"
+			>
+				<img
+					src="/certainties/betaalbaar.webp"
+					alt="Betaalbaar"
+					class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+				/>
+				<p class="font-semibold text-lg">Betaalbaar</p>
+				<p class="pt-2 pb-3.5 lg:pb-5">
+					In ons standaard Voyp abonnement krijg je alle mogelijkheden die je nodig hebt. Zo hoef je
+					bij ons niet maandelijks extra te betalen als je je telefonie wilt uitbreiden.
+				</p>
+				<p>
+					Voor extra telefoonnummers en extra VoIP-accounts hanteren we eerlijke en scherpe
+					tarieven. Daarnaast krijg je extra korting als je meer afneemt.
+				</p>
+			</div>
 		</div>
 
-		<div
-			class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl col-span-2 shadow-md"
-		>
-			<img
-				src="/certainties/dagelijks.webp"
-				alt="dagelijks"
-				class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+		<div class="relative group col-span-2">
+			<div
+				class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 			/>
-			<p class="font-semibold text-lg">Dagelijks opzegbaar</p>
-			<p class="pt-2 pb-3.5 lg:pb-5">
-				Bij Voyp houden we niet van wurgcontracten. Daarom kun je iedere dag je accounts,
-				SIP-trunks, telefoonnummers, of het Voyp-abonnement bij ons opzeggen.
-			</p>
-			<p>
-				Dit betekent dat je iedere dag je accounts, telefoonnummers of het hele abonnement kunt
-				opzeggen. Voor ADSL geldt een contractduur van een jaar.
-			</p>
+			<div
+				class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			  rounded-3xl"
+			>
+				<img
+					src="/certainties/dagelijks.webp"
+					alt="dagelijks"
+					class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+				/>
+				<p class="font-semibold text-lg">Dagelijks opzegbaar</p>
+				<p class="pt-2 pb-3.5 lg:pb-5">
+					Bij Voyp houden we niet van wurgcontracten. Daarom kun je iedere dag je accounts,
+					SIP-trunks, telefoonnummers, of het Voyp-abonnement bij ons opzeggen.
+				</p>
+				<p>
+					Dit betekent dat je iedere dag je accounts, telefoonnummers of het hele abonnement kunt
+					opzeggen. Voor ADSL geldt een contractduur van een jaar.
+				</p>
+			</div>
 		</div>
 
-		<div
-			class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl col-span-2 shadow-md"
-		>
-			<img
-				src="/certainties/betrouwbaar.webp"
-				alt="Betrouwbaar"
-				class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+		<div class="relative group col-span-2">
+			<div
+				class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 			/>
-			<p class="font-semibold text-lg">Betrouwbaar</p>
-			<p class="pt-2 pb-3.5 lg:pb-5">
-				Van addertjes gaan onze haren recht overeind staan. Je weet vooraf duidelijk wat je moet
-				betalen en kunt gesprekskosten altijd inzien. Geen verrassingen achteraf.
-			</p>
-			<p>
-				Uiteraard monitoren we onze diensten en servers, informeren we je pro-actief bij storingen
-				en zorgen we er elke dag voor dat jij optimaal bereikbaar bent.
-			</p>
+			<div
+				class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			  rounded-3xl"
+			>
+				<img
+					src="/certainties/betrouwbaar.webp"
+					alt="Betrouwbaar"
+					class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+				/>
+				<p class="font-semibold text-lg">Betrouwbaar</p>
+				<p class="pt-2 pb-3.5 lg:pb-5">
+					Van addertjes gaan onze haren recht overeind staan. Je weet vooraf duidelijk wat je moet
+					betalen en kunt gesprekskosten altijd inzien. Geen verrassingen achteraf.
+				</p>
+				<p>
+					Uiteraard monitoren we onze diensten en servers, informeren we je pro-actief bij storingen
+					en zorgen we er elke dag voor dat jij optimaal bereikbaar bent.
+				</p>
+			</div>
 		</div>
 
-		<div
-			class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl col-start-2 col-end-4
-			shadow-md"
-		>
-			<img
-				src="/certainties/persoonlijke.webp"
-				alt="Persoonlijke service"
-				class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+		<div class="relative group lg:col-start-2 col-span-2">
+			<div
+				class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 			/>
-			<p class="font-semibold text-lg">Persoonlijke service</p>
-			<p class="pt-2 pb-3.5 lg:pb-5">
-				Wij zijn dagelijks bereikbaar van negen tot vijf. Bij Voyp geven we je onbeperkte support op
-				je telefonie. Dus heb je problemen of vragen? Bel, mail of chat met ons.
-			</p>
-			<p>
-				Wij zorgen ervoor dat we onze klanten én hun telefonie behoeften kennen. Zo hoef je niet
-				elke keer alles opnieuw uit te leggen en word je snel geholpen.
-			</p>
+			<div
+				class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			  rounded-3xl"
+			>
+				<img
+					src="/certainties/persoonlijke.webp"
+					alt="Persoonlijke service"
+					class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+				/>
+				<p class="font-semibold text-lg">Persoonlijke service</p>
+				<p class="pt-2 pb-3.5 lg:pb-5">
+					Wij zijn dagelijks bereikbaar van negen tot vijf. Bij Voyp geven we je onbeperkte support
+					op je telefonie. Dus heb je problemen of vragen? Bel, mail of chat met ons.
+				</p>
+				<p>
+					Wij zorgen ervoor dat we onze klanten én hun telefonie behoeften kennen. Zo hoef je niet
+					elke keer alles opnieuw uit te leggen en word je snel geholpen.
+				</p>
+			</div>
 		</div>
 
-		<div
-			class="border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 rounded-3xl col-span-2 shadow-md"
-		>
-			<img
-				src="/certainties/flexibel.webp"
-				alt="Flexibel"
-				class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+		<div class="relative group col-start-2 col-span-2 lg:col-span-2">
+			<div
+				class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
+				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 			/>
-			<p class="font-semibold text-lg">Flexibel</p>
-			<p class="pt-2 pb-3.5 lg:pb-5">
-				Wat voor een multinational ideaal is heb je als ZZP’er niet nodig en andersom. Stel daarom
-				eenvoudig je belplan in met functies die jij nodig hebt.
-			</p>
-			<p>
-				Voor deze functies worden geen extra maandelijkse kosten in rekening gebracht. Zo zorgen wij
-				er samen voor dat je optimaal bereikbaar bent én blijft.
-			</p>
+			<div
+				class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
+			  rounded-3xl"
+			>
+				<img
+					src="/certainties/flexibel.webp"
+					alt="Flexibel"
+					class="w-32 lg:w-[9.3rem] pb-3 mx-auto"
+				/>
+				<p class="font-semibold text-lg">Flexibel</p>
+				<p class="pt-2 pb-3.5 lg:pb-5">
+					Wat voor een multinational ideaal is heb je als ZZP’er niet nodig en andersom. Stel daarom
+					eenvoudig je belplan in met functies die jij nodig hebt.
+				</p>
+				<p>
+					Voor deze functies worden geen extra maandelijkse kosten in rekening gebracht. Zo zorgen
+					wij er samen voor dat je optimaal bereikbaar bent én blijft.
+				</p>
+			</div>
 		</div>
 	</section>
 </div>

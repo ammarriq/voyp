@@ -284,20 +284,40 @@
 		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
 
 		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<img src="logos/marmerbehandelen.png" alt="marmerbehandelen" />
-			<img src="logos/ITWizzard.png" alt="ITWizzard" />
-			<img src="logos/themag.png" alt="themag" />
-			<img src="logos/moventes.png" alt="moventes" />
-			<img src="logos/viwecom.png" alt="viwecom" />
-			<img src="logos/tallgrass.png" alt="tallgrass" />
-			<img src="logos/timeprofit.png" alt="timeprofit" />
-			<img src="logos/boomkwekerij.png" alt="boomkwekerij" />
-			<img src="logos/guidato.png" alt="guidato" />
-			<img
-				src="logos/theokooptjeauto.png"
-				alt="theokooptjeauto"
-				class=" mx-auto col-auto sm:col-span-full md:col-auto"
-			/>
+			<a href="https://www.arbec.nl/">
+				<img src="logos/arbec.png" alt="arbec" />
+			</a>
+			<a href="https://www.theokooptjeauto.nl/">
+				<img src="logos/theokooptjeauto.png" alt="theokooptjeauto" />
+			</a>
+			<a href="https://www.mr-dentalsupplies.nl/">
+				<img src="logos/mrdental.png" alt="mrdental" />
+			</a>
+			<a href="https://www.moventes.nl/">
+				<img src="logos/moventes.png" alt="moventes" />
+			</a>
+			<a href="https://www.sieboldnijenhuisarchitect.nl/">
+				<img src="logos/sieboldnijenhuis.png" alt="sieboldnijenhuis" />
+			</a>
+			<a href="https://www.eldecollege.nl/">
+				<img src="logos/eldecollege.png" alt="eldecollege" />
+			</a>
+			<a href="https://www.hethoutens.nl/">
+				<img src="logos/hethoutens.png" alt="hethoutens" />
+			</a>
+			<a href="https://www.bts-bv.nl/">
+				<img src="logos/BTS.png" alt="BTS" />
+			</a>
+			<a href="https://www.tallgrass.nl/">
+				<img src="logos/tallgrass.png" alt="tallgrass" />
+			</a>
+			<a href="https://www.raket.online/">
+				<img
+					src="logos/raket.png"
+					alt="raket"
+					class=" mx-auto col-auto sm:col-span-full md:col-auto"
+				/>
+			</a>
 		</div>
 	</section>
 </div>
