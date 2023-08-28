@@ -56,7 +56,6 @@
 		{ label: 'Veelgestelde vragen', children: [] },
 		{ label: 'Contact', children: [] },
 		{ label: 'Voyp updates', children: [] },
-		{ label: 'Storingen', children: [] },
 		{ label: 'Voorwaarden', children: [] },
 		{ label: 'Privacy & GDPR', children: [] }
 	];

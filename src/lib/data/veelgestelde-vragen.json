@@ -1,0 +1,136 @@
+[
+ [
+  {
+    "id": "1",
+    "question": "Hoe vraag ik een offerte aan of kan ik klant worden?",
+    "answer": ["Je kunt hier eenvoudig je kosten berekenen en een bestelling plaatsen of offerte aanvragen. We nemen uiteraard altijd contact met je op om alles door te spreken zodat je zeker weet dat je telefonie exact gaat doen wat jij nodig hebt."]
+  },
+  {
+    "id": "2",
+    "question": "Ik heb eigen toestellen, kan ik die blijven gebruiken?",
+    "answer": [
+      "Heb je al VoIP-toestellen, dan kun je die eenvoudig configureren om op ons netwerk te gebruiken. Dit mag je zelf doen, maar voor € 20,- eenmalig per toestel doen wij het voor je. Geen zorgen, wel overstappen!",
+      "Heb je momenteel analoge toestellen? Er zijn manieren om die te blijven gebruiken, al zijn daar nadelen aan verbonden. Neem contact met ons op, dan adviseren wij je graag!"
+    ]
+  },
+  {
+    "id": "3",
+    "question": "Blijf ik bereikbaar op mijn huidige nummer als ik overstap en moet ik zelf opzeggen?",
+    "answer": [
+      "Wij zorgen er altijd voor dat je bereikbaar blijft tijdens je overstap. De meeste providers beschouwen een overstap ook als opzegging. Het kan natuurlijk nooit kwaad voor de zekerheid even met je huidige aanbieder te bellen."
+    ]
+}],
+[
+  {
+    "id": "1",
+    "question": "Ik wil de app gebruiken of ben de inloggegevens vergeten?",
+    "answer": [
+      "Neem contact op met support@voyp.nl of via de chat en wij helpen je zo snel mogelijk verder."
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Kan ik mijn Bria Stretto account op meerdere apparaten gebruiken?",
+    "answer": [
+      "Dit kan helaas niet. Een Bria account wordt met een licentie op je toestel afgegeven. Wel kunnen we uiteraard de licentie vrijgeven als je een nieuwe mobiel of pc hebt."
+    ]
+  },
+  {
+    "id": "3",
+    "question": "Bria Stretto app werkt niet (goed) of geeft meldingen. Wat moet ik doen?",
+    "answer": [
+    "Kijk eerst of je niet toevallig op het WiFi zit. Vaak leidt het gebruik van WiFi namelijk tot problemen. Probeer anders de app of je mobiel/computer opnieuw op te starten. Nog steeds problemen? Neem dan contact met ons op."
+  ]
+}],
+ [
+  {
+    "id": "1",
+    "question": "Ik wil meer/minder accounts, nummers of functies. Hoe regel ik dit?",
+    "answer": [
+      "Je diensten zijn dagelijks aanpasbaar of opzegbaar. Diensten uitbreiden of opzeggen? Mail ons op support@voyp.nl en wij regelen het voor je."
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Kan ik mijn VoIP-account gebruiken op meerdere vaste toestellen?",
+    "answer": [
+      "Een VoIP-account wordt toegewezen aan een apparaat. Het is daarom niet mogelijk om 1 account op meerdere toestellen te gebruiken. Per toestel heb je een extra VoIP-account nodig."
+    ]
+  },
+  {
+    "id": "3",
+    "question": "Ik heb problemen met mijn vaste telefoon of de gesprekskwaliteit?",
+    "answer": [
+      "Vervelend om te horen. Met een reset van je toestel worden veel problemen vaak al opgelost. Nog steeds problemen? Neem contact op met support@voyp.nl en wij helpen je graag verder."
+    ]
+}],
+ [
+  {
+    "id": "1",
+    "question": "Kan ik ook onbeperkt bellen voor een vast bedrag per maand?",
+    "answer": [
+      "Wij bieden geen onbeperkt bellen aan en zijn dit ook niet van plan. Je betaalt bij ons per seconde. In veel gevallen blijkt dit voordeliger te zijn dan vooraf voor een vast bedrag je belminuten af te kopen.",
+      "Het kan zijn dat je zoveel belt dat afkopen wel interessant voor je is. Wij kunnen je dan op gesprekskosten misschien niet bieden wat je zoekt, maar hopen dat we je met onze uitstekende diensten en beoordelingen toch kunnen overtuigen via Voyp te bellen."
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Momenteel heb ik nog een fax staan. Kan ik die blijven gebruiken?",
+    "answer": [
+      "Via onze portal kun je eenvoudig PDF's digitaal faxen en worden ontvangen faxen per mail naar je toe gestuurd. Toch je oude fax blijven gebruiken? Met een converter kunnen we deze aansluiten op het VoIP-netwerk zodat je kunt blijven faxen zoals je bent gewend."
+    ]
+ },
+ {
+    "id": "3",
+    "question": "Op welke manier worden de voicemail berichten afgeleverd?",
+    "answer": [
+      "Voicemails sturen we standaard naar je mailadres en verwijderen we van ons platform. Op verzoek kunnen we deze behouden, zodat je ze via onze portal kunt uitluisteren. Ook kunnen we instellen dat je inbelt naar je voicemailbox, zoals je wellicht gewend bent van je mobiele provider."
+    ]
+}],
+ [
+  {
+    "id": "1",
+    "question": "Welke betalingstermijn hanteren jullie?",
+    "answer": [
+      "Bij Voyp hanteren we een betalingstermijn van 14 dagen."
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Hoe betaal ik mijn facturen?",
+    "answer": [
+      "Het makkelijkste betaal je per automatische incasso. Handmatig betalen kan ook, maar daarvoor worden wel € 2,50 administratiekosten per factuur in rekening gebracht."
+    ]
+  },
+  {
+    "id": "3",
+    "question": "Hoe kan ik mijn belgeschiedenis inzien?",
+    "answer": [
+      "Via MijnVoyp kun je makkelijk en snel je belgeschiedenis inzien. Ook download je hier eventueel je gespreksopnames."
+  ]
+}],
+ [
+  {
+    "id": "1",
+    "question": "Zijn alle diensten dagelijks opzegbaar?",
+    "answer": [
+      "Het Voyp-abonnement en de diensten die daaronder vallen zijn dagelijks opzegbaar. Voyp ADSL is vooralsnog niet dagelijks opzegbaar maar is per jaar opzegbaar met een opzegtermijn van 1 kalendermaand na verloop van het jaarcontract."
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Wanneer krijg ik de laatste (credit)-factuur?",
+    "answer": [
+      "Je betaalt het abonnement vooraf en de gesprekskosten achteraf.",
+      "Nadat je opzegging is verwerkt ontvang je een laatste nota in de daaropvolgende maand. Dit zodat we kunnen kijken welke belkosten er nog zijn gemaakt. Het verschil wordt binnen 14 dagen overgemaakt of dient binnen 14 dagen te worden betaald. Heb je een machtiging afgegeven, dan is dat de laatste factuur die we afschrijven."
+    ]
+  },
+  {
+    "id": "3",
+    "question": "Blijf ik bereikbaar tijdens het opzeggen?",
+    "answer": [
+      "Je bent er zelf verantwoordelijk voor om bij je nieuwe provider te regelen dat zij je oude nummers overnemen. Wij zeggen je diensten pas op nadat we bevestiging hebben gekregen dat je telefoonnummer is overgenomen door je nieuwe provider.",
+      "Als je vergeet om nummerbehoud aan te vragen, verwerken we de opzegging op de werkdag dat we hem ontvangen, waardoor je vanaf dat moment niet bereikbaar bent. Hou dit dus goed in de gaten!"
+    ]
+}]
+]
