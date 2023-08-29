@@ -1,6 +1,9 @@
 <script>
+	import tableData from '$lib/data/tarieven.json';
+
 	import Button from '$components/Button.svelte';
-	import Accordion from '$components/Accordion.svelte';
+	import Accordion from './Accordion.svelte';
+	import Table from '$components/Table.svelte';
 </script>
 
 <div class="bg-white">
@@ -23,17 +26,18 @@
 			</p>
 			<p>
 				Op deze pagina geven we je inzicht in alle tarieven die we voor onze diensten in rekening
-				brengen. Bekijk ook onze <span class="font-semibold underline hover:no-underline"
-					>gesprekstarieven.</span
+				brengen. Bekijk ook onze <a
+					href="/meer-informatie/algemenie-informatie/gesprekstarieven"
+					class="font-semibold underline hover:no-underline">gesprekstarieven.</a
 				>
 			</p>
 			<Button
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
-				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.73rem] lg:text-sm">
+				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.73rem] lg:text-sm">
 					<span class="shrink-0">Offerte aanvragen of direct bestellen</span>
-					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
+					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
 				</div>
 			</Button>
 		</div>
@@ -98,53 +102,18 @@
 					Binnen Nederland betaal je 2,2 cent per minuut naar vaste nummers en 7,5 cent per minuut
 					naar mobiele nummers. Gesprekken worden afgerekend per seconde. Op alle gesprekken geldt
 					een starttarief van 5 cent.
-					<span class="underline hover:no-underline">
+					<a
+						href="/meer-informatie/algemenie-informatie/gesprekstarieven"
+						class="underline hover:no-underline"
+					>
 						Kijk hier voor alle <span class="font-semibold">gesprekstarieven.</span>
-					</span>
+					</a>
 				</div>
 			</Accordion>
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex border mt-6 border-[#ccc] overflow-x-auto">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitespace-nowrap">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Vast</th>
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Mobiel</th>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] bg-[#f5f5f5] hover:bg-[#ebebeb]">
-						<td class=" px-2.5 py-2">Nederland</td>
-						<td class=" px-2.5 py-2">€ 0,022</td>
-						<td class=" px-2.5 py-2">€ 0,075</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">België</td>
-						<td class="px-2.5 py-2">€ 0,026</td>
-						<td class="px-2.5 py-2">€ 0,032</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Verenigd Koninkrijk</td>
-						<td class="px-2.5 py-2">€ 0,058</td>
-						<td class="px-2.5 py-2">€ 0,058</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Duitsland</td>
-						<td class="px-2.5 py-2">€ 0,031</td>
-						<td class="px-2.5 py-2">€ 0,084</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Frankrijk</td>
-						<td class="px-2.5 py-2">€ 0,026</td>
-						<td class="px-2.5 py-2">€ 0,060</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Verenigde Staten</td>
-						<td class="px-2.5 py-2">€ 0,032</td>
-						<td class="px-2.5 py-2">€ 0,032</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[0]} />
 		</section>
 
 		<section>
@@ -170,40 +139,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex overflow-x-auto border mt-6 border-[#ccc]">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitesp">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Maandelijks</th>
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Eenmalig</th>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Voyp-abonnement (incl. account en nummer)</td>
-						<td class="px-2.5 py-2">€ 12,-</td>
-						<td class="px-2.5 py-2">€ € 30,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Antwoordservice (€ 2,28 per afgehandeld gesprek)</td>
-						<td class="px-2.5 py-2">€ 15,-</td>
-						<td class="px-2.5 py-2">€ 90,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Licentie Counterpath Bria Desktop/Mac </td>
-						<td class="px-2.5 py-2">€ 5,-</td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Voyp ADSL</td>
-						<td class="px-2.5 py-2">€ 60,-</td>
-						<td class="px-2.5 py-2">€ 100,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Voyp Glasvezel</td>
-						<td class="px-2.5 py-2">v.a. € 95,-</td>
-						<td class="px-2.5 py-2">v.a. € 250,-</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[1]} />
 		</section>
 
 		<section>
@@ -227,35 +163,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex overflow-x-auto border mt-6 border-[#ccc]">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitesp">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Maandelijks</th>
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Eenmalig</th>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> SIM-kaart, zonder data </td>
-						<td class="px-2.5 py-2">€ 15,-</td>
-						<td class="px-2.5 py-2">€ 50,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Databundel, 2 GB </td>
-						<td class="px-2.5 py-2">€ 10,-</td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Databundel, 6 GB </td>
-						<td class="px-2.5 py-2">€ 15,-</td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Databundel, 10 GB </td>
-						<td class="px-2.5 py-2">€ 22,50</td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[2]} />
 		</section>
 
 		<section>
@@ -279,40 +187,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex overflow-x-auto border mt-6 border-[#ccc]">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitesp">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Maandelijks</th>
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Eenmalig</th>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Tot 10 accounts</td>
-						<td class="px-2.5 py-2">€ 4,-</td>
-						<td class="px-2.5 py-2">€ 8,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Tussen 10 en 20 accounts </td>
-						<td class="px-2.5 py-2">€ 3,-</td>
-						<td class="px-2.5 py-2">€ 6,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Tussen 20 en 50 accounts </td>
-						<td class="px-2.5 py-2">€ 2,50</td>
-						<td class="px-2.5 py-2">€ 5,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Vanaf 50 accounts </td>
-						<td class="px-2.5 py-2">€ 2,-</td>
-						<td class="px-2.5 py-2">€ 4,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> SIP-trunk, per kanaal </td>
-						<td class="px-2.5 py-2">€ 2,50</td>
-						<td class="px-2.5 py-2">€ 15,-</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[3]} />
 		</section>
 
 		<section>
@@ -341,60 +216,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex overflow-x-auto border mt-6 border-[#ccc]">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitesp">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Maandelijks</th>
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Eenmalig</th>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Extra los nummer </td>
-						<td class="px-2.5 py-2">€ 2,-</td>
-						<td class="px-2.5 py-2">€ 10,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Blok 10 nummers </td>
-						<td class="px-2.5 py-2">€ 10,-</td>
-						<td class="px-2.5 py-2">€ 30,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Blok 100 nummers </td>
-						<td class="px-2.5 py-2">€ 35,-</td>
-						<td class="px-2.5 py-2">€ 50,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Internationaal nummer, vanaf </td>
-						<td class="px-2.5 py-2">€ 10,-</td>
-						<td class="px-2.5 py-2">€ 50,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Servicenummers</td>
-						<td class="px-2.5 py-2">€ 30,-</td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Verhuiskosten los nummer </td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-						<td class="px-2.5 py-2">€ 10,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Verhuiskosten blok 10/100 nummers </td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-						<td class="px-2.5 py-2">€ 50,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Verhuiskosten blok 10/100 nummers KPN </td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-						<td class="px-2.5 py-2">€ 200,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Verhuiskosten internationale nummers </td>
-						<td class="px-2.5 py-2">n.v.t.</td>
-						<td class="px-2.5 py-2">op aanvraag</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[4]} />
 		</section>
 
 		<section>
@@ -419,38 +241,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex overflow-x-auto border mt-6 border-[#ccc]">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitesp">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Eenmalig</th>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Keuzemenu</td>
-						<td class="px-2.5 py-2">€ 75,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2">Wachtrij</td>
-						<td class="px-2.5 py-2">€ 75,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Toestelconfiguratie, per toestel </td>
-						<td class="px-2.5 py-2">€ 25,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Stemactrice inschakelen, inclusief 100 woorden </td>
-						<td class="px-2.5 py-2">€ 120,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Stemactrice, per 100 extra woorden </td>
-						<td class="px-2.5 py-2">€ 40,-</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Toeslag handmatige betaling/stornering </td>
-						<td class="px-2.5 py-2">€ 2.50</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[5]} />
 		</section>
 
 		<section>
@@ -470,26 +261,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<div class="flex overflow-x-auto border mt-6 border-[#ccc]">
-				<table class="w-0 grow text-sm text-start divide-y divide-[#e0e0e0] whitesp">
-					<tr class="divide-x divide-[#ccc]">
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3" />
-						<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">Eenmalig</th>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Conform algemene voorwaarden </td>
-						<td class="px-2.5 py-2">gratis</td>
-					</tr>
-					<tr class="divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Overige ondersteuning, per uur </td>
-						<td class="px-2.5 py-2">€ 80,-</td>
-					</tr>
-					<tr class="bg-[#f5f5f5] divide-x divide-[#e0e0e0] hover:bg-[#ebebeb]">
-						<td class="px-2.5 py-2"> Voorrijkosten, per kilometer </td>
-						<td class="px-2.5 py-2">€ 0,50</td>
-					</tr>
-				</table>
-			</div>
+			<Table tableData={tableData[6]} />
 		</section>
 	</section>
 </div>

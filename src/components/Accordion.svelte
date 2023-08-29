@@ -1,28 +1,71 @@
-<script>
+<script lang="ts">
+	import { createAccordion, melt } from '@melt-ui/svelte';
 	import { slide } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
 
-	export let open = false;
-	let clazz = '';
-	export { clazz as class };
+	export let elements;
 
-	const handleClick = () => (open = !open);
+	const {
+		elements: { content, item, trigger, root },
+		helpers: { isSelected }
+	} = createAccordion({
+		defaultValue: ''
+	});
+
+	let items: Array<{
+		id: string;
+		question: string;
+		answer: Array<string>;
+	}> = elements;
+
+	let className = '';
+	export { className as class };
 </script>
 
-<div class={clazz}>
-	<button class="w-full flex items-center" on:click={handleClick}>
-		{#if open}
-			<slot name="open" />
-		{:else}
-			<slot name="close" />
-		{/if}
+<div class="mx-auto max-w-2xl rounded-xl bg-white lg:w-[27rem]" {...$root}>
+	{#each items as { id, question, answer }, i}
+		<div
+			use:melt={$item(id)}
+			class="overflow-hidden transition-colors first:rounded-t-xl
+            last:rounded-b-xl"
+		>
+			<h2 class="flex">
+				<button
+					use:melt={$trigger(id)}
+					class="flex flex-1 cursor-pointer gap-3 items-center justify-start
+						 px-3.5 sm:px-5 py-4 text-xs sm:text-sm font-normal
+						 transition-colors focus:!ring-0
+						focus-visible:text-magnum-800 {className}
+						{i !== 0 && 'border-t border-t-white'}"
+				>
+					{#if $isSelected(id)}
+						<span class="icon-[mdi--chevron-up] w-6 h-6 shrink-0" />
+					{:else}
+						<span class="icon-[mdi--chevron-down] w-6 h-6 shrink-0" />
+					{/if}
 
-		<slot name="title" />
-	</button>
-
-	{#if open}
-		<div transition:slide={{ duration: 600, easing: quintOut }}>
-			<slot name="content" />
+					<span class="text-start">{question}</span>
+				</button>
+			</h2>
+			{#if $isSelected(id)}
+				<div
+					class="content overflow-hidden bg-secondary text-sm text-primary"
+					use:melt={$content(id)}
+					transition:slide
+				>
+					<div class="text-start px-5 py-4 space-y-3">
+						<span>{answer[0]}</span>
+						{#if answer.length > 1}
+							<span class="block">{answer[1]}</span>
+						{/if}
+					</div>
+				</div>
+			{/if}
 		</div>
-	{/if}
+	{/each}
 </div>
+
+<style lang="postcss">
+	.content {
+		box-shadow: inset 0px 1px 0px theme('colors.white');
+	}
+</style>

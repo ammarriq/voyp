@@ -265,11 +265,11 @@
 				<img src="/logos/eldecollege.png" alt="eldecollege" />
 			</a>
 
-			<a href="https://www.sofacompany.com/" class="mx-auto col-auto sm:col-span-full md:col-auto">
+			<a href="https://www.sofacompany.com/">
 				<img src="/logos/sofacompany.png" alt="sofacompany" />
 			</a>
 
-			<a href="https://www.voordekunst.nl/">
+			<a href="https://www.voordekunst.nl/" class="mx-auto col-auto sm:col-span-full md:col-auto">
 				<img src="/logos/voordekunst.png" alt="voordekunst" />
 			</a>
 		</div>

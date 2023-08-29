@@ -1,6 +1,6 @@
 <script>
 	import Brand from '$components/Brand.svelte';
-	import Accordion2 from '$components/Accordion2.svelte';
+	import Accordion2 from '$components/Accordion.svelte';
 	import elements from '$lib/data/veelgestelde-vragen.json';
 </script>
 

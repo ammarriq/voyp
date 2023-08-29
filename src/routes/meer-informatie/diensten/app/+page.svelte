@@ -63,7 +63,7 @@
 				  opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 text-center md:text-start
+					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 text-start
 				 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">De voordelen</h3>
@@ -134,7 +134,7 @@
 	<section class="container mx-auto px-6 py-20 sm:pb-24 text-center">
 		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Wat zijn de verschillen</h2>
 
-		<div class="lg:grid grid-cols-3 text-sm leading-7 lg:leading-8 space-y-10 md:space-y-0">
+		<div class="lg:grid grid-cols-3 text-sm leading-7 lg:leading-8">
 			<div class="relative group">
 				<div
 					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur

@@ -154,7 +154,7 @@
 				<img src="/logos/moventes.png" alt="moventes" />
 			</a>
 
-			<a href="https://www.sofacompany.com/" class="mx-auto col-auto sm:col-span-full md:col-auto">
+			<a href="https://www.sofacompany.com/">
 				<img src="/logos/sofacompany.png" alt="sofacompany" />
 			</a>
 
@@ -166,7 +166,7 @@
 				<img src="/logos/raket.png" alt="raket" />
 			</a>
 
-			<a href="https://www.renefriso.nl/">
+			<a href="https://www.renefriso.nl/" class="mx-auto col-auto sm:col-span-full md:col-auto">
 				<img src="/logos/renefriso.png" alt="renefriso" />
 			</a>
 		</div>

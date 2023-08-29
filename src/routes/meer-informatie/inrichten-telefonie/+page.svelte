@@ -27,9 +27,9 @@
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
-				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.75rem] lg:text-sm">
+				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm">
 					<span class="shrink-0">Kosten berekenen</span>
-					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
+					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
 				</div>
 			</Button>
 		</div>
@@ -226,9 +226,9 @@
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
-				<div class="flex items-center gap-1 text-[0.65rem] md:text-[0.75rem] lg:text-sm">
+				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm">
 					<span class="shrink-0">Download handleiding</span>
-					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
+					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
 				</div>
 			</Button>
 		</div>
@@ -309,10 +309,10 @@
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
 				<div
-					class="flex items-center gap-1 text-[0.65rem] md:text-[0.75rem] lg:text-sm tracking-wider"
+					class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm tracking-wider"
 				>
 					<span class="shrink-0">Bereken kosten</span>
-					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-6 h-6" />
+					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
 				</div>
 			</Button>
 		</div>
