@@ -2,7 +2,7 @@
 	import Button from '$components/Button.svelte';
 </script>
 
-<div class="bg-white">
+<div class="bg-white" id="functionaliteiten">
 	<section
 		class="container mx-auto px-6 pt-14 lg:pt-20 pb-8 md:pb-24 md:flex gap-3 lg:gap-12
     justify-between items-center text-base md:text-sm leading-8 md:leading-7 lg:text-base
@@ -204,6 +204,7 @@
 
 <div class="bg-secondary">
 	<section
+		id="belplan-instellen"
 		class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 md:flex gap-3 lg:gap-12
     justify-between items-center text-base md:text-sm leading-8 md:leading-7 lg:text-base
     lg:leading-8 text-center md:text-start"
@@ -243,6 +244,7 @@
 
 <div class="bg-white">
 	<section
+		id="antwoordservice"
 		class="container mx-auto pt-24 pb-20 sm:pb-24 md:flex gap-10 items-center text-center
 		md:text-start md:text-sm md:leading-7 lg:text-base lg:leading-8"
 	>
@@ -275,6 +277,7 @@
 
 <div class="bg-secondary">
 	<section
+		id="stemactrice"
 		class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 md:flex gap-8 lg:gap-10 text-center
 		 md:text-start items-center justify-between"
 	>
@@ -321,6 +324,7 @@
 
 <div class="bg-white">
 	<section
+		id="support"
 		class="container mx-auto pt-24 pb-20 sm:pb-24 md:flex gap-10 items-center text-center
 		md:text-start md:text-sm md:leading-7 lg:text-base lg:leading-8"
 	>

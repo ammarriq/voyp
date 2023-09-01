@@ -7,10 +7,10 @@
 			<a href="tel:0886789400"><span class="icon-[mdi--phone] w-6 h-6" /></a>
 		</div>
 		<div class="flex gap-x-3 gap-y-2 justify-center items-center flex-wrap text-xs font-extralight">
-			<a href="/">Bestellen</a>
-			<a href="/">Privacy</a>
-			<a href="/">Algemene voorwaarden</a>
-			<a href="/">Meer informatie</a>
+			<a href="/bestellen">Bestellen</a>
+			<a href="/over-voyp/privacy">Privacy</a>
+			<a href="/over-voyp/voorwaarden">Algemene voorwaarden</a>
+			<a href="/meer-informatie/algemenie-informatie/voip">Meer informatie</a>
 		</div>
 	</section>
 </footer>
