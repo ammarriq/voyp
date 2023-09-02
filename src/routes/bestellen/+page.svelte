@@ -1,12 +1,31 @@
+<script lang="ts">
+	let iframeHeight = ''; // Default height
+	let activeStep: number[] = [1, 2, 3, 4, 5]; // Default active step
+
+	function adjustIframeHeight() {
+		const iframe = document.getElementById('main-iframe') as HTMLIFrameElement;
+		if (iframe) {
+			const activeStepElement = iframe.contentWindow?.document.getElementById(
+				`data-step=${activeStep}`
+			);
+			if (activeStepElement) {
+				iframe.style.height = activeStepElement.scrollHeight + 'px';
+			}
+		}
+	}
+</script>
+
 <section class="pt-16 overflow-hidden">
 	<iframe
-		class="top-0 mx-auto overflow-hidden"
+		id="main-iframe"
+		class="w-full top-0 mx-auto overflow-hidden"
 		width="1200"
 		scrolling="no"
 		title="bestellen"
 		src="https://bestellen.voyp.nl/"
 		frameborder="0"
-		allowfullscreen
+		style={`height: ${iframeHeight};`}
+		on:load={adjustIframeHeight}
 	/>
 </section>
 

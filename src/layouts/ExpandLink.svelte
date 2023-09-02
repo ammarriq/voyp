@@ -1,11 +1,13 @@
 <script>
 	import { slide } from 'svelte/transition';
+	import { page } from '$app/stores';
 
 	export let label = '';
 	export let href = '';
 
 	export let isOpen = false;
 	export let expandable = false;
+	$: pathname = $page.url.pathname;
 </script>
 
 <div class="relative">
@@ -19,7 +21,13 @@
 			<span class="icon-[mdi--chevron-down] w-4 h-4 shrink-0" />
 		</button>
 	{:else}
-		<a {href} class="hover:text-primary">{label}</a>
+		<a
+			{href}
+			class="px-2 py-3 hover:bg-secondary"
+			class:bg-secondary={pathname.includes(`${href}`)}
+		>
+			{label}
+		</a>
 	{/if}
 
 	{#if expandable && isOpen}
