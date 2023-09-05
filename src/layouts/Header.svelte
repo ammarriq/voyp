@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
 	import { clickOutside } from '$lib/client/action';
 
 	import Brand from '$components/Brand.svelte';
@@ -13,17 +12,9 @@
 
 	$: pathname = $page.url.pathname;
 
-	let scrolled = false;
+	let scrolled: number;
 
-	onMount(() => {
-		window.addEventListener('scroll', handleScroll);
-	});
-
-	function handleScroll() {
-		scrolled = window.scrollY > 0;
-	}
-
-	let item1: Array<{
+	const item1: Array<{
 		label: string;
 		href: string;
 		children: Array<{ label: string; href: string }>;
@@ -65,7 +56,7 @@
 		}
 	];
 
-	let item2: Array<{
+	const item2: Array<{
 		label: string;
 		href: string;
 	}> = [
@@ -79,7 +70,9 @@
 	let open = false;
 </script>
 
-<header class="fixed z-30 inset-x-0 bg-white" class:scroll-header={scrolled}>
+<svelte:window bind:scrollY={scrolled} />
+
+<header class="fixed z-30 inset-x-0 bg-white" class:scroll-header={!!scrolled}>
 	<section class="container h-20 lg:h-[6.5rem] flex lg:justify-between items-center">
 		<!-- Tablet and mobile -->
 		<button type="button" class="block lg:hidden" on:click|stopPropagation={() => (open = !open)}>
