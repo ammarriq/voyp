@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Button from '$components/Button.svelte';
 </script>
 
@@ -27,6 +28,7 @@
 			</p>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>

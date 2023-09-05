@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Button from '$components/Button.svelte';
 	import Carousel from '$components/Carousel.svelte';
 	import Hoverable from '$components/Hoverable.svelte';
@@ -21,11 +22,12 @@
 			</p>
 			<p>
 				Bellen zonder gedoe dus. Onze klanten beoordelen ons niet voor niets met een gemiddelde van
-				een 9,4. <a href="/" class="font-semibold">Huiverig om over te stappen?</a> Nergens voor nodig.
-				In 3 eenvoudige stappen stap je over naar Voyp en ga je bellen zoals het hoort.
+				een 9,4. <a href="./overstappen" class="font-semibold">Huiverig om over te stappen?</a> Nergens
+				voor nodig. In 3 eenvoudige stappen stap je over naar Voyp en ga je bellen zoals het hoort.
 			</p>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
@@ -113,8 +115,8 @@
 				</p>
 				<p>
 					Voor extra telefoonnummers, extra VoIP-accounts, internet en Voyp Mobiel hanteren we
-					eerlijke en scherpe <a href="/" class="underline">tarieven</a>. Ook krijg je korting als
-					je meer afneemt.
+					eerlijke en scherpe <a href="/tarieven" class="underline">tarieven</a>. Ook krijg je
+					korting als je meer afneemt.
 				</p>
 			</div>
 		</div>
@@ -310,9 +312,11 @@
 			</div>
 		</div>
 		<Button
-			class="bg-primary mt-5 md:mt-10 text-white hover:bg-white hover:text-primary border border-primary"
+			on:click={() => goto('/bestellen')}
+			class="bg-primary mt-5 md:mt-10 text-white hover:bg-white hover:text-primary border 
+			border-primary"
 		>
-			Overstappen naar voyp
+			OFFERTE AANVRAGEN OF DIRECT BESTELLEN
 		</Button>
 	</section>
 </div>

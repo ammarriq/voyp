@@ -177,6 +177,7 @@
 			</div>
 		</div>
 		<Button
+			on:click={() => goto('/bestellen')}
 			class="bg-primary mt-5 md:mt-10 text-white hover:bg-white hover:text-primary border border-primary"
 		>
 			Overstappen naar voyp

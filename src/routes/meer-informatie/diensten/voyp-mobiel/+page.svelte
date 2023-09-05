@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Button from '$components/Button.svelte';
 	import Clickable from '$components/Clickable.svelte';
 </script>
@@ -106,7 +107,7 @@
 				Een SIM-kaart heeft geen afhankelijkheid van je internetverbinding én je hebt geen
 				doorschakelkosten. Met Voyp Mobiel heb je dus de optimale integratie van je vaste telefonie
 				in je mobiele telefoon.
-				<a href="/" class="font-semibold underline">
+				<a href="/tarieven#voypmobiel" class="font-semibold underline">
 					Dit kan al vanaf € 15,- per maand per simkaart.
 				</a>
 				Sluit daarnaast nog een databundel (2GB, 6Gb of 10GB) af die in heel Europa geldig is en je ziet
@@ -120,6 +121,7 @@
 			<img src="/hero/voypmobiel.png" alt="voypmobiel" class="max-w-[17rem] mx-auto" />
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="bg-primary mt-10 text-white hover:bg-white hover:text-primary border
 				border-primary"
 			>
@@ -393,6 +395,7 @@
 			/>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="bg-primary mt-10 text-white hover:bg-white hover:text-primary border
 				border-primary mb-9 md:mb-0"
 			>
@@ -413,8 +416,8 @@
 			<p>
 				Met onze persoonlijke service zorgen wij ervoor dat je flexibel en betaalbaar optimaal
 				bereikbaar bent. Dit doen we inmiddels ruim 4 jaar naar volle tevredenheid van onze klanten.
-				<a href="/" class="font-semibold">Don’t take our word for it, take theirs</a> en ga ook bellen
-				zonder gedoe!
+				<span class="font-semibold">Don’t take our word for it, take theirs</span> en ga ook bellen zonder
+				gedoe!
 			</p>
 		</div>
 	</section>

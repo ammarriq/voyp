@@ -81,10 +81,12 @@
 
 <header class="fixed z-30 inset-x-0 bg-white" class:scroll-header={scrolled}>
 	<section class="container h-20 lg:h-[6.5rem] flex lg:justify-between items-center">
+		<!-- Tablet and mobile -->
 		<button type="button" class="block lg:hidden" on:click|stopPropagation={() => (open = !open)}>
 			<span class="icon-[mdi--menu] w-8 h-8 align-middle" />
 		</button>
 
+		<!-- Tablet and mobile -->
 		{#if open}
 			<div
 				class="fixed top-[4.6rem] inset-x-0 border-b bg-secondary
@@ -137,15 +139,7 @@
 					<ClickableExpandLink label="Bestellen" href="/bestellen" />
 
 					<a
-						href="/"
-						class="block p-3 hover:bg-primary/90 hover:text-white transition-colors
-					  duration-700"
-					>
-						<span class="icon-[mdi--lock] w-3.5 h-3.5" />
-					</a>
-
-					<a
-						href="/"
+						href="tel:+31886789400"
 						class="p-3 flex gap-1 items-center hover:bg-primary/90 hover:text-white
 					  transition-colors duration-700"
 					>
@@ -159,6 +153,7 @@
 
 		<Brand class="w-40 lg:w-48 h-12 lg:h-16 mx-auto lg:mx-0" />
 
+		<!-- Desktop -->
 		<div class="hidden lg:block">
 			<nav class="uppercase flex gap-1 items-center text-xs font-medium">
 				<a href="/" class="px-2 py-3 hover:bg-secondary" class:bg-secondary={pathname === '/'}>
@@ -210,11 +205,7 @@
 
 				<ExpandLink label="Bestellen" href="/bestellen" />
 
-				<a href="/" class="hover:bg-secondary px-2 py-3">
-					<span class="icon-[mdi--lock] w-3.5 h-3.5" />
-				</a>
-
-				<a href="/" class="flex gap-0.5 items-center hover:bg-secondary px-2 py-3">
+				<a href="tel:+31886789400" class="flex gap-0.5 items-center hover:bg-secondary px-2 py-3">
 					<span class="icon-[mdi--phone] w-3.5 h-3.5" />
 
 					<span>088 6789 400</span>

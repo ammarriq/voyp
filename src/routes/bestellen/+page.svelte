@@ -1,20 +1,3 @@
-<script lang="ts">
-	let iframeHeight = ''; // Default height
-	let activeStep: number[] = [1, 2, 3, 4, 5]; // Default active step
-
-	function adjustIframeHeight() {
-		const iframe = document.getElementById('main-iframe') as HTMLIFrameElement;
-		if (iframe) {
-			const activeStepElement = iframe.contentWindow?.document.getElementById(
-				`data-step=${activeStep}`
-			);
-			if (activeStepElement) {
-				iframe.style.height = activeStepElement.scrollHeight + 'px';
-			}
-		}
-	}
-</script>
-
 <section class="pt-16 overflow-hidden">
 	<iframe
 		id="main-iframe"
@@ -24,8 +7,6 @@
 		title="bestellen"
 		src="https://bestellen.voyp.nl/"
 		frameborder="0"
-		style={`height: ${iframeHeight};`}
-		on:load={adjustIframeHeight}
 	/>
 </section>
 

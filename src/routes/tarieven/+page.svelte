@@ -4,6 +4,7 @@
 	import Button from '$components/Button.svelte';
 	import Accordion from './Accordion.svelte';
 	import Table from '$components/Table.svelte';
+	import { goto } from '$app/navigation';
 </script>
 
 <div class="bg-white">
@@ -32,6 +33,7 @@
 				>
 			</p>
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
@@ -139,7 +141,9 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table tableData={tableData[1]} />
+			<div id="voypmobiel">
+				<Table tableData={tableData[1]} />
+			</div>
 		</section>
 
 		<section>

@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
+	import { goto } from '$app/navigation';
 	import Button from '$components/Button.svelte';
+
+	const pdfFilename = 'HandleidingMijnVoyp.pdf';
 </script>
 
 <div class="bg-white" id="functionaliteiten">
@@ -24,6 +27,7 @@
 			</p>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
@@ -214,9 +218,8 @@
 
 			<p class="pb-5">
 				Voor onze klanten hebben we een handleiding geschreven waarin we uitleggen hoe je de meest
-				voorkomende dingen aanpast en instelt in onze <a href="/" class="font-semibold">portal</a>.
-				Meldingen activeren, openingstijden wijzigen of een tijdelijke doorschakeling kun je zo
-				eenvoudig zelf regelen.
+				voorkomende dingen aanpast en instelt in onze portal. Meldingen activeren, openingstijden
+				wijzigen of een tijdelijke doorschakeling kun je zo eenvoudig zelf regelen.
 			</p>
 			<p>
 				Kom je er niet uit? Geen probleem. Wij helpen je graag. Mail ons en wij regelen het voor je.
@@ -228,7 +231,9 @@
       text-white bg-primary hover:text-primary hover:bg-white"
 			>
 				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm">
-					<span class="shrink-0">Download handleiding</span>
+					<a href={`/${pdfFilename}`} class="shrink-0" download={pdfFilename}
+						>Download handleiding</a
+					>
 					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
 				</div>
 			</Button>
@@ -255,21 +260,23 @@
 		/>
 		<div>
 			<h2 class="text-3xl sm:text-4xl font-medium pb-8">Antwoordservice</h2>
-			<p class="pb-5">
-				Tijdens ons eerste contact nemen wij alle tijd voor je. Niet alleen om een passende offerte
-				op te stellen maar juist ook omdat we graag met je meedenken over de perfecte invulling van
-				je telefonie wensen. Zo komt het regelmatig voor dat we onze klanten kennis laten maken met
-				functies waar ze nog nooit van hebben gehoord. Met een frisse en kritische blik kijken we
-				daarom ook graag naar jouw huidige situatie om je telefonie te optimaliseren.
+			<p>
+				Soms ben je niet in staat de telefoon te beantwoorden. Je kunt dan gebruik maken van de
+				gratis voicemail mogelijkheid die wij je bieden. Klanten vinden het alleen niet altijd
+				prettig om een voicemail achter te laten: als ze bellen willen ze iemand spreken en gehoord
+				worden.
+			</p>
+			<p class="py-5">
+				Voor € 15,- per maand en € 2,28 per gesprek schakel je direct een vaste telefoniste in van
+				BizziPhone die je klanten voor jou te woord staat als jij niet kunt opnemen. De telefoniste
+				voert het gesprek met de klant en geeft aan dat er iemand die inhoudelijk meer weet zo snel
+				mogelijk terug gaat bellen. Per mail ontvang je dan een verslag van dit gesprek: wie er
+				gebeld heeft, waarom en waarop de beller kan worden teruggebeld.
 			</p>
 			<p>
-				Een aantal vragen komt hier altijd naar voren. Bijvoorbeeld om hoeveel telefoonnummers het
-				gaat en of dat bestaande nummers zijn of dat je op zoek bent naar nieuwe nummers. Ook vragen
-				we hoe je wil je gaan bellen. Wil je <a href="/" class="underline">nieuwe toestellen</a>
-				aanschaffen, heb je al VoIP-toestellen of wil je gebruik maken van
-				<a href="/" class="underline">Voyp Mobiel</a>? Ook kijken we of je gebruik wilt maken van
-				bijvoorbeeld een keuzemenu of wachtrij. In een paar minuten kunnen wij zo het juiste advies
-				geven en de ideale offerte aan je uitbrengen.
+				De uitstraling van een extra medewerker, zonder de bijbehorende kosten. Zo zorg je voor
+				optimale bereikbaarheid, ook als het beantwoorden van de telefoon even minder goed uitkomt.
+				Het activeren van de antwoordservice kost eenmalig € 90,-.
 			</p>
 		</div>
 	</section>
@@ -308,6 +315,7 @@
 			/>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>

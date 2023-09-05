@@ -4,6 +4,7 @@
 	import Button from '$components/Button.svelte';
 	import Display from '$components/Display.svelte';
 	import Table from '$components/Table.svelte';
+	import { goto } from '$app/navigation';
 
 	let words: string[] = ['VoIP-accounts', 'SIP-trunks'];
 </script>
@@ -83,7 +84,9 @@
 						Ook stellen we in welk nummer en naam je klanten in beeld zien als je uitbelt. Via onze
 						portal kun je dit overigens eenvoudig zelf aanpassen, maar wij doen dit uiteraard ook
 						graag voor je. Samen zorgen we ervoor dat je telefonie precies doet wat jij wilt.
-						<a href="/" class="underline">Kijk voor meer informatie over je belplan hier.</a>
+						<a href="/meer-informatie/inrichten-telefonie/#belplan-instellen" class="underline">
+							Kijk voor meer informatie over je belplan hier.
+						</a>
 					</p>
 				</div>
 			</div>
@@ -163,6 +166,7 @@
 			</p>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>

@@ -4,6 +4,7 @@
 	import Button from '$components/Button.svelte';
 	import Display from '$components/Display.svelte';
 	import Table from '$components/Table.svelte';
+	import { goto } from '$app/navigation';
 
 	let words: string[] = ['regionummers', 'landelijke nummers', 'servicenummers'];
 </script>
@@ -180,6 +181,7 @@
 			</p>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
       text-white bg-primary hover:text-primary hover:bg-white"
 			>

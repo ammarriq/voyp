@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Button from '$components/Button.svelte';
 </script>
 
@@ -28,7 +29,7 @@
 			<p>
 				VoIP is dus zónder moeilijke installaties, hoge kosten, ingewikkelde telefooncentrales en
 				dure ISDN-kanalen bellen zoals het hoort. Wil je ook overal goed en betrouwbaar bereikbaar
-				zijn? <a href="/" class="font-semibold">Stap dan nu over!.</a>
+				zijn? <a href="./overstappen" class="font-semibold">Stap dan nu over!.</a>
 			</p>
 		</div>
 
@@ -211,6 +212,7 @@
 			/>
 
 			<Button
+				on:click={() => goto('/bestellen')}
 				class="bg-primary mt-10 text-white hover:bg-white hover:text-primary border
 				border-primary mb-9 md:mb-0"
 			>
@@ -231,8 +233,8 @@
 			<p>
 				Met onze persoonlijke service zorgen wij ervoor dat je flexibel en betaalbaar optimaal
 				bereikbaar bent. Dit doen we inmiddels ruim 4 jaar naar volle tevredenheid van onze klanten.
-				<a href="/" class="font-semibold">Don’t take our word for it, take theirs</a> en ga ook bellen
-				zoals het hoort. Welkom bij Voyp.
+				<span class="font-semibold">Don’t take our word for it, take theirs</span> en ga ook bellen zoals
+				het hoort. Welkom bij Voyp.
 			</p>
 		</div>
 	</section>
