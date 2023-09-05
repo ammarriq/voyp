@@ -1,14 +1,42 @@
-<section class="pt-16 overflow-hidden">
-	<iframe
-		id="main-iframe"
-		class="w-full top-0 mx-auto overflow-hidden"
-		width="1200"
-		scrolling="no"
-		title="bestellen"
-		src="https://bestellen.voyp.nl/"
-		frameborder="0"
-	/>
-</section>
+<script lang="ts">
+	import { browser } from '$app/environment';
+
+	let windowWidth = 0;
+
+	const scripts = [
+		'https://bestellen.voyp.nl/assets/jquery-3.3.1.min.js',
+		'https://bestellen.voyp.nl/assets/main-0ddcaf73c9c2e5b56c1842fac8f3b85a.js',
+		'https://bestellen.voyp.nl/assets/render-template-fd3e8e164cc2925333578d706af7bd25.js',
+		'https://bestellen.voyp.nl/assets/steps-nav-073b837e39919c4aea7173ffda575432.js',
+		'https://bestellen.voyp.nl/assets/arrow-buttons-9e8a36fc1fd590a020261d4f0d6d1d4a.js'
+	];
+
+	const getPage = async () => {
+		const res = await fetch('https://bestellen.voyp.nl/');
+		const page = await res.text();
+
+		scripts.map((s) => {
+			const script = document.createElement('script');
+			script.src = s;
+
+			setTimeout(() => document.body.append(script), 300);
+		});
+
+		return page;
+	};
+</script>
+
+<svelte:window bind:innerWidth={windowWidth} />
+
+<div class="hidden xl:block">
+	{#await getPage()}
+		<div class="text-center">
+			<i class="icon-[mdi--loading] animate-spin w-16 h-16 my-12" />
+		</div>
+	{:then page}
+		{@html page}
+	{/await}
+</div>
 
 <div class="bg-secondary">
 	<section

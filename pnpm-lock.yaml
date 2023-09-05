@@ -11,6 +11,9 @@ dependencies:
   animejs:
     specifier: ^3.2.1
     version: 3.2.1
+  iframe-resizer:
+    specifier: ^4.3.6
+    version: 4.3.6
   textillate:
     specifier: ^0.4.1
     version: 0.4.1
@@ -34,6 +37,9 @@ devDependencies:
   '@types/animejs':
     specifier: ^3.1.7
     version: 3.1.7
+  '@types/iframe-resizer':
+    specifier: ^3.5.9
+    version: 3.5.9
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.45.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.47.0)(typescript@5.1.6)
@@ -542,6 +548,10 @@ packages:
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+
+  /@types/iframe-resizer@3.5.9:
+    resolution: {integrity: sha512-RQUBI75F+uXruB95BFpC/8V8lPgJg4MQ6HxOCtAZYBB/h0FNCfrFfb4I+u2pZJIV7sKeszZbFqy1UnGeBMrvsA==}
+    dev: true
 
   /@types/json-schema@7.0.12:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
@@ -1432,6 +1442,11 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+
+  /iframe-resizer@4.3.6:
+    resolution: {integrity: sha512-wz0WodRIF6eP0oGQa5NIP1yrITAZ59ZJvVaVJqJRjaeCtfm461vy2C3us6CKx0e7pooqpIGLpVMSTzrfAjX9Sg==}
+    engines: {node: '>=0.8.0'}
+    dev: false
 
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
