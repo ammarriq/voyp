@@ -1,3 +1,28 @@
+<script lang="ts">
+	const scripts = [
+		'https://bestellen.voyp.nl/assets/jquery-3.3.1.min.js',
+		'https://bestellen.voyp.nl/assets/main-0ddcaf73c9c2e5b56c1842fac8f3b85a.js',
+		'https://bestellen.voyp.nl/assets/render-template-fd3e8e164cc2925333578d706af7bd25.js',
+		'https://bestellen.voyp.nl/assets/steps-nav-073b837e39919c4aea7173ffda575432.js',
+		'https://bestellen.voyp.nl/assets/cost-overview-c2fcf52b75cc93fb967b0fa8a6748bf1.js',
+		'https://bestellen.voyp.nl/assets/arrow-buttons-9e8a36fc1fd590a020261d4f0d6d1d4a.js'
+	];
+
+	const getPage = async () => {
+		const res = await fetch('https://bestellen.voyp.nl/toestellen');
+		const page = await res.text();
+
+		scripts.map((s) => {
+			const script = document.createElement('script');
+			script.src = s;
+
+			setTimeout(() => document.body.append(script), 300);
+		});
+
+		return page;
+	};
+</script>
+
 <div class="bg-white">
 	<section class="container mx-auto px-6 pt-14 md:pt-20 pb-8 md:pb-24 leading-8">
 		<h2 class="text-3xl sm:text-4xl font-medium pb-9">Hardware</h2>
@@ -24,9 +49,18 @@
 	</section>
 </div>
 
+{#await getPage()}
+	<div class="text-center">
+		<i class="icon-[mdi--loading] animate-spin w-16 h-16 my-12" />
+	</div>
+{:then page}
+	{@html page}
+{/await}
+
 <div class="bg-secondary">
 	<section
-		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24 text-sm leading-8 md:grid grid-cols-3 gap-10 items-start"
+		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24
+		text-sm leading-8 md:grid grid-cols-3 gap-10 items-start"
 	>
 		<div class="col-span-2">
 			<p class="pb-5">

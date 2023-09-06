@@ -1,8 +1,4 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-
-	let windowWidth = 0;
-
 	const scripts = [
 		'https://bestellen.voyp.nl/assets/jquery-3.3.1.min.js',
 		'https://bestellen.voyp.nl/assets/main-0ddcaf73c9c2e5b56c1842fac8f3b85a.js',
@@ -25,8 +21,6 @@
 		return page;
 	};
 </script>
-
-<svelte:window bind:innerWidth={windowWidth} />
 
 <div class="hidden xl:block">
 	{#await getPage()}
