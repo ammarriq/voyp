@@ -1,16 +1,16 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { goto } from '$app/navigation'
 
-	import Display from '$components/Display.svelte';
-	import Button from '$components/Button.svelte';
-	import Carousel from '$components/Carousel.svelte';
+	import Display from '$components/Display.svelte'
+	import Button from '$components/Button.svelte'
+	import Carousel from './Carousel.svelte'
 
 	let words: string[][] = [
 		['het hOOrt', 'jij wilt', 'het kan'],
 		['zonder gedoe', 'zonder addertjes', 'zonder bijbetalen'],
 		['hOe werkt het', 'what is hat'],
 		['what is dat', 'wat heb ik nOdig']
-	];
+	]
 </script>
 
 <div class="bg-primary">
@@ -192,10 +192,8 @@
 	>
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
-				Echt vast/mobiel <br class="block" /><Display
-					class="text-3xl lg:text-5xl"
-					words={words[2]}
-				/>
+				Echt vast/mobiel <br class="block" />
+				<Display class="text-3xl lg:text-5xl" words={words[2]} />
 			</h2>
 			<p class="pb-5">
 				Vast-Mobiel integratie: je hoort er vaak over. Het is namelijk ideaal: met je mobiele

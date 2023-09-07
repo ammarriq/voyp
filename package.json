@@ -40,7 +40,7 @@
 	"dependencies": {
 		"@melt-ui/svelte": "^0.39.1",
 		"animejs": "^3.2.1",
-		"iframe-resizer": "^4.3.6",
+		"swiper": "^10.2.0",
 		"textillate": "^0.4.1"
 	}
 }
