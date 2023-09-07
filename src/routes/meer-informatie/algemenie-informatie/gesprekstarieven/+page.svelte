@@ -1,6 +1,7 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Button from '$components/Button.svelte';
+	import { goto } from '$app/navigation'
+	import Button from '$components/Button.svelte'
+	import SearchableTable from './SearchableTable.svelte'
 </script>
 
 <div class="bg-white">
@@ -81,10 +82,16 @@
 	</section>
 </div>
 
+<div>
+	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
+		<SearchableTable />
+	</section>
+</div>
+
 <div class="bg-secondary">
 	<section
-		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24 text-sm leading-8 md:grid grid-cols-3 gap-10
-     items-start"
+		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24
+		text-sm leading-8 md:grid grid-cols-3 gap-10 items-start"
 	>
 		<div class="col-span-2">
 			<p class="pb-5">

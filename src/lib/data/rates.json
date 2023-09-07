@@ -1,0 +1,32 @@
+[
+	{
+		"land": "Afghanistan",
+		"prefix": "Afganistan",
+		"minuut": "+93"
+	},
+	{
+		"land": "USA",
+		"prefix": "Washinton",
+		"minuut": "+983"
+	},
+	{
+		"land": "Pakistan",
+		"prefix": "Karachi",
+		"minuut": "+324"
+	},
+	{
+		"land": "Brazil",
+		"prefix": "Brazil",
+		"minuut": "+86"
+	},
+	{
+		"land": "China",
+		"prefix": "Beijing",
+		"minuut": "-53"
+	},
+	{
+		"land": "UAE",
+		"prefix": "Dubai",
+		"minuut": "-654"
+	}
+]

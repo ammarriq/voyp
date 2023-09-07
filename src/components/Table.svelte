@@ -14,7 +14,7 @@
 		<thead>
 			<tr>
 				{#each keys as item, i (i)}
-					<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start">
+					<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start capitalize">
 						{item}
 					</th>
 				{/each}
