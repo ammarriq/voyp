@@ -1,0 +1,47 @@
+[
+	{
+		"": "Extra los nummer",
+		"Maandelijks": "€ 2,-",
+		"Eenmalig": "€ 10,-"
+	},
+	{
+		"": "Blok 10 nummers",
+		"Maandelijks": "€ 10,-",
+		"Eenmalig": "€ 30,-"
+	},
+	{
+		"": "Blok 100 nummers",
+		"Maandelijks": "€ 35,-",
+		"Eenmalig": "€ 50,-"
+	},
+	{
+		"": "Internationaal nummer, vanaf",
+		"Maandelijks": "€ 10,-",
+		"Eenmalig": "€ 50,-"
+	},
+	{
+		"": "Servicenummers",
+		"Maandelijks": "€ 30,-",
+		"Eenmalig": "n.v.t."
+	},
+	{
+		"": "Verhuiskosten los nummer",
+		"Maandelijks": "n.v.t.",
+		"Eenmalig": "€ 10,-"
+	},
+	{
+		"": "Verhuiskosten blok 10/100 nummers",
+		"Maandelijks": "n.v.t.",
+		"Eenmalig": "€ 50,-"
+	},
+	{
+		"": "Verhuiskosten blok 10/100 nummers KPN",
+		"Maandelijks": "n.v.t.",
+		"Eenmalig": "€ 200,-"
+	},
+	{
+		"": "Verhuiskosten internationale nummers",
+		"Maandelijks": "n.v.t.",
+		"Eenmalig": "op aanvraag"
+	}
+]

@@ -5,21 +5,21 @@
 		'https://bestellen.voyp.nl/assets/render-template-fd3e8e164cc2925333578d706af7bd25.js',
 		'https://bestellen.voyp.nl/assets/steps-nav-073b837e39919c4aea7173ffda575432.js',
 		'https://bestellen.voyp.nl/assets/arrow-buttons-9e8a36fc1fd590a020261d4f0d6d1d4a.js'
-	];
+	]
 
 	const getPage = async () => {
-		const res = await fetch('https://bestellen.voyp.nl/');
-		const page = await res.text();
+		const res = await fetch('https://bestellen.voyp.nl/')
+		const page = await res.text()
 
 		scripts.map((s) => {
-			const script = document.createElement('script');
-			script.src = s;
+			const script = document.createElement('script')
+			script.src = s
 
-			setTimeout(() => document.body.append(script), 300);
-		});
+			setTimeout(() => document.body.append(script), 300)
+		})
 
-		return page;
-	};
+		return page
+	}
 </script>
 
 <div class="hidden xl:block">

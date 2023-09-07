@@ -1,0 +1,27 @@
+[
+	{
+		"": "Tot 10 accounts",
+		"Maandelijks": "€ 4,-",
+		"Eenmalig": "€ 8,-"
+	},
+	{
+		"": "Tussen 10 en 20 accounts",
+		"Maandelijks": "€ 3,-",
+		"Eenmalig": "€ 6,-"
+	},
+	{
+		"": "Tussen 20 en 50 accounts",
+		"Maandelijks": "€ 2,50",
+		"Eenmalig": "€ 5,-"
+	},
+	{
+		"": "Vanaf 50 accounts",
+		"Maandelijks": "€ 2,-",
+		"Eenmalig": "€ 4,-"
+	},
+	{
+		"": "SIP-trunk, per kanaal",
+		"Maandelijks": "€ 2,50",
+		"Eenmalig": "€ 15,-"
+	}
+]
