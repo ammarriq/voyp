@@ -19,6 +19,7 @@
 		"@sveltejs/kit": "^1.20.4",
 		"@types/animejs": "^3.1.7",
 		"@types/iframe-resizer": "^3.5.9",
+		"@types/node": "^20.6.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.15",
@@ -39,7 +40,9 @@
 	"type": "module",
 	"dependencies": {
 		"@melt-ui/svelte": "^0.39.1",
+		"@sveltejs/site-kit": "^5.2.2",
 		"animejs": "^3.2.1",
+		"markdown": "^0.5.0",
 		"swiper": "^10.2.0",
 		"textillate": "^0.4.1"
 	}

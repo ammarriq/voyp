@@ -1,23 +1,23 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
-	import { page } from '$app/stores';
-	import { clickOutside } from '$lib/client/action';
+	import { slide } from 'svelte/transition'
+	import { page } from '$app/stores'
+	import { clickOutside } from '$lib/client/action'
 
-	import Brand from '$components/Brand.svelte';
+	import Brand from '$components/Brand.svelte'
 
-	import ExpandLink from '$layouts/ExpandLink.svelte';
-	import ExpandNav from '$layouts/ExpandNav.svelte';
-	import ClickableExpandLink from '$layouts/ClickableExpandLink.svelte';
-	import ClickableExpandNav from '$layouts/ClickableExpandNav.svelte';
+	import ExpandLink from '$layouts/ExpandLink.svelte'
+	import ExpandNav from '$layouts/ExpandNav.svelte'
+	import ClickableExpandLink from '$layouts/ClickableExpandLink.svelte'
+	import ClickableExpandNav from '$layouts/ClickableExpandNav.svelte'
 
-	$: pathname = $page.url.pathname;
+	$: pathname = $page.url.pathname
 
-	let scrolled: number;
+	let scrolled: number
 
 	const item1: Array<{
-		label: string;
-		href: string;
-		children: Array<{ label: string; href: string }>;
+		label: string
+		href: string
+		children: Array<{ label: string; href: string }>
 	}> = [
 		{
 			label: 'Algemenie informatie',
@@ -54,20 +54,20 @@
 				{ label: 'Support & toestelconfiguratie', href: '#support' }
 			]
 		}
-	];
+	]
 
 	const item2: Array<{
-		label: string;
-		href: string;
+		label: string
+		href: string
 	}> = [
-		{ label: 'Veelgestelde vragen', href: 'veelgestelde-vragen' },
-		{ label: 'Contact', href: 'contact' },
-		{ label: 'Voyp updates', href: 'updates' },
-		{ label: 'Voorwaarden', href: 'voorwaarden' },
-		{ label: 'Privacy & GDPR', href: 'privacy' }
-	];
+		{ label: 'Veelgestelde vragen', href: '/veelgestelde-vragen' },
+		{ label: 'Contact', href: '/contact' },
+		{ label: 'Voyp updates', href: '/updates' },
+		{ label: 'Voorwaarden', href: '/voorwaarden' },
+		{ label: 'Privacy & GDPR', href: '/privacy' }
+	]
 
-	let open = false;
+	let open = false
 </script>
 
 <svelte:window bind:scrollY={scrolled} />
@@ -119,10 +119,7 @@
 					<ClickableExpandLink label="Over Voyp" expandable>
 						<div class="capitalize">
 							{#each item2 as { label, href }, i (i)}
-								<a
-									href={`/over-voyp/${href}`}
-									class="block px-5 py-3 bg-primary hover:bg-primary/90 text-white"
-								>
+								<a {href} class="block px-5 py-3 bg-primary hover:bg-primary/90 text-white">
 									{label}
 								</a>
 							{/each}
@@ -185,9 +182,9 @@
 						<div class="border capitalize">
 							{#each item2 as { label, href }, i (i)}
 								<a
-									href={`/over-voyp/${href}`}
+									{href}
 									class="block hover:bg-secondary p-3"
-									class:bg-secondary={pathname.includes(`/over-voyp/${href}`)}
+									class:bg-secondary={pathname.includes(`/${href}`)}
 								>
 									{label}
 								</a>
