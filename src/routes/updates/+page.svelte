@@ -1,59 +1,37 @@
-<script>
-	import Search from '$layouts/Search.svelte';
-	import Pagination from './Pagination.svelte';
+<script lang="ts">
+	import Search from '$layouts/Search.svelte'
+	import Pagination from './Pagination.svelte'
+
+	export let data
+
+	const extractContent = (content: string) =>
+		content
+			.split('\r\n')
+			.filter(Boolean)
+			.filter((s) => !s.includes('#'))
 </script>
 
 <section
-	class="container px-6 pt-16 sm:pt-20 pb-20 sm:pb-24 text-sm leading-8 lg:grid gap-10 grid-cols-3"
+	class="container px-6 pt-16 sm:pt-20 pb-20 sm:pb-24
+	text-sm leading-8 lg:grid gap-10 grid-cols-3"
 >
 	<div class="col-span-2 max-w-2xl lg:max-w-none mx-auto lg:mx-0">
-		<!-- {#each Array(6) as _, i (i)}
-			<div class="flex gap-9 border-b first:pt-0 pt-10 pb-16">
-				<div class="flex flex-col gap-1.5">
-					<a href="/">
-						<span
-							class="icon-[mdi--facebook] w-[1.1rem] h-[1.1rem] text-gray-300 transition-colors duration-300
-          hover:text-primary"
-						/>
-					</a>
-					<a href="/">
-						<span
-							class="icon-[mdi--twitter] w-[1.1rem] h-[1.1rem] text-gray-300 transition-colors duration-300
-          hover:text-primary"
-						/>
-					</a>
-					<a href="/">
-						<span
-							class="icon-[mdi--google] w-[1.1rem] h-[1.1rem] text-gray-300 transition-colors duration-300
-          hover:text-primary"
-						/>
-					</a>
-					<a href="/">
-						<span
-							class="icon-[mdi--linkedin] w-[1.1rem] h-[1.1rem] text-gray-300 transition-colors duration-300
-          hover:text-primary"
-						/>
-					</a>
-					<a href="/">
-						<span
-							class="icon-[mdi--pinterest] w-[1.1rem] h-[1.1rem] text-gray-300 transition-colors duration-300
-          hover:text-primary"
-						/>
-					</a>
-				</div>
-				<div class="text-sm leading-7">
-					<img src="/updates/voyp-weetjes.png" alt="voyp-weetjes" class="w-52" />
-					<h3 class="font-medium text-lg pt-4 pb-3">Voyp gaat samen met BlackGATE</h3>
-					<p>
-						We hebben geweldig nieuws om met je te delen! Vanaf 1 augustus 2023 gaan Voyp en
-						BlackGATE intensiever samenwerken. Voyp zal voortaan een label zijn van BlackGATE, wat
-						betekent dat…
+		<nav class="flex flex-col items-center gap-4">
+			{#each data.blogs as blog}
+				<a
+					href="/updates/{blog.slug}"
+					class="border-b first:pt-0 pt-4 sm:pt-10
+					pb-10 sm:pb-16 text-sm leading-[1.7rem] sm:leading-7"
+				>
+					<img src={blog.featured_img} alt={blog.slug} class="w-48 sm:w-52" />
+					<h3 class="font-medium text-lg pt-4 pb-3">{blog.title}</h3>
+					<p class="line-clamp-2">
+						{extractContent(blog.content)}
 					</p>
-				</div>
-			</div>
-		{/each} -->
-
-		<Pagination />
+				</a>
+			{/each}
+			<Pagination />
+		</nav>
 	</div>
 	<div class="lg:border-l lg:pl-10 max-w-2xl mx-auto lg:mx-0 pt-16 lg:pt-0">
 		<h3 class="font-semibold pb-4 text-base">Zoeken</h3>

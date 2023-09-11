@@ -1,81 +1,35 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-import { extractFrontmatter } from '@sveltejs/site-kit/markdown'
-import { CONTENT_BASE_PATHS } from '../../../constants'
-// import { render_content } from '../renderer.js'
+import { BLOG_BASE_PATH } from '../../../constants'
 
-/**
- * @param {import('./types').BlogData} blog_data
- * @param {string} slug
- */
-// export async function get_processed_blog_post(blog_data, slug) {
-// 	for (const post of blog_data) {
-// 		if (post.slug === slug) {
-// 			return {
-// 				...post,
-// 				content: await render_content(post.file, post.content)
-// 			}
-// 		}
-// 	}
-//
-// 	return null
-// }
+export const get_blogs = async () => {
+	const blogs = await get_markdown_files()
 
-const BLOG_NAME_REGEX = /^(\d{4}-\d{2}-\d{2})-(.+)\.md$/
+	return blogs.map(({ head, content }) => ({ ...extract_head(head), content }))
+}
 
-/** @returns {Promise<import('./types').BlogData>} */
-export async function get_blog_data(base = CONTENT_BASE_PATHS.BLOG) {
+const get_markdown_files = async () => {
 	const { readdir, readFile } = await import('node:fs/promises')
+	const file_names = await readdir(BLOG_BASE_PATH)
 
-	/** @type {import('./types').BlogData} */
-	const blog_posts = []
+	const read_files = file_names.map((f) => readFile(`${BLOG_BASE_PATH}/${f}`, 'utf-8'))
+	const files = await Promise.all(read_files)
 
-	for (const file of (await readdir(base)).reverse()) {
-		if (!BLOG_NAME_REGEX.test(file)) continue
-
-		const { date, date_formatted, slug } = get_date_and_slug(file)
-		const { metadata, body } = extractFrontmatter(await readFile(`${base}/${file}`, 'utf-8'))
-
-		blog_posts.push({
-			date,
-			date_formatted,
-			content: body,
-			description: metadata.description,
-			draft: metadata.draft === 'true',
-			slug,
-			title: metadata.title,
-			file,
-			author: {
-				name: metadata.author,
-				url: metadata.authorURL
-			}
-		})
-	}
-
-	return blog_posts
+	return files
+		.map((file) => file.split('---').filter(Boolean))
+		.map(([head, content]) => ({ head, content }))
 }
 
-/** @param {import('./types').BlogData} blog_data */
-export function get_blog_list(blog_data) {
-	return blog_data.map(({ slug, date, title, description, draft }) => ({
-		slug,
-		date,
-		title,
-		description,
-		draft
-	}))
+const extract_head = (head: string) => {
+	const filtered_head = head.split('\r\n').filter(Boolean)
+
+	const title = extract_attr(filtered_head, 'title')
+	const slug = extract_attr(filtered_head, 'slug')
+	const featured_img = extract_attr(filtered_head, 'featured_img')
+
+	return { title, slug, featured_img }
 }
 
-/** @param {string} filename */
-function get_date_and_slug(filename) {
-	const match = BLOG_NAME_REGEX.exec(filename)
-	if (!match) throw new Error(`Invalid filename for blog: '${filename}'`)
+const extract_attr = (head: string[], attr: string) => {
+	const value = head.find((str) => str.includes(attr)) as string
 
-	const [, date, slug] = match
-	const [y, m, d] = date.split('-')
-	const date_formatted = `${months[+m - 1]} ${+d} ${y}`
-
-	return { date, date_formatted, slug }
+	return value.replace(`${attr}:`, '').trim()
 }
-
-const months = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split(' ')
