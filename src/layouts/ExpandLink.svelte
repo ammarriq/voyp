@@ -1,13 +1,13 @@
 <script>
-	import { slide } from 'svelte/transition';
-	import { page } from '$app/stores';
+	import { fly } from 'svelte/transition'
+	import { page } from '$app/stores'
 
-	export let label = '';
-	export let href = '';
+	export let label = ''
+	export let href = ''
 
-	export let isOpen = false;
-	export let expandable = false;
-	$: pathname = $page.url.pathname;
+	export let isOpen = false
+	export let expandable = false
+	$: pathname = $page.url.pathname
 </script>
 
 <div class="relative">
@@ -34,7 +34,7 @@
 		<nav
 			on:mouseenter={() => (isOpen = true)}
 			on:mouseleave={() => (isOpen = false)}
-			transition:slide={{ axis: 'y' }}
+			transition:fly={{ y: '10px' }}
 			class="w-[11.8rem] max-w-[15rem] absolute flex flex-col bg-white"
 		>
 			<slot />

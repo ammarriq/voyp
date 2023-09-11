@@ -156,7 +156,7 @@
 
 				<div class:bg-secondary={pathname.includes('meer-informatie')}>
 					<ExpandLink label="Meer Informatie" expandable>
-						<div class="border">
+						<div class="shadow-lg">
 							{#each item1 as { label, href, children }, i (i)}
 								{@const url = label.replaceAll(' ', '-').toLowerCase()}
 								<div class:bg-secondary={pathname.includes(`${href}`)}>
@@ -179,7 +179,7 @@
 
 				<div class:bg-secondary={pathname.includes('over-voyp')}>
 					<ExpandLink label="Over Voyp" expandable>
-						<div class="border capitalize">
+						<div class="capitalize shadow-lg">
 							{#each item2 as { label, href }, i (i)}
 								<a
 									{href}

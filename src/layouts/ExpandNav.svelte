@@ -1,11 +1,11 @@
 <script>
-	import { slide } from 'svelte/transition';
+	import { fly } from 'svelte/transition'
 
-	export let label = '';
-	export let href = '';
+	export let label = ''
+	export let href = ''
 
-	export let isOpen = false;
-	export let expandable = false;
+	export let isOpen = false
+	export let expandable = false
 </script>
 
 <div class="relative">
@@ -26,9 +26,9 @@
 		<nav
 			on:mouseenter={() => (isOpen = true)}
 			on:mouseleave={() => (isOpen = false)}
-			transition:slide={{ axis: 'y', duration: 50 }}
-			class="capitalize w-52 max-w-[15rem] z-30 absolute -top-[0.05rem] left-[10.8rem] flex flex-col
-      bg-white ml-3 border"
+			transition:fly={{ x: '20px' }}
+			class="capitalize w-52 max-w-[15rem] z-30 flex flex-col
+			absolute -top-[0.05rem] left-[10.8rem] bg-white ml-3 shadow-lg"
 		>
 			<slot />
 		</nav>
