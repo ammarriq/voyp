@@ -3,7 +3,7 @@ import { BLOG_BASE_PATH } from '../../../constants'
 export const get_blogs = async () => {
 	const blogs = await get_markdown_files()
 
-	return blogs.map(({ head, content }) => ({ ...extract_head(head), content }))
+	return blogs.map(({ head, content }) => ({ ...extract_head(head), content })).reverse()
 }
 
 const get_markdown_files = async () => {
