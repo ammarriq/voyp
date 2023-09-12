@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Pagination from './Pagination.svelte'
-
 	export let data
 
 	const extractContent = (content: string) =>
@@ -25,6 +23,5 @@
 				</p>
 			</a>
 		{/each}
-		<Pagination />
 	</nav>
 </div>
