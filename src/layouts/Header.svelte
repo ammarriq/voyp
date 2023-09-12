@@ -127,6 +127,12 @@
 					</ClickableExpandLink>
 
 					<ClickableExpandLink label="Bestellen" href="/bestellen" />
+					<a
+						href="https://mijn.voyp.nl/login"
+						class="block p-3 hover:bg-primary/90 hover:text-white transition-colors duration-700"
+					>
+						<i class="icon-[mdi--lock] w-3.5 h-3.5" />
+					</a>
 
 					<a
 						href="tel:+31886789400"
@@ -194,6 +200,12 @@
 				</div>
 
 				<ExpandLink label="Bestellen" href="/bestellen" />
+				<a
+					href="https://mijn.voyp.nl/login"
+					class="px-2 py-3 hover:bg-secondary shrink-0 flex items-center"
+				>
+					<i class="icon-[mdi--lock] w-3 h-3" />
+				</a>
 
 				<a href="tel:+31886789400" class="flex gap-0.5 items-center hover:bg-secondary px-2 py-3">
 					<span class="icon-[mdi--phone] w-3.5 h-3.5" />
