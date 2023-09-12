@@ -1,0 +1,44 @@
+.content h1 {
+	@apply !text-3xl !font-semibold;
+}
+
+.content h2 {
+	@apply !text-2xl !font-semibold;
+}
+
+.content h3 {
+	@apply !text-xl !font-semibold;
+}
+
+.content h4 {
+	@apply !text-lg !font-semibold;
+}
+
+.content h5 {
+	@apply !text-base !font-semibold;
+}
+
+.content h6 {
+	@apply !text-sm !font-semibold;
+}
+
+.content a,
+.content strong {
+	@apply !font-semibold !text-primary;
+}
+
+.content a:hover {
+	@apply underline;
+}
+
+.content .title {
+	@apply mb-8;
+}
+
+.content .featured_image {
+	@apply md:float-right ml-8 mb-8 md:mb-0;
+}
+
+.content img {
+	@apply mx-auto;
+}
