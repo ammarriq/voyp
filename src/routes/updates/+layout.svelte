@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores'
-	import Search from '$layouts/Search.svelte'
 
 	export let data
 	$: slug = $page.params.slug as string
@@ -33,7 +32,20 @@
 	<slot />
 	<div class="lg:border-l lg:pl-10 max-w-2xl mx-auto lg:mx-0 pt-16 lg:pt-0">
 		<h3 class="font-semibold pb-4 text-base">Zoeken</h3>
-		<Search />
+		<form
+			class="w-full flex items-center text-sm
+			bg-secondary px-2.5 border border-primary"
+			method="get"
+			action="/search"
+		>
+			<input
+				name="q"
+				type="text"
+				placeholder="Wat zoek je?"
+				class="w-full pl-1 pr-2 py-2.5 focus:outline-none bg-transparent placeholder-primary"
+			/>
+			<span class="icon-[mdi--search] w-6 h-6" />
+		</form>
 
 		<div class="w-full border-b py-5" />
 
