@@ -8,8 +8,8 @@
 		</div>
 		<div class="flex gap-x-3 gap-y-2 justify-center items-center flex-wrap text-xs font-extralight">
 			<a href="/bestellen">Bestellen</a>
-			<a href="/over-voyp/privacy">Privacy</a>
-			<a href="/over-voyp/voorwaarden">Algemene voorwaarden</a>
+			<a href="/privacy">Privacy</a>
+			<a href="/voorwaarden">Algemene voorwaarden</a>
 			<a href="/meer-informatie/algemenie-informatie/voip">Meer informatie</a>
 		</div>
 	</section>
