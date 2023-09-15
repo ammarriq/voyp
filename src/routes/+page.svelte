@@ -6,10 +6,10 @@
 	import Carousel from './Carousel.svelte'
 
 	let words: string[][] = [
-		['het hOOrt', 'jij wilt', 'het kan'],
+		['het hoort', 'jij wilt', 'het kan'],
 		['zonder gedoe', 'zonder addertjes', 'zonder bijbetalen'],
-		['hOe werkt het', 'what is hat'],
-		['what is dat', 'wat heb ik nOdig']
+		['hoe werkt het', 'wat is het'],
+		['what is dat', 'wat heb ik nodig']
 	]
 </script>
 
