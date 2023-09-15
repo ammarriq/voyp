@@ -9,7 +9,7 @@
 		['het hoort', 'jij wilt', 'het kan'],
 		['zonder gedoe', 'zonder addertjes', 'zonder bijbetalen'],
 		['hoe werkt het', 'wat is het'],
-		['what is dat', 'wat heb ik nodig']
+		['wat is dat', 'wat heb ik nodig']
 	]
 </script>
 
