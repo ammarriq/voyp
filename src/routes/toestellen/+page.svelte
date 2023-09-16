@@ -6,21 +6,21 @@
 		'https://bestellen.voyp.nl/assets/steps-nav-073b837e39919c4aea7173ffda575432.js',
 		'https://bestellen.voyp.nl/assets/cost-overview-c2fcf52b75cc93fb967b0fa8a6748bf1.js',
 		'https://bestellen.voyp.nl/assets/arrow-buttons-9e8a36fc1fd590a020261d4f0d6d1d4a.js'
-	];
+	]
 
 	const getPage = async () => {
-		const res = await fetch('https://bestellen.voyp.nl/toestellen');
-		const page = await res.text();
+		const res = await fetch('https://bestellen.voyp.nl/toestellen')
+		const page = await res.text()
 
 		scripts.map((s) => {
-			const script = document.createElement('script');
-			script.src = s;
+			const script = document.createElement('script')
+			script.src = s
 
-			setTimeout(() => document.body.append(script), 300);
-		});
+			setTimeout(() => document.body.append(script), 300)
+		})
 
-		return page;
-	};
+		return page
+	}
 </script>
 
 <div class="bg-white">
@@ -49,13 +49,15 @@
 	</section>
 </div>
 
-{#await getPage()}
-	<div class="text-center">
-		<i class="icon-[mdi--loading] animate-spin w-16 h-16 my-12" />
-	</div>
-{:then page}
-	{@html page}
-{/await}
+<div class="container">
+	{#await getPage()}
+		<div class="text-center">
+			<i class="icon-[mdi--loading] animate-spin w-16 h-16 my-12" />
+		</div>
+	{:then page}
+		{@html page}
+	{/await}
+</div>
 
 <div class="bg-secondary">
 	<section
