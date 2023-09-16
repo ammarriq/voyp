@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation'
 
 	import Display from '$components/Display.svelte'
-	import Button from '$components/Button.svelte'
+	import Button, { btnClasses } from '$components/Button.svelte'
 	import Carousel from './Carousel.svelte'
 
 	let words: string[][] = [
@@ -33,9 +33,20 @@
 				Telefonie hoeft niet moeilijk te zijn en al helemaal niet duur. Vanaf € 12,- per maand ben
 				je flexibel en betrouwbaar overal telefonisch bereikbaar.
 			</p>
-			<Button on:click={() => goto('/tarieven')} class="bg-white hover:bg-blue-100 mb-10">
-				Bekijk ons aanbod
-			</Button>
+			<div class="flex gap-8 flex-col md:flex-row items-center mb-12">
+				<a
+					href="/tarieven"
+					class="{btnClasses} px-8 py-4 w-max font-semibold bg-white hover:bg-blue-100"
+				>
+					Bekijk ons aanbod
+				</a>
+				<a
+					href="/bestellen"
+					class="{btnClasses} px-8 py-4 w-max font-semibold bg-white hover:bg-blue-100"
+				>
+					Bereken je kosten
+				</a>
+			</div>
 		</div>
 		<img src="/hero/vlogo.png" alt="vlogo" class="mx-auto lg:mx-0 w-60 lg:w-80" />
 	</section>
