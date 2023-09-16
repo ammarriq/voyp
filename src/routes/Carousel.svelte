@@ -11,10 +11,10 @@
 	onMount(() => {
 		new Swiper(sliderRef, {
 			modules: [Pagination, Autoplay],
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false
-			},
+			// autoplay: {
+			// 	delay: 2500,
+			// 	disableOnInteraction: false
+			// },
 			spaceBetween: 30,
 			pagination: { el: '.swiper-pagination', clickable: true },
 			breakpoints: {
@@ -32,6 +32,7 @@
 	<div class="swiper-wrapper flex items-stretch !overflow-y-visible">
 		{#each cards as card, i (i)}
 			<div class="swiper-slide !h-auto !flex flex-col select-none">
+				<i class="icon-[mdi--format-quote-open] w-16 h-16 mx-auto" />
 				<div
 					class="flex flex-col grow justify-between bg-[#284182]
 					text-sm leading-8 font-normal text-white p-4 py-6 rounded-3xl mb-8"
