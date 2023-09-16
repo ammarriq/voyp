@@ -40,7 +40,6 @@
 	"type": "module",
 	"dependencies": {
 		"@melt-ui/svelte": "^0.39.1",
-		"animejs": "^3.2.1",
 		"marked": "^9.0.0",
 		"swiper": "^10.2.0",
 		"textillate": "^0.4.1"

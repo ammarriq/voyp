@@ -1,12 +1,12 @@
 <script lang="ts">
-	import tableData from '$lib/data/tarieven.json';
+	import tableData from '$lib/data/tarieven.json'
 
-	import Button from '$components/Button.svelte';
-	import Display from '$components/Display.svelte';
-	import Table from '$components/Table.svelte';
-	import { goto } from '$app/navigation';
+	import Button from '$components/Button.svelte'
+	import Display from '$components/Animate.svelte'
+	import Table from '$components/Table.svelte'
+	import { goto } from '$app/navigation'
 
-	let words: string[] = ['regionummers', 'landelijke nummers', 'servicenummers'];
+	let words: string[] = ['regionummers', 'landelijke nummers', 'servicenummers']
 </script>
 
 <section
@@ -79,12 +79,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Landelijk nummer</h3>
 					<p>
@@ -99,12 +100,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Servicenummer</h3>
 					<p>
@@ -119,12 +121,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Nummer meenemen</h3>
 					<p>
@@ -138,12 +141,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Je nummer is altijd van jou</h3>
 					<p>

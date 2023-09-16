@@ -8,9 +8,6 @@ dependencies:
   '@melt-ui/svelte':
     specifier: ^0.39.1
     version: 0.39.5(svelte@4.2.0)
-  animejs:
-    specifier: ^3.2.1
-    version: 3.2.1
   marked:
     specifier: ^9.0.0
     version: 9.0.0
@@ -730,10 +727,6 @@ packages:
 
   /animate.css@4.1.1:
     resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
-    dev: false
-
-  /animejs@3.2.1:
-    resolution: {integrity: sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==}
     dev: false
 
   /ansi-regex@5.0.1:

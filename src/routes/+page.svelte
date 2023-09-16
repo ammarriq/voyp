@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 
-	import Display from '$components/Display.svelte'
+	import Animate from '$components/Animate.svelte'
 	import Button, { btnClasses } from '$components/Button.svelte'
 	import Carousel from './Carousel.svelte'
 
@@ -16,12 +16,12 @@
 <div class="bg-primary">
 	<section
 		class="container text-white px-6 pt-16 lg:pt-24 pb-16 sm:pb-20 lg:flex lg:justify-between
-		 text-center lg:text-start items-center gap-14"
+		text-center lg:text-start items-center gap-14"
 	>
 		<div>
 			<h1 class="inline-block text-5xl lg:text-7xl sm:px-0 pb-8">
 				Bellen zoals <br class="block sm:hidden" />
-				<Display class="text-5xl lg:text-6xl" words={words[0]} />
+				<Animate class="text-5xl lg:text-7xl" words={words[0]} />
 			</h1>
 			<p class="pb-5">
 				Bellen zonder gedoe, dat is onze missie. Welkom bij Voyp. Geen addertjes onder het gras,
@@ -113,7 +113,7 @@
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
 				Totaalpakket <br class="block" />
-				<Display words={words[1]} class="text-3xl lg:text-5xl" />
+				<Animate words={words[1]} class="text-3xl lg:text-5xl" />
 			</h2>
 			<p class="pb-5">
 				Of je nu een eenpitter bent die alleen mobiel bereikbaar wilt zijn of een multinational met
@@ -204,7 +204,7 @@
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
 				Echt vast/mobiel <br class="block" />
-				<Display class="text-3xl lg:text-5xl" words={words[2]} />
+				<Animate class="text-3xl lg:text-5xl" words={words[2]} />
 			</h2>
 			<p class="pb-5">
 				Vast-Mobiel integratie: je hoort er vaak over. Het is namelijk ideaal: met je mobiele
@@ -266,7 +266,7 @@
 		<img src="/hero/voip1.png" alt="voip1" class="w-52 lg:w-80 mx-auto pb-12 md:pb-0" />
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
-				Voice over IP <br class="block" /><Display class="text-3xl lg:text-5xl" words={words[3]} />
+				Voice over IP <br class="block" /><Animate class="text-3xl lg:text-5xl" words={words[3]} />
 			</h2>
 			<p>
 				Vroeger had je een analoge lijn of een ISDN centrale. Simpel gezegd gaat er dan een koper
