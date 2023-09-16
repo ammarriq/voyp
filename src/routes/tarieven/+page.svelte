@@ -42,7 +42,7 @@
 			<Button
 				on:click={() => goto('/bestellen')}
 				class="mt-8 md:mt-10 border border-primary
-      text-white bg-primary hover:text-primary hover:bg-white"
+      	text-white bg-primary hover:text-primary hover:bg-white"
 			>
 				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.73rem] lg:text-sm">
 					<span class="shrink-0">Offerte aanvragen of direct bestellen</span>
@@ -127,7 +127,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table data={gesprekskosten} />
+			<Table data={gesprekskosten} columnsWidth={['auto', '8rem', '8rem']} />
 		</section>
 
 		<section>
@@ -154,7 +154,7 @@
 			<div class="w-full border-b border-primary pt-2.5" />
 
 			<div id="voypmobiel">
-				<Table data={abonnementen} />
+				<Table data={abonnementen} columnsWidth={['auto', '8rem', '8rem']} />
 			</div>
 		</section>
 
@@ -179,7 +179,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table data={voypmobiel} />
+			<Table data={voypmobiel} columnsWidth={['auto', '8rem', '8rem']} />
 		</section>
 
 		<section>
@@ -203,7 +203,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table data={voipaccounts} />
+			<Table data={voipaccounts} columnsWidth={['auto', '8rem', '8rem']} />
 		</section>
 
 		<section>
@@ -232,7 +232,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table data={telefoonnummers} />
+			<Table data={telefoonnummers} columnsWidth={['auto', '8rem', '8rem']} />
 		</section>
 
 		<section>
@@ -257,7 +257,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table data={configuratie} />
+			<Table data={configuratie} columnsWidth={['auto', '8rem', '8rem']} />
 		</section>
 
 		<section>
@@ -277,7 +277,7 @@
 
 			<div class="w-full border-b border-primary pt-2.5" />
 
-			<Table data={ondersteuning} />
+			<Table data={ondersteuning} columnsWidth={['auto', '8rem', '8rem']} />
 		</section>
 	</section>
 </div>

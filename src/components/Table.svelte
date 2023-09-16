@@ -1,6 +1,7 @@
 <script lang="ts">
 	let clazz = ''
 	export { clazz as class }
+	export let columnsWidth: string[] = []
 	export let data: Array<Record<string, unknown>>
 
 	const keys = Object.keys(data[0])
@@ -14,7 +15,10 @@
 		<thead>
 			<tr>
 				{#each keys as item, i (i)}
-					<th class="border-b-2 border-[#ccc] px-2.5 py-3 text-start capitalize">
+					<th
+						class="border-b-2 border-[#ccc] px-2.5 py-3 text-start capitalize"
+						style:width={columnsWidth[i]}
+					>
 						{item}
 					</th>
 				{/each}
