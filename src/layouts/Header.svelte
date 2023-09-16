@@ -106,7 +106,7 @@
 							<ClickableExpandNav {label} expandable>
 								{#each children as { label, href }}
 									<a
-										href={`/meer-informatie/${url}${href}`}
+										href="/meer-informatie/{url}{href}"
 										class="block px-7 py-3 bg-primary/90 hover:bg-primary text-white"
 									>
 										{label}
@@ -185,7 +185,7 @@
 					</ExpandLink>
 				</div>
 
-				<div class:bg-secondary={pathname.includes('over-voyp')}>
+				<div class:bg-secondary={item2.some((o) => pathname.includes(o.href))}>
 					<ExpandLink label="Over Voyp" expandable>
 						<div class="capitalize shadow-lg">
 							{#each item2 as { label, href }, i (i)}
