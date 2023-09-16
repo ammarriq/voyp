@@ -36,13 +36,13 @@
 			<div class="flex gap-8 flex-col md:flex-row items-center mb-12">
 				<a
 					href="/tarieven"
-					class="{btnClasses} px-8 py-4 w-max font-semibold bg-white hover:bg-blue-100"
+					class="{btnClasses} px-10 py-5 w-max font-semibold bg-white hover:bg-blue-100"
 				>
 					Bekijk ons aanbod
 				</a>
 				<a
 					href="/bestellen"
-					class="{btnClasses} px-8 py-4 w-max font-semibold bg-white hover:bg-blue-100"
+					class="{btnClasses} px-10 py-5 w-max font-semibold bg-white hover:bg-blue-100"
 				>
 					Bereken je kosten
 				</a>
