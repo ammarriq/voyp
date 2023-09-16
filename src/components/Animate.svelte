@@ -36,7 +36,11 @@
 					in:fly|global={{ y: 200, delay: i * 100 + inDelay, duration: 1000, easing: elasticOut }}
 					out:fly|global={{ y: -200, delay: i * 100, duration: 200 }}
 				>
-					{letter}
+					{#if !!letter.trim()}
+						{letter}
+					{:else}
+						&nbsp;
+					{/if}
 				</span>
 			{/each}
 		{/key}

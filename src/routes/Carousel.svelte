@@ -10,13 +10,10 @@
 
 	onMount(() => {
 		new Swiper(sliderRef, {
-			modules: [Pagination, Autoplay],
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false
-			},
 			spaceBetween: 30,
+			modules: [Pagination, Autoplay],
 			pagination: { el: '.swiper-pagination', clickable: true },
+			autoplay: { delay: 2500, disableOnInteraction: false },
 			breakpoints: {
 				0: { slidesPerView: 1 },
 				768: { slidesPerView: 2 },
