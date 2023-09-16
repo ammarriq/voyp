@@ -97,7 +97,7 @@
 
 					<ClickableExpandLink label="Tarieven" href="/tarieven" />
 
-					<ClickableExpandLink label="toestellen" href="/toestellen" />
+					<ClickableExpandLink label="Toestellen" href="/toestellen" />
 
 					<ClickableExpandLink label="Meer Informatie" expandable>
 						{#each item1 as { label, children }, i (i)}
@@ -160,7 +160,7 @@
 
 				<ExpandLink label="Tarieven" href="/tarieven" />
 
-				<ExpandLink label="toestellen" href="/toestellen" />
+				<ExpandLink label="Toestellen" href="/toestellen" />
 
 				<div class:bg-secondary={pathname.includes('meer-informatie')}>
 					<ExpandLink label="Meer Informatie" expandable>
