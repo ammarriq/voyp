@@ -1,5 +1,5 @@
 <script lang="ts">
-	import voipaccounts from '$lib/data/voip-accounts.json'
+	import voypmobiel from '$lib/data/voyp-mobiel.json'
 
 	import Button from '$components/Button.svelte'
 	import Display from '$components/Animate.svelte'
@@ -197,7 +197,7 @@
 		</div>
 
 		<div class="pt-6 md:pt-0">
-			<Table data={voipaccounts} columnsWidth={['auto', '8rem', '8rem']} />
+			<Table data={voypmobiel} columnsWidth={['auto', '8rem', '8rem']} />
 		</div>
 	</section>
 </div>

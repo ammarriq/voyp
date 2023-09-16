@@ -1,5 +1,5 @@
 <script lang="ts">
-	import tableData from '$lib/data/tarieven.json'
+	import voipaccounts from '$lib/data/voip-accounts.json'
 
 	import Button from '$components/Button.svelte'
 	import Display from '$components/Animate.svelte'
@@ -10,8 +10,8 @@
 </script>
 
 <section
-	class="relative overflow-x-hidden container mx-auto text-center pt-20 sm:pt-28 md:pt-32 pb-32
-	sm:pb-36 md:pb-44 mt-6"
+	class="relative overflow-x-hidden container mx-autotext-center
+	pt-20 sm:pt-28 md:pt-32 pb-32 sm:pb-36 md:pb-44 mt-6"
 >
 	<div class="text-white md:px-20 lg:px-28">
 		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-12">
@@ -23,7 +23,9 @@
 		</p>
 	</div>
 	<div
-		class="-z-10 px-12 absolute bottom-0 mt-[100px] ml-[-55%] sm:ml-[-54%] md:ml-[-51.8%] h-[50rem] w-[200%] rounded-b-[100%] bg-gradient-to-b from-primary via-blue-800 to-blue-600"
+		class="-z-10 px-12 absolute bottom-0 mt-[100px] ml-[-55%]
+		sm:ml-[-54%] md:ml-[-51.8%] h-[50rem] w-[200%] rounded-b-[100%]
+		bg-gradient-to-b from-primary via-blue-800 to-blue-600"
 	/>
 </section>
 
@@ -34,17 +36,18 @@
 		</h2>
 
 		<div
-			class="md:grid grid-cols-2 gap-6 lg:gap-10 text-sm leading-7 lg:text-base lg:leading-8 space-y-10
-			md:space-y-0"
+			class="md:grid grid-cols-2 gap-6 lg:gap-10 text-sm
+			leading-7 lg:text-base lg:leading-8 space-y-10 md:space-y-0"
 		>
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Hoe werkt het</h3>
 					<p class="pb-5">
@@ -65,12 +68,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Wat stellen wij voor je in</h3>
 					<p class="pb-5">
@@ -93,12 +97,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Toestellen instellen</h3>
 					<p class="pb-5">
@@ -168,8 +173,8 @@
 
 			<Button
 				on:click={() => goto('/bestellen')}
-				class="mt-8 md:mt-10 border border-primary
-      text-white bg-primary hover:text-primary hover:bg-white"
+				class="mt-8 md:mt-10 border border-primary text-white
+				bg-primary hover:text-primary hover:bg-white"
 			>
 				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm">
 					<span class="shrink-0">Offerte aanvragen of direct bestellen</span>
@@ -179,7 +184,7 @@
 		</div>
 
 		<div class="pt-6 md:pt-0">
-			<Table tableData={tableData[3]} class="w-full" />
+			<Table data={voipaccounts} columnsWidth={['auto', '8rem', '8rem']} class="w-full" />
 		</div>
 	</section>
 </div>
