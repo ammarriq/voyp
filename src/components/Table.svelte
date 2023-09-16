@@ -1,5 +1,6 @@
 <script lang="ts">
 	let clazz = ''
+
 	export { clazz as class }
 	export let columnsWidth: string[] = []
 	export let data: Array<Record<string, unknown>>
