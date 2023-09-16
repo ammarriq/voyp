@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Swiper from 'swiper'
-	import { Pagination } from 'swiper/modules'
+	import { Pagination, Autoplay } from 'swiper/modules'
 	import { onMount } from 'svelte'
 	import feedback from '$lib/data/feedback.json'
 	import 'swiper/css'
@@ -10,8 +10,12 @@
 
 	onMount(() => {
 		new Swiper(sliderRef, {
+			modules: [Pagination, Autoplay],
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false
+			},
 			spaceBetween: 30,
-			modules: [Pagination],
 			pagination: { el: '.swiper-pagination', clickable: true },
 			breakpoints: {
 				0: { slidesPerView: 1 },
