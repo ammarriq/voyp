@@ -4,6 +4,7 @@
 	import Animate from '$components/Animate.svelte'
 	import Button, { btnClasses } from '$components/Button.svelte'
 	import Carousel from './Carousel.svelte'
+	import FeedbackHover from './FeedbackHover.svelte'
 
 	let words: string[][] = [
 		['het hoort', 'jij wilt', 'het kan'],
@@ -232,13 +233,13 @@
 			<span>9.4</span>
 			<span class="flex">
 				{#each Array(4) as _, i (i)}
-					<span class="icon-[mdi--star] text-yellow-400 w-7 h-7 space-x-0" />
+					<i class="icon-[mdi--star] text-yellow-400 w-7 h-7 space-x-0" />
 				{/each}
-				<span class="icon-[mdi--star-half] text-yellow-400 w-7 h-7" />
+				<i class="icon-[mdi--star-half] text-yellow-400 w-7 h-7" />
 			</span>
 
 			<span>65 reviews</span>
-			<span class="icon-[mdi--comment-multiple-outline] text-cyan-500 w-6 h-6" />
+			<FeedbackHover />
 		</div>
 
 		<p class="py-5">
