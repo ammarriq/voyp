@@ -1,7 +1,7 @@
 <script lang="ts">
-	let clazz = '';
+	let clazz = ''
 
-	export { clazz as class };
+	export { clazz as class }
 </script>
 
 <img src="/voyp.png" alt="voyp" class={clazz} />

@@ -147,7 +147,9 @@
 			</div>
 		{/if}
 
-		<Brand class="w-40 lg:w-48 h-12 lg:h-16 mx-auto lg:mx-0" />
+		<a href="/" class="block mx-auto lg:mx-0">
+			<Brand class="w-40 lg:w-48 h-12 lg:h-16" />
+		</a>
 
 		<!-- Desktop -->
 		<div class="hidden lg:block">
