@@ -3,6 +3,7 @@
 
 	import Animate from '$components/Animate.svelte'
 	import Button, { btnClasses } from '$components/Button.svelte'
+	import Link from '$components/Link.svelte'
 	import Carousel from './Carousel.svelte'
 	import FeedbackHover from './FeedbackHover.svelte'
 
@@ -295,40 +296,46 @@
 		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
 
 		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<a href="https://www.arbec.nl/">
-				<img src="logos/arbec.png" alt="arbec" />
-			</a>
-			<a href="https://www.theokooptjeauto.nl/">
-				<img src="logos/theokooptjeauto.png" alt="theokooptjeauto" />
-			</a>
-			<a href="https://www.mr-dentalsupplies.nl/">
-				<img src="logos/mrdental.png" alt="mrdental" />
-			</a>
-			<a href="https://www.moventes.nl/">
-				<img src="logos/moventes.png" alt="moventes" />
-			</a>
-			<a href="https://www.sieboldnijenhuisarchitect.nl/">
-				<img src="logos/sieboldnijenhuis.png" alt="sieboldnijenhuis" />
-			</a>
-			<a href="https://www.eldecollege.nl/">
-				<img src="logos/eldecollege.png" alt="eldecollege" />
-			</a>
-			<a href="https://www.hethoutens.nl/">
-				<img src="logos/hethoutens.png" alt="hethoutens" />
-			</a>
-			<a href="https://www.bts-bv.nl/">
-				<img src="logos/BTS.png" alt="BTS" />
-			</a>
-			<a href="https://www.tallgrass.nl/">
-				<img src="logos/tallgrass.png" alt="tallgrass" />
-			</a>
-			<a href="https://www.raket.online/">
-				<img
-					src="logos/raket.png"
-					alt="raket"
-					class=" mx-auto col-auto sm:col-span-full md:col-auto"
-				/>
-			</a>
+			<Link href="https://www.vankleeftechniek.nl/">
+				<img slot="trigger" src="logos/vankleeftechniek.webp" alt="vankleeftechniek" />
+				<p>Van Kleef Techniek</p>
+			</Link>
+			<Link href="https://www.econe.nl/">
+				<img slot="trigger" src="logos/econe.webp" alt="econe" />
+				<p>Econe</p>
+			</Link>
+			<Link href="https://www.renefriso.nl/">
+				<img slot="trigger" src="logos/renefriso.webp" alt="renefriso" />
+				<p>René Friso</p>
+			</Link>
+			<Link href="https://www.raket.online/">
+				<img slot="trigger" src="logos/raket.webp" alt="raket" />
+				<p>Raket</p>
+			</Link>
+			<Link href="https://www.toprow.com/">
+				<img slot="trigger" src="logos/toprow.webp" alt="toprow" />
+				<p>Toprow</p>
+			</Link>
+			<Link href="https://www.viwecom.nl/">
+				<img slot="trigger" src="logos/viwecom.webp" alt="viwecom" />
+				<p>Viwecom</p>
+			</Link>
+			<Link href="https://www.schimmel-tdi.nl/">
+				<img slot="trigger" src="logos/schimmeltechniek.webp" alt="schimmeltechniek" />
+				<p>Schimmel Techniek</p>
+			</Link>
+			<Link href="https://www.arbec.nl/">
+				<img slot="trigger" src="logos/arbec.webp" alt="arbec" />
+				<p>Arbec</p>
+			</Link>
+			<Link href="https://www.heemlanden.nl/">
+				<img slot="trigger" src="logos/collegedeheemlanden.webp" alt="collegedeheemlanden" />
+				<p>College de Heemlanden</p>
+			</Link>
+			<Link href="https://www.eldecollege.nl/">
+				<img slot="trigger" src="logos/eldecollege.webp" alt="eldecollege" />
+				<p>Elde</p>
+			</Link>
 		</div>
 	</section>
 </div>
