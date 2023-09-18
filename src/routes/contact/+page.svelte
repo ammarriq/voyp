@@ -1,5 +1,5 @@
 <script>
-	import Brand from '$components/Brand.svelte';
+	import Brand from '$components/Brand.svelte'
 </script>
 
 <section class="relative overflow-x-hidden container mx-auto pt-16 md:pt-24 pb-24 mt-6">
@@ -19,7 +19,7 @@
 		<h3 class="text-lg font-medium pb-2">CONTACT DETAILS</h3>
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--map-marker] w-10 h-10 text-white" />
+				<i class="icon-[mdi--map-marker] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">BlackGATE B.V.</p>
@@ -30,7 +30,7 @@
 
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--phone-outline] w-10 h-10 text-white" />
+				<i class="icon-[mdi--phone-outline] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">Telefoon:</p>
@@ -40,7 +40,7 @@
 
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--clock-outline] w-10 h-10 text-white" />
+				<i class="icon-[mdi--clock-outline] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">Openingstijden:</p>
@@ -50,7 +50,7 @@
 
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--email-outline] w-10 h-10 text-white" />
+				<i class="icon-[mdi--email-outline] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">E-mail:</p>
@@ -60,7 +60,7 @@
 
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--currency-eur] w-10 h-10 text-white" />
+				<i class="icon-[mdi--currency-eur] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">Bank:</p>
@@ -70,7 +70,7 @@
 
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--file] w-10 h-10 text-white" />
+				<i class="icon-[mdi--file] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">KvK:</p>
@@ -80,7 +80,7 @@
 
 		<div class="flex gap-4 items-center">
 			<span class="w-20 h-20 flex items-center justify-center bg-primary rounded-full shrink-0">
-				<span class="icon-[mdi--circle-outline] w-10 h-10 text-white" />
+				<i class="icon-[mdi--circle-outline] w-10 h-10 text-white" />
 			</span>
 			<span class="text-sm leading-7">
 				<p class="font-medium text-base">BTW:</p>
@@ -104,12 +104,12 @@
 				<p>Klant van Voyp en je hebt vragen of hulp nodig?</p>
 
 				<div class="flex gap-2 items-center pt-8">
-					<span class="icon-[mdi--phone] w-4 h-4" />
+					<i class="icon-[mdi--phone] w-4 h-4" />
 					<span> 088 6789 401 </span>
 				</div>
 
 				<div class="flex gap-2 items-center pb-9 pt-1">
-					<span class="icon-[mdi--email] w-4 h-4" />
+					<i class="icon-[mdi--email] w-4 h-4" />
 					<span>support@voyp.nl</span>
 				</div>
 
@@ -119,12 +119,32 @@
 				<p>Nog geen klant en wil je advies over Voyp?</p>
 
 				<div class="flex gap-2 items-center pt-8">
-					<span class="icon-[mdi--phone] w-4 h-4" />
+					<i class="icon-[mdi--phone] w-4 h-4" />
 					<span> 088 6789 402 </span>
 				</div>
 
 				<div class="flex gap-2 items-center pb-9 pt-1">
-					<span class="icon-[mdi--email] w-4 h-4" />
+					<i class="icon-[mdi--email] w-4 h-4" />
+					<span>support@voyp.nl</span>
+				</div>
+
+				<div class="border-t border-primary" />
+
+				<h4 class="text-base font-medium pb-3 pt-9">Storingen</h4>
+				<p>
+					Een storing is natuurlijk heel vervelend. Bel ons binnen kantoortijden op ons algemene
+					nummer of stuur ons een e-mail. Buiten kantoortijden of het algemene nummer niet
+					bereikbaar? Stuur ons een mailtje en wij antwoorden zo snel mogelijk. Kan het absoluut
+					niet wachten tot de volgende werkdag? Bel dan onderstaand storingsnummer.
+				</p>
+
+				<div class="flex gap-2 items-center pt-8">
+					<i class="icon-[mdi--phone] w-4 h-4" />
+					<span> 088 6789 499 </span>
+				</div>
+
+				<div class="flex gap-2 items-center pb-9 pt-1">
+					<i class="icon-[mdi--email] w-4 h-4" />
 					<span>support@voyp.nl</span>
 				</div>
 			</div>
@@ -176,23 +196,23 @@
 			<h3 class="font-semibold pb-5 text-base">Laatste Voyp updates</h3>
 			<div>
 				<div class="flex items-center gap-2">
-					<span class="icon-[mdi--check] shrink-0 w-4 h-4" />
+					<i class="icon-[mdi--check] shrink-0 w-4 h-4" />
 					<a href="/" class="line-clamp-1">Voyp gaat samen met BlackGATE</a>
 				</div>
 				<div class="flex items-center gap-2">
-					<span class="icon-[mdi--check] shrink-0 w-4 h-4" />
+					<i class="icon-[mdi--check] shrink-0 w-4 h-4" />
 					<a href="/">De eerste indruk</a>
 				</div>
 				<div class="flex items-center gap-2">
-					<span class="icon-[mdi--check] shrink-0 w-4 h-4" />
+					<i class="icon-[mdi--check] shrink-0 w-4 h-4" />
 					<a href="/" class="line-clamp-1">Telefonische drukte opvangen</a>
 				</div>
 				<div class="flex items-center gap-2">
-					<span class="icon-[mdi--check] shrink-0 w-4 h-4" />
+					<i class="icon-[mdi--check] shrink-0 w-4 h-4" />
 					<a href="/" class="line-clamp-1">Lokaal telefoonnummer vergroot je markt</a>
 				</div>
 				<div class="flex items-center gap-2">
-					<span class="icon-[mdi--check] shrink-0 w-4 h-4" />
+					<i class="icon-[mdi--check] shrink-0 w-4 h-4" />
 					<a href="/" class="line-clamp-1">Hoe richt ik mijn telefonie in</a>
 				</div>
 			</div>
