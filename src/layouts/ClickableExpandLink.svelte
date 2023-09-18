@@ -1,13 +1,11 @@
 <script>
-	import { slide } from 'svelte/transition';
-	import { page } from '$app/stores';
+	import { slide } from 'svelte/transition'
 
-	export let label = '';
-	export let href = '';
+	export let label = ''
+	export let href = ''
 
-	export let isOpen = false;
-	export let expandable = false;
-	$: pathname = $page.url.pathname;
+	export let isOpen = false
+	export let expandable = false
 </script>
 
 <div>
@@ -21,7 +19,11 @@
 			<span class="icon-[mdi--chevron-down] w-7 h-7 shrink-0" />
 		</button>
 	{:else}
-		<a {href} class="block p-3 hover:bg-primary/90 hover:text-white transition-colors duration-700">
+		<a
+			{href}
+			on:click
+			class="block p-3 hover:bg-primary/90 hover:text-white transition-colors duration-700"
+		>
 			{label}
 		</a>
 	{/if}

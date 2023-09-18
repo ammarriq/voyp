@@ -76,6 +76,7 @@
 		</button>
 
 		<!-- Tablet and mobile -->
+
 		{#if open}
 			<div
 				class="fixed top-[4.6rem] inset-x-0 border-b bg-secondary
@@ -87,19 +88,28 @@
 					<a
 						href="/"
 						class="block p-3 hover:bg-primary/90 hover:text-white transition-colors duration-700"
+						on:click={() => (open = !open)}
 					>
 						Home
 					</a>
 
-					<ClickableExpandLink label="Tarieven" href="/tarieven" />
+					<ClickableExpandLink label="Tarieven" href="/tarieven" on:click={() => (open = !open)} />
 
-					<ClickableExpandLink label="Toestellen" href="/toestellen" />
+					<ClickableExpandLink
+						label="Toestellen"
+						href="/toestellen"
+						on:click={() => (open = !open)}
+					/>
 
 					<ClickableExpandLink label="Meer Informatie" expandable>
 						{#each item1 as { label, children }, i (i)}
 							<ClickableExpandNav {label} expandable>
 								{#each children as { label, href }}
-									<a {href} class="block px-7 py-3 bg-primary/90 hover:bg-primary text-white">
+									<a
+										{href}
+										on:click={() => (open = !open)}
+										class="block px-7 py-3 bg-primary/90 hover:bg-primary text-white"
+									>
 										{label}
 									</a>
 								{/each}
@@ -110,7 +120,11 @@
 					<ClickableExpandLink label="Over Voyp" expandable>
 						<div class="capitalize">
 							{#each item2 as { label, href }, i (i)}
-								<a {href} class="block px-5 py-3 bg-primary hover:bg-primary/90 text-white">
+								<a
+									{href}
+									on:click={() => (open = !open)}
+									class="block px-5 py-3 bg-primary hover:bg-primary/90 text-white"
+								>
 									{label}
 								</a>
 							{/each}
