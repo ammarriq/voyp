@@ -1,25 +1,42 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Button from '$components/Button.svelte';
-	import Clickable from '$components/Clickable.svelte';
+	import { goto } from '$app/navigation'
+	import Button from '$components/Button.svelte'
+	import Clickable from '$components/Clickable.svelte'
 </script>
 
-<section
-	class="relative overflow-x-hidden container mx-auto text-center pt-20 sm:pt-28 md:pt-32 pb-32
-	sm:pb-36 md:pb-44 mt-6"
->
-	<div class="text-white md:px-20 lg:px-28">
-		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-12">
-			App desktop / mobiel
-		</h1>
-		<p>
-			Soms wil je geen vast toestel, maar gewoon bellen vanaf je laptop of desktop. Dat kan
-			natuurlijk! Ook kun je met een app op je mobiel gebruik maken van Voyp zonder onze SIM-kaart.
-		</p>
-	</div>
+<section class="relative overflow-x-hidden container mx-auto text-center bg-opacity-50">
 	<div
-		class="-z-10 px-12 absolute bottom-0 mt-[100px] ml-[-55%] sm:ml-[-54%] md:ml-[-51.8%] h-[50rem] w-[200%] rounded-b-[100%] bg-gradient-to-b from-primary via-blue-800 to-blue-600"
+		class="absolute inset-0 bg-[url(/hero/briamac.webp)]
+		top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
+		w-5/6 h-5/6
+		bg-center bg-contain bg-no-repeat m-4"
 	/>
+	<div
+		class="relative text-white z-10
+		sm:pt-52 sm:pb-44 md:px-20 lg:px-28 pt-20 pb-32
+		after:absolute after:inset-0 after:top-0 after:-z-10 after:py-44
+		after:bg-gradient-to-tr after:from-primary/40 from-90% after:to-white/20"
+	>
+		<h1 class="text-4xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-12">App desktop / mobiel</h1>
+		<p class="text-lg font-medium">
+			Soms wil je geen vast toestel, maar gewoon bellen vanaf je laptop of desktop. Dat kan
+			natuurlijk!
+		</p>
+		<p class="text-lg font-medium">
+			Ook kun je met een app op je mobiel gebruik maken van Voyp zonder onze SIM-kaart.
+		</p>
+		<svg
+			class="absolute inset-x-0 bottom-0 overflow-hidden fill-white z-50"
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1000 100"
+			preserveAspectRatio="none"
+		>
+			<path
+				class="elementor-shape-fill"
+				d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
+			/>
+		</svg>
+	</div>
 </section>
 
 <div class="bg-white">
