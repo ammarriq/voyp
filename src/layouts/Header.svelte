@@ -59,7 +59,7 @@
 		{ label: 'Veelgestelde vragen', href: '/veelgestelde-vragen' },
 		{ label: 'Contact', href: '/contact' },
 		{ label: 'Voyp updates', href: '/updates' },
-		{ label: 'Voorwaarden', href: '/voorwaarden' },
+		{ label: 'Voorwaarden', href: '/algemene-voorwaarden' },
 		{ label: 'Privacy & GDPR', href: '/privacy' }
 	]
 
