@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import Button from '$components/Button.svelte';
+	import { goto } from '$app/navigation'
+	import Button, { btnClasses } from '$components/Button.svelte'
 
-	const pdfFilename = 'HandleidingMijnVoyp.pdf';
+	const pdfFilename = 'HandleidingMijnVoyp.pdf'
 </script>
 
 <div class="bg-white" id="functionaliteiten">
@@ -218,8 +218,13 @@
 
 			<p class="pb-5">
 				Voor onze klanten hebben we een handleiding geschreven waarin we uitleggen hoe je de meest
-				voorkomende dingen aanpast en instelt in onze portal. Meldingen activeren, openingstijden
-				wijzigen of een tijdelijke doorschakeling kun je zo eenvoudig zelf regelen.
+				voorkomende dingen aanpast en instelt in onze <a
+					href="https://mijn.voyp.nl/login"
+					class="text-primary font-semibold"
+				>
+					portal
+				</a>. Meldingen activeren, openingstijden wijzigen of een tijdelijke doorschakeling kun je
+				zo eenvoudig zelf regelen.
 			</p>
 			<p>
 				Kom je er niet uit? Geen probleem. Wij helpen je graag. Mail ons en wij regelen het voor je.
@@ -314,18 +319,18 @@
 				class="max-w-[14rem] lg:max-w-[17rem] mx-auto mt-10 md:mt-0"
 			/>
 
-			<Button
-				on:click={() => goto('/bestellen')}
-				class="mt-8 md:mt-10 border border-primary
-      text-white bg-primary hover:text-primary hover:bg-white"
+			<a
+				href="/bestellen"
+				class="{btnClasses} mt-8 md:mt-10 border border-primary
+      	text-white bg-primary hover:text-primary hover:bg-white"
 			>
 				<div
 					class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm tracking-wider"
 				>
-					<span class="shrink-0">Bereken kosten</span>
+					<span class="shrink-0">Bereken je kosten</span>
 					<span class="icon-[mdi--arrow-right-thin] shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
 				</div>
-			</Button>
+			</a>
 		</div>
 	</section>
 </div>
