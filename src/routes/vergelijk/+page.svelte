@@ -331,10 +331,10 @@
 		<p>Zo kun je ook het kostenaspect eenvoudig meenemen in je beslissing.</p>
 
 		<div
-			class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-5 lg:pt-16 text-start text-sm z-10
+			class="grid sm:grid-cols-2 lg:grid-cols-4 pt-5 lg:pt-16 text-start text-sm z-10
 			leading-6"
 		>
-			<section>
+			<section class="px-5 pb-6">
 				<img src="/logos/kpn.webp" alt="kpn" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
@@ -378,7 +378,7 @@
 				<span class="text-red-400">€ 0,08 per gesprek</span>
 			</section>
 
-			<section>
+			<section class="px-5 pb-6">
 				<img src="/logos/voipzeker.webp" alt="voipzeker" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
@@ -435,7 +435,7 @@
 				<span>€ 0,04 per gesprek</span>
 			</section>
 
-			<section>
+			<section class="shadow-full border border-primary px-5 pb-6">
 				<img src="/logos/voyp.webp" alt="voyp" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
@@ -502,7 +502,7 @@
 				<span>€ 0,05 per gesprek</span>
 			</section>
 
-			<section>
+			<section class="px-5 pb-6">
 				<img src="/logos/verbonden.webp" alt="verbonden" class="w-80 lg:w-full mx-auto" />
 
 				<div class="border-t border-b border-primary py-3.5">
@@ -677,3 +677,9 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.shadow-full {
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	}
+</style>
