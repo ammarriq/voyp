@@ -1,25 +1,32 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Button from '$components/Button.svelte';
-	import Clickable from '$components/Clickable.svelte';
+	import { goto } from '$app/navigation'
+	import Button from '$components/Button.svelte'
+	import Clickable from '$components/Clickable.svelte'
 </script>
 
 <section
-	class="relative overflow-x-hidden container mx-auto text-center pt-20 sm:pt-28 md:pt-32 pb-32
-	sm:pb-36 md:pb-44 mt-6"
+	class="relative overflow-x-hidden container mx-auto text-center bg-opacity-50
+	pt-20 pb-32 sm:pt-52 sm:pb-44 mt-6 bg-[url(/hero/voypmobiel.webp)] bg-cover bg-center
+	after:absolute after:inset-0 after:bg-gradient-to-r after:from-primary/20 after:to-white/20"
 >
 	<div class="text-white md:px-20 lg:px-28">
-		<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-12">
-			Voyp Mobiel
-		</h1>
-		<p>
+		<h1 class="text-4xl md:text-5xl lg:text-6xl font-normal pb-8 lg:pb-12">Voyp Mobiel</h1>
+		<p class="text-lg font-semibold">
 			Vast mobiel integratie zoals het hoort. Met een SIM-kaart van Voyp in je mobiele telefoon bel
 			je overal eenvoudig met je mobiele én zakelijke telefoonnummer.
 		</p>
 	</div>
-	<div
-		class="-z-10 px-12 absolute bottom-0 mt-[100px] ml-[-55%] sm:ml-[-54%] md:ml-[-51.8%] h-[50rem] w-[200%] rounded-b-[100%] bg-gradient-to-b from-primary via-blue-800 to-blue-600"
-	/>
+	<svg
+		class="absolute inset-x-0 bottom-0 overflow-hidden fill-white z-50"
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 1000 100"
+		preserveAspectRatio="none"
+	>
+		<path
+			class="elementor-shape-fill"
+			d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
+		/>
+	</svg>
 </section>
 
 <div class="bg-white">
@@ -64,8 +71,8 @@
 				  opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 text-start
-				 bg-white h-full rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 text-start bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4 lg:pb-3.5 text-center">De voordelen</h3>
 					<p>✓ Uitbellen met mobiel én vast numer</p>
@@ -454,7 +461,7 @@
 			</a>
 
 			<a href="https://www.raket.online/">
-				<img src="/logos/raket.png" alt="raket" />
+				<img src="/logos/raket.webp" alt="raket" />
 			</a>
 
 			<a href="https://dentalsupplies.nl/">
@@ -466,7 +473,7 @@
 			</a>
 
 			<a href="https://www.eldecollege.nl/">
-				<img src="/logos/eldecollege.png" alt="eldecollege" />
+				<img src="/logos/eldecollege.webp" alt="eldecollege" />
 			</a>
 
 			<a href="https://www.bladewp.com/">

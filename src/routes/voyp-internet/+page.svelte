@@ -1,6 +1,6 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Button from '$components/Button.svelte';
+	import { goto } from '$app/navigation'
+	import Button from '$components/Button.svelte'
 </script>
 
 <section
@@ -265,7 +265,7 @@
 			</a>
 
 			<a href="https://www.eldecollege.nl/">
-				<img src="/logos/eldecollege.png" alt="eldecollege" />
+				<img src="/logos/eldecollege.webp" alt="eldecollege" />
 			</a>
 
 			<a href="https://www.sofacompany.com/">

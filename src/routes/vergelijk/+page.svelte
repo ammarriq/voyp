@@ -596,7 +596,7 @@
 			</a>
 
 			<a href="https://eldecollege.nl/">
-				<img src="/logos/eldecollege.png" alt="eldecollege" />
+				<img src="/logos/eldecollege.webp" alt="eldecollege" />
 			</a>
 
 			<a href="https://timeprofit.nl/">

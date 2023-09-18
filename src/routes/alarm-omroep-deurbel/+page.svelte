@@ -1,6 +1,6 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Button from '$components/Button.svelte';
+	import { goto } from '$app/navigation'
+	import Button from '$components/Button.svelte'
 </script>
 
 <section
@@ -165,7 +165,7 @@
 			</a>
 
 			<a href="https://www.raket.online/">
-				<img src="/logos/raket.png" alt="raket" />
+				<img src="/logos/raket.webp" alt="raket" />
 			</a>
 
 			<a href="https://www.renefriso.nl/" class="mx-auto col-auto sm:col-span-full md:col-auto">
