@@ -8,8 +8,7 @@
 	<div
 		class="absolute inset-0 bg-[url(/hero/briamac.webp)]
 		top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2
-		w-5/6 h-5/6
-		bg-center bg-contain bg-no-repeat m-4"
+		w-5/6 h-5/6 bg-center bg-contain bg-no-repeat m-4"
 	/>
 	<div
 		class="relative text-white z-10
