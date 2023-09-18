@@ -60,7 +60,7 @@
 		{ label: 'Contact', href: '/contact' },
 		{ label: 'Voyp updates', href: '/updates' },
 		{ label: 'Voorwaarden', href: '/algemene-voorwaarden' },
-		{ label: 'Privacy & GDPR', href: '/privacy' }
+		{ label: 'Privacy & AVG', href: '/privacy' }
 	]
 
 	let open = false
