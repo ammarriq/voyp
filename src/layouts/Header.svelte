@@ -16,12 +16,10 @@
 
 	const item1: Array<{
 		label: string
-		href: string
 		children: Array<{ label: string; href: string }>
 	}> = [
 		{
 			label: 'Algemenie informatie',
-			href: 'algemenie-informatie',
 			children: [
 				{ label: 'Gesprekstarieven', href: '/gesprekstarieven' },
 				{ label: 'Onze vijf zekerheden', href: '/vijf-zekerheden' },
@@ -33,7 +31,6 @@
 		},
 		{
 			label: 'Diensten',
-			href: 'diensten',
 			children: [
 				{ label: 'Telefoonnummers', href: '/telefoonnummers' },
 				{ label: 'Accounts & SIP-trunks', href: '/accounts' },
@@ -45,13 +42,12 @@
 		},
 		{
 			label: 'Inrichten telefonie',
-			href: 'inrichten-telefonie',
 			children: [
-				{ label: 'Functionaliteiten', href: '#functionaliteiten' },
-				{ label: 'Belplan instellen', href: '#belplan-instellen' },
-				{ label: 'Antwoordservice', href: '#antwoordservice' },
-				{ label: 'Stemactrice', href: '#stemactrice' },
-				{ label: 'Support & toestelconfiguratie', href: '#support' }
+				{ label: 'Functionaliteiten', href: '/inrichten-telefonie#functionaliteiten' },
+				{ label: 'Belplan instellen', href: '/inrichten-telefonie#belplan-instellen' },
+				{ label: 'Antwoordservice', href: '/inrichten-telefonie#antwoordservice' },
+				{ label: 'Stemactrice', href: '/inrichten-telefonie#stemactrice' },
+				{ label: 'Support & toestelconfiguratie', href: '/inrichten-telefonie#support' }
 			]
 		}
 	]
@@ -101,14 +97,9 @@
 
 					<ClickableExpandLink label="Meer Informatie" expandable>
 						{#each item1 as { label, children }, i (i)}
-							{@const url = label.replaceAll(' ', '-').toLowerCase()}
-
 							<ClickableExpandNav {label} expandable>
 								{#each children as { label, href }}
-									<a
-										href="/meer-informatie/{url}{href}"
-										class="block px-7 py-3 bg-primary/90 hover:bg-primary text-white"
-									>
+									<a {href} class="block px-7 py-3 bg-primary/90 hover:bg-primary text-white">
 										{label}
 									</a>
 								{/each}
@@ -162,24 +153,19 @@
 
 				<ExpandLink label="Toestellen" href="/toestellen" />
 
-				<div class:bg-secondary={pathname.includes('meer-informatie')}>
+				<div
+					class:bg-secondary={item1.some((o) => o.children.some((o) => pathname.includes(o.href)))}
+				>
 					<ExpandLink label="Meer Informatie" expandable>
 						<div class="shadow-lg">
-							{#each item1 as { label, href, children }, i (i)}
-								{@const url = label.replaceAll(' ', '-').toLowerCase()}
-								<div class:bg-secondary={pathname.includes(`${href}`)}>
-									<ExpandNav {label} expandable>
-										{#each children as { label, href }}
-											<a
-												href={`/meer-informatie/${url}${href}`}
-												class="hover:bg-secondary p-3 scroll-smooth"
-												class:bg-secondary={pathname.includes(`${href}`)}
-											>
-												{label}
-											</a>
-										{/each}
-									</ExpandNav>
-								</div>
+							{#each item1 as { label, children }, i (i)}
+								<ExpandNav {label} expandable>
+									{#each children as { label, href }}
+										<a {href} class="hover:bg-secondary p-3 scroll-smooth">
+											{label}
+										</a>
+									{/each}
+								</ExpandNav>
 							{/each}
 						</div>
 					</ExpandLink>

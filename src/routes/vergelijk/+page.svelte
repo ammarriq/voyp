@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation'
 	import Button from '$components/Button.svelte'
-	import Carousel from '../../../Carousel.svelte'
+	import Carousel from '../Carousel.svelte'
 	import Hoverable from '$components/Hoverable.svelte'
 </script>
 
