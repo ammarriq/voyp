@@ -1,16 +1,22 @@
 <script lang="ts">
-	import Toggle from '$components/Toggle.svelte'
+	import { writable } from 'svelte/store'
 	import rates from '$lib/data/rates.json'
+	import Toggle from '$components/Toggle.svelte'
+	import Pagination from './Pagination.svelte'
+
+	const page = writable(1)
 
 	let land: string
 	let prefix: string
 
-	$: data = rates.filter((r) => {
-		const isLand = land ? r.land.toLowerCase().includes(land.toLowerCase()) : true
-		const isPrefix = prefix ? r.prefix.toLowerCase().includes(prefix.toLowerCase()) : true
+	$: data = rates
+		.filter((r) => {
+			const isLand = land ? r.land.toLowerCase().includes(land.toLowerCase()) : true
+			const isPrefix = prefix ? r.prefix.toLowerCase().includes(prefix.toLowerCase()) : true
 
-		return isLand && isPrefix
-	})
+			return isLand && isPrefix
+		})
+		.slice(($page - 1) * 10, $page * 10)
 </script>
 
 <div class="max-w-2xl mx-auto text-left space-y-12">
@@ -105,4 +111,5 @@
 			{/each}
 		</tbody>
 	</table>
+	<Pagination count={rates.length} {page} />
 </div>

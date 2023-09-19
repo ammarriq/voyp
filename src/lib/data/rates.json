@@ -28,5 +28,35 @@
 		"land": "UAE",
 		"prefix": "-654",
 		"minuut": "€ 436"
+	},
+	{
+		"land": "Afghanistan",
+		"prefix": "+31",
+		"minuut": "€ 0,022"
+	},
+	{
+		"land": "USA",
+		"prefix": "+983",
+		"minuut": "€ 8,543"
+	},
+	{
+		"land": "Pakistan",
+		"prefix": "+324",
+		"minuut": "€ 546"
+	},
+	{
+		"land": "Brazil",
+		"prefix": "+86",
+		"minuut": "€ 0,043"
+	},
+	{
+		"land": "China",
+		"prefix": "-53",
+		"minuut": "€ 436"
+	},
+	{
+		"land": "UAE",
+		"prefix": "-654",
+		"minuut": "€ 436"
 	}
 ]
