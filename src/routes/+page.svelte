@@ -113,8 +113,8 @@
 			class="w-52 lg:w-80 mx-auto pb-12 md:pb-0"
 		/>
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
-			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
-				Totaalpakket <br class="block" />
+			<h2 class="block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
+				Totaalpakket <br />
 				<Animate words={words[1]} class="text-3xl lg:text-5xl" />
 			</h2>
 			<p class="pb-5">
