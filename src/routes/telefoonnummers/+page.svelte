@@ -1,5 +1,5 @@
 <script lang="ts">
-	import voypmobiel from '$lib/data/voyp-mobiel.json'
+	import telefoonnummers from '$lib/data/telefoonnummers.json'
 
 	import Button from '$components/Button.svelte'
 	import Display from '$components/Animate.svelte'
@@ -44,17 +44,18 @@
 		</h2>
 
 		<div
-			class="md:grid grid-cols-2 gap-6 lg:gap-10 text-sm leading-7 lg:text-base lg:leading-8 space-y-10
-			md:space-y-0"
+			class="md:grid grid-cols-2 gap-6 lg:gap-10 text-sm
+			leading-7 lg:text-base lg:leading-8 space-y-10 md:space-y-0"
 		>
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur acity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Regionaal nummer</h3>
 					<p>
@@ -69,12 +70,13 @@
 
 			<div class="relative group">
 				<div
-					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500 to-primary rounded-lg blur
-				opacity-10 group-hover:opacity-25 transition duration-1000 group-hover:duration-200"
+					class="absolute -inset-[0.01rem] bg-gradient-to-r from-cyan-500
+					to-primary rounded-lg blur opacity-10 group-hover:opacity-25
+					transition duration-1000 group-hover:duration-200"
 				/>
 				<div
-					class="relative border px-5 md:px-4 lg:px-6 py-10 md:py-6 lg:py-12 bg-white h-full
-			  rounded-3xl"
+					class="relative border px-5 md:px-4 lg:px-6 py-10
+					md:py-6 lg:py-12 bg-white h-full rounded-3xl"
 				>
 					<h3 class="font-semibold text-lg pb-4">Internationaal nummer</h3>
 					<p>
@@ -196,8 +198,8 @@
 
 			<Button
 				on:click={() => goto('/bestellen')}
-				class="mt-8 md:mt-10 border border-primary
-      text-white bg-primary hover:text-primary hover:bg-white"
+				class="mt-8 md:mt-10 border border-primary text-white
+				bg-primary hover:text-primary hover:bg-white"
 			>
 				<div class="flex items-center gap-1 text-[0.625rem] md:text-[0.67rem] lg:text-sm">
 					<span class="shrink-0">Offerte aanvragen of direct bestellen</span>
@@ -207,7 +209,7 @@
 		</div>
 
 		<div class="pt-6 md:pt-0">
-			<Table data={voypmobiel} columnsWidth={['auto', '8rem', '8rem']} />
+			<Table data={telefoonnummers} columnsWidth={['auto', '8rem', '8rem']} class="bg-white" />
 		</div>
 	</section>
 </div>

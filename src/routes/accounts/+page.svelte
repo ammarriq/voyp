@@ -194,7 +194,7 @@
 		</div>
 
 		<div class="pt-6 md:pt-0">
-			<Table data={voipaccounts} columnsWidth={['auto', '8rem', '8rem']} class="w-full" />
+			<Table data={voipaccounts} columnsWidth={['auto', '8rem', '8rem']} class="bg-white" />
 		</div>
 	</section>
 </div>
