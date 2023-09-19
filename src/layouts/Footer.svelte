@@ -9,8 +9,8 @@
 		<div class="flex gap-x-3 gap-y-2 justify-center items-center flex-wrap text-xs font-extralight">
 			<a href="/bestellen">Bestellen</a>
 			<a href="/privacy">Privacy</a>
-			<a href="/voorwaarden">Algemene voorwaarden</a>
-			<a href="/meer-informatie/algemenie-informatie/voip">Meer informatie</a>
+			<a href="/algemene-voorwaarden">Algemene voorwaarden</a>
+			<a href="/voip">Meer informatie</a>
 		</div>
 	</section>
 </footer>
