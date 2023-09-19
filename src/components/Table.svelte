@@ -55,16 +55,17 @@
 			{#each data as row, i (i)}
 				<Toggle>
 					<tr
-						class="hover:bg-[#ebebeb] flex flex-col px-2.5 py-3 border-y"
+						class="hover:bg-[#ebebeb] border-y"
 						class:bg-gray-200={i % 2 === 0}
 						slot="header"
 						on:click={toggle}
 						let:toggle
 						let:open
 					>
-						<td class="py-1 flex items-center gap-2">
+						<td class="relative pl-6 pr-2.5 py-3">
 							<i
-								class="text-primary w-4 h-4"
+								class="inline-block text-primary w-4 h-4
+								absolute top-1/2 -translate-y-1/2 left-1.5"
 								class:icon-[mdi--plus]={!open}
 								class:icon-[mdi--minus]={open}
 							/>

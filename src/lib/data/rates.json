@@ -1,32 +1,32 @@
 [
 	{
 		"land": "Afghanistan",
-		"prefix": "Afganistan",
-		"minuut": "+93"
+		"prefix": "+31",
+		"minuut": "€ 0,022"
 	},
 	{
 		"land": "USA",
-		"prefix": "Washinton",
-		"minuut": "+983"
+		"prefix": "+983",
+		"minuut": "€ 8,543"
 	},
 	{
 		"land": "Pakistan",
-		"prefix": "Karachi",
-		"minuut": "+324"
+		"prefix": "+324",
+		"minuut": "€ 546"
 	},
 	{
 		"land": "Brazil",
-		"prefix": "Brazil",
-		"minuut": "+86"
+		"prefix": "+86",
+		"minuut": "€ 0,043"
 	},
 	{
 		"land": "China",
-		"prefix": "Beijing",
-		"minuut": "-53"
+		"prefix": "-53",
+		"minuut": "€ 436"
 	},
 	{
 		"land": "UAE",
-		"prefix": "Dubai",
-		"minuut": "-654"
+		"prefix": "-654",
+		"minuut": "€ 436"
 	}
 ]
