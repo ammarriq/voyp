@@ -32,6 +32,22 @@
 	{/await}
 </div>
 
+<div class="container xl:hidden flex items-center flex-col md:flex-row px-6 pb-16">
+	<img class="md:w-1/2" src="/hero/bestelling.webp" alt="bestselling" />
+	<div class="md:w-1/2 space-y-8 leading-loose">
+		<p>
+			Leuk dat je een bestelling wilt plaatsen of wilt berekenen hoeveel het je gaat besparen om bij
+			Voyp je telefonie af te nemen. Helaas werkt onze bestelmodule niet goed op tablets en mobiele
+			telefoons.
+		</p>
+		<p>
+			Daarom willen we je graag vragen om deze pagina op je desktop of laptop te bezoeken.
+			Natuurlijk kun je ons ook altijd even bellen, ons mailen of met ons chatten. We staan je op
+			werkdagen tussen negen en vijf graag te woord.
+		</p>
+	</div>
+</div>
+
 <div class="bg-secondary">
 	<section
 		class="container mx-auto px-6 pt-16 pb-20 sm:pb-24 text-sm leading-8 md:grid grid-cols-3 gap-10
