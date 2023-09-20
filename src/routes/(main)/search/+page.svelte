@@ -43,7 +43,7 @@
 <section class="container mb-4 space-y-6">
 	{#each data.blogs as blog, i (i)}
 		<a
-			href="/updates/{blog.slug}"
+			href="/update/{blog.slug}"
 			class="flex md:items-center flex-col md:flex-row gap-6 md:gap-12
       p-6 border rounded-lg hover:shadow-md transition-all"
 		>

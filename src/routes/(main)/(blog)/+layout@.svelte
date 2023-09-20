@@ -16,7 +16,7 @@
 			<a href="/" class="hover:underline">Home</a>
 			{#if title}
 				/
-				<a href="/updates" class="hover:underline">Voyp Updates</a>
+				<a href="/update" class="hover:underline">Voyp Updates</a>
 				<span>/ {title}</span>
 			{:else}
 				<span>/ Voyp Updates</span>
@@ -64,7 +64,7 @@
 		<h3 class="font-semibold pt-7 pb-4 text-base">Recent Posts</h3>
 
 		{#each data.blogs.slice(0, 10) as blog, i (i)}
-			<a href="/updates/{blog.slug}" class="block hover:underline">{blog.title}</a>
+			<a href="/update/{blog.slug}" class="block hover:underline">{blog.title}</a>
 		{/each}
 	</div>
 </section>

@@ -15,7 +15,7 @@
 				{#each data.blogs as blog (blog.slug)}
 					<div class="flex items-center gap-2">
 						<span class="icon-[mdi--check] shrink-0 w-4 h-4" />
-						<a href="/updates/{blog.slug}">{blog.title}</a>
+						<a href="/update/{blog.slug}">{blog.title}</a>
 					</div>
 				{/each}
 			</div>

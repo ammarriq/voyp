@@ -58,7 +58,7 @@
 	}> = [
 		{ label: 'Veelgestelde vragen', href: '/veelgestelde-vragen' },
 		{ label: 'Contact', href: '/contact' },
-		{ label: 'Voyp updates', href: '/updates' },
+		{ label: 'Voyp updates', href: '/update' },
 		{ label: 'Voorwaarden', href: '/algemene-voorwaarden' },
 		{ label: 'Privacy & AVG', href: '/privacy' }
 	]

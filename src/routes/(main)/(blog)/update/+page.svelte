@@ -14,7 +14,7 @@
 	<nav class="flex flex-col items-center gap-4">
 		{#each data.blogs as blog}
 			<a
-				href="/updates/{blog.slug}"
+				href="/update/{blog.slug}"
 				class="border-b first:pt-0 pt-4 sm:pt-10
 					pb-10 sm:pb-16 text-sm leading-[1.7rem] sm:leading-7"
 			>
