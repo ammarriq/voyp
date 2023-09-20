@@ -1,1 +1,1 @@
-export const BLOG_BASE_PATH = './blog'
+export const BLOG_PATH = './blog'

@@ -1,19 +1,23 @@
-import { BLOG_BASE_PATH } from '../../../constants'
+import { BLOG_PATH } from '../../../constants'
 
-export const get_blogs = async () => {
-	const blogs = await get_markdown_files()
+export const get_blogs = async (from: number, per_page: number) => {
+	const blogs = await get_markdown_files(from, per_page)
 
-	return blogs.map(({ head, content }) => ({ ...extract_head(head), content })).reverse()
+	return blogs.map(({ head, content }) => ({ ...extract_head(head), content }))
 }
 
-const get_markdown_files = async () => {
+const get_markdown_files = async (from: number, per_page: number) => {
 	const { readdir, readFile } = await import('node:fs/promises')
-	const file_names = await readdir(BLOG_BASE_PATH)
+	const blog_namees = await readdir(BLOG_PATH)
 
-	const read_files = file_names.map((f) => readFile(`${BLOG_BASE_PATH}/${f}`, 'utf-8'))
-	const files = await Promise.all(read_files)
+	const get_blog_files = blog_namees
+		.reverse()
+		.slice(from, from + per_page)
+		.map((f) => readFile(`${BLOG_PATH}/${f}`, 'utf-8'))
 
-	return files
+	const blogs = await Promise.all(get_blog_files)
+
+	return blogs
 		.map((file) => file.split('---').filter(Boolean))
 		.map(([head, content]) => ({ head, content }))
 }
