@@ -1,7 +1,5 @@
 import { error } from '@sveltejs/kit'
 
-export const prerender = true
-
 export const load = async ({ parent, params }) => {
 	const { blogs } = await parent()
 
