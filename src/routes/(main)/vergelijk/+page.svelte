@@ -1,5 +1,7 @@
 <script>
 	import { goto } from '$app/navigation'
+	import Customers from '$components/Customers.svelte'
+
 	import Button from '$components/Button.svelte'
 	import Carousel from '../Carousel.svelte'
 	import Hoverable from '$components/Hoverable.svelte'
@@ -578,57 +580,7 @@
 	</section>
 </div>
 
-<div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
-
-		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<a href="https://advocatenkantoorjansen.nl/">
-				<img src="/logos/advocatenkantoorjansen.png" alt="advocatenkantoorjansen" />
-			</a>
-
-			<a href="https://toprow.com/">
-				<img src="/logos/toprow.png" alt="toprow" />
-			</a>
-
-			<a href="https://sunwood.nl/">
-				<img src="/logos/sunwood.png" alt="sunwood" />
-			</a>
-
-			<a href="https://eldecollege.nl/">
-				<img src="/logos/eldecollege.webp" alt="eldecollege" />
-			</a>
-
-			<a href="https://timeprofit.nl/">
-				<img src="/logos/timeprofit.png" alt="timeprofit" />
-			</a>
-
-			<a href="https://mediamansion.nl/">
-				<img src="/logos/mediamansion.png" alt="mediamansion" />
-			</a>
-
-			<a href="https://lawspot.nl/">
-				<img src="/logos/lawspot.png" alt="lawspot" />
-			</a>
-
-			<a href="https://cuentas.nl/">
-				<img src="/logos/cuentas.png" alt="cuentas" />
-			</a>
-
-			<a href="https://bladewp.com/">
-				<img src="/logos/bladewp.png" alt="bladewp" />
-			</a>
-
-			<a href="https://tallgrass.nl/">
-				<img
-					src="/logos/tallgrass.png"
-					alt="tallgrass"
-					class=" mx-auto col-auto sm:col-span-full md:col-auto"
-				/>
-			</a>
-		</div>
-	</section>
-</div>
+<Customers />
 
 <style>
 	.shadow-full {
