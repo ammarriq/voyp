@@ -31,7 +31,7 @@
 </script>
 
 <div class="relative">
-	<p class="absolute inset-x-0 sm:left-0 word {clazz} text-[#6EC1E4]">
+	<p class="absolute inset-x-0 sm:left-0 {clazz} text-[#6EC1E4]">
 		{#key index}
 			{#each currentWord as letter, i (i)}
 				<span
@@ -57,10 +57,3 @@
 		{/each}
 	</p>
 </div>
-<!-- {#each words as word, index (word)}
-	{#if index === index}
-		<p class="{clazz} inline-block text-[#6EC1E4]" transition:animateWord>
-			{word}
-		</p>
-	{/if}
-{/each} -->
