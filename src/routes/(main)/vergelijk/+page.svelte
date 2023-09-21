@@ -1,7 +1,11 @@
 <script>
 	import { goto } from '$app/navigation'
+	import Customers from '$components/Customers.svelte'
+	import WatVindenOnzeKlanten from '$components/Wat vinden onze klanten.svelte'
+	import OverstappenZonderGedoe from '$components/Overstappen zonder gedoe.svelte'
+
 	import Button from '$components/Button.svelte'
-	import Carousel from '../Carousel.svelte'
+	import Carousel from '../../../components/Carousel.svelte'
 	import Hoverable from '$components/Hoverable.svelte'
 </script>
 
@@ -228,98 +232,11 @@
 </div>
 
 <div class="bg-secondary">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-10">Wat vinden onze klanten</h2>
-		<div class="flex items-center justify-center gap-3">
-			<span>9.4</span>
-			<span class="flex">
-				{#each Array(4) as _, i (i)}
-					<span class="icon-[mdi--star] text-yellow-400 w-7 h-7 space-x-0" />
-				{/each}
-				<span class="icon-[mdi--star-half] text-yellow-400 w-7 h-7" />
-			</span>
-
-			<span>65 reviews</span>
-			<span class="icon-[mdi--comment-multiple-outline] text-cyan-500 w-6 h-6" />
-		</div>
-
-		<p class="py-5">
-			Uiteraard vertellen wij je graag dat wij het goed doen. Dat het slim is om te gaan bellen via
-			Voyp.<br /> En dat je er goed aan doet om zo snel mogelijk over te stappen. Iedereen wil immers
-			bellen zonder gedoe.
-		</p>
-		<p class="pb-3">
-			Nog niet helemaal overtuigd? ​Onze klanten zijn dat gelukkig wel! Lees hier waarom.
-		</p>
-
-		<div class="border border-primary" />
-
-		<div class="pt-5">
-			<Carousel />
-		</div>
-	</section>
+	<WatVindenOnzeKlanten />
 </div>
 
-<div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Overstappen zonder gedoe</h2>
-		<div class="grid md:grid-cols-3 gap-5">
-			<div class="flex flex-col items-center">
-				<h3 class="text-[1.35rem] font-semibold pb-3">Advies</h3>
-				<p class="md:leading-7 md:text-sm lg:text-base lg:leading-8">
-					In ons eerste contact nemen wij de tijd voor onze klant. We bespreken uitgebreid de wensen
-					en mogelijkheden. We denken graag met je mee over een goede invulling van jullie telefonie
-					wensen.
-				</p>
-				<img
-					src="/overstappen/overstappenstap1.webp"
-					alt="overstappenstap1"
-					class="max-w-[12rem]"
-				/>
-			</div>
 
-			<div class="flex flex-col items-center">
-				<img
-					src="/overstappen/overstappenstap2.webp"
-					alt="overstappenstap2"
-					class="hidden md:block max-w-[12rem]"
-				/>
-				<h3 class="text-[1.35rem] font-semibold pb-3">Aanvraag</h3>
-				<p class="md:leading-7 md:text-sm lg:text-base lg:leading-8">
-					Welkom bij Voyp. Het nummerbehoud gaan we voor je aanvragen en aansluitend nemen we nog
-					even contact met je op om de inhoudelijke wensen te bespreken en te implementeren op ons
-					platform.
-				</p>
-				<img
-					src="/overstappen/overstappenstap2.webp"
-					alt="overstappenstap2"
-					class="block md:hidden max-w-[12rem]"
-				/>
-			</div>
-
-			<div class="flex flex-col items-center">
-				<h3 class="text-[1.35rem] font-semibold pb-3">Oplevering</h3>
-				<p class="md:leading-7 md:text-sm lg:text-base lg:leading-8">
-					Met onze naadloze overstapservice merk je eigenlijk weinig van de portering. Op het
-					afgesproken porteermoment gaan je nieuwe toestelen over en start ook jij met bellen zonder
-					gedoe.
-				</p>
-				<img
-					src="/overstappen/overstappenstap3.webp"
-					alt="overstappenstap3"
-					class="max-w-[12rem]"
-				/>
-			</div>
-		</div>
-		<Button
-			on:click={() => goto('/bestellen')}
-			class="bg-primary mt-5 md:mt-10 text-white hover:bg-white hover:text-primary border 
-			border-primary"
-		>
-			OFFERTE AANVRAGEN OF DIRECT BESTELLEN
-		</Button>
-	</section>
-</div>
+<OverstappenZonderGedoe />
 
 <div class="bg-secondary">
 	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
@@ -578,57 +495,7 @@
 	</section>
 </div>
 
-<div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
-
-		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<a href="https://advocatenkantoorjansen.nl/">
-				<img src="/logos/advocatenkantoorjansen.png" alt="advocatenkantoorjansen" />
-			</a>
-
-			<a href="https://toprow.com/">
-				<img src="/logos/toprow.png" alt="toprow" />
-			</a>
-
-			<a href="https://sunwood.nl/">
-				<img src="/logos/sunwood.png" alt="sunwood" />
-			</a>
-
-			<a href="https://eldecollege.nl/">
-				<img src="/logos/eldecollege.webp" alt="eldecollege" />
-			</a>
-
-			<a href="https://timeprofit.nl/">
-				<img src="/logos/timeprofit.png" alt="timeprofit" />
-			</a>
-
-			<a href="https://mediamansion.nl/">
-				<img src="/logos/mediamansion.png" alt="mediamansion" />
-			</a>
-
-			<a href="https://lawspot.nl/">
-				<img src="/logos/lawspot.png" alt="lawspot" />
-			</a>
-
-			<a href="https://cuentas.nl/">
-				<img src="/logos/cuentas.png" alt="cuentas" />
-			</a>
-
-			<a href="https://bladewp.com/">
-				<img src="/logos/bladewp.png" alt="bladewp" />
-			</a>
-
-			<a href="https://tallgrass.nl/">
-				<img
-					src="/logos/tallgrass.png"
-					alt="tallgrass"
-					class=" mx-auto col-auto sm:col-span-full md:col-auto"
-				/>
-			</a>
-		</div>
-	</section>
-</div>
+<Customers />
 
 <style>
 	.shadow-full {
