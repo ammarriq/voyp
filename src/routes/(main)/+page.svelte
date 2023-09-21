@@ -3,6 +3,7 @@
 	import Customers from '$components/Customers.svelte'
 	import WatVindenOnzeKlanten from '$components/Wat vinden onze klanten.svelte'	
 	import OverstappenZonderGedoe from '$components/Overstappen zonder gedoe.svelte'
+	import Vijfzekerhedenblock from '$components/Vijf zekerheden block.svelte'
 
 	import Animate from '$components/Animate.svelte'
 	import Button, { btnClasses } from '$components/Button.svelte'
@@ -57,53 +58,7 @@
 	</section>
 </div>
 
-<div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-9">Onze vijf zekerheden</h2>
-		<p>
-			Bij Voyp houden we van simpel én toegankelijk. We houden niet van verborgen kosten. Niet zoals
-			bij andere aanbieders maandelijks betalen voor functionaliteiten zoals openingstijden en een
-			keuzemenu, niet meteen een factuur wanneer je ondersteuning nodig hebt en wél meteen geholpen
-			worden zonder uren in de rij te hoeven staan. Dit zijn onze vijf zekerheden.
-		</p>
-		<div class="md:flex gap-4 items-center justify-around space-y-7 md:space-y-0 text-sm pt-16">
-			<span
-				class="flex gap-2 flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
-			>
-				<img src="/certainties/betaalbaar.webp" alt="Betaalbaar" class="w-20 pb-4" />
-				<p>Betaalbaar</p>
-			</span>
-
-			<span
-				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
-			>
-				<img src="/certainties/dagelijks.webp" alt="Dagelijks opzegbaar" class="w-20 pb-4" />
-				<p>Dagelijks opzegbaar</p>
-			</span>
-
-			<span
-				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
-			>
-				<img src="/certainties/betrouwbaar.webp" alt="Betrouwbaar" class="w-20 pb-4" />
-				<p>Betrouwbaar</p>
-			</span>
-
-			<span
-				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
-			>
-				<img src="/certainties/persoonlijke.webp" alt="Persoonlijke service" class="w-20 pb-4" />
-				<p>Persoonlijke service</p>
-			</span>
-
-			<span
-				class="flex flex-col items-center justify-center grayscale hover:grayscale-0 transition duration-700"
-			>
-				<img src="/certainties/flexibel.webp" alt="Flexibel" class="w-20 pb-4" />
-				<p>Flexibel</p>
-			</span>
-		</div>
-	</section>
-</div>
+<Vijfzekerhedenblock />
 
 <div class="bg-secondary">
 	<section

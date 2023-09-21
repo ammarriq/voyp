@@ -5,6 +5,7 @@
 	import Display from '$components/Animate.svelte'
 	import Table from '$components/Table.svelte'
 	import { goto } from '$app/navigation'
+	import Customers from '$components/Customers.svelte'
 
 	let words: string[] = ['VoIP-accounts', 'SIP-trunks']
 </script>
@@ -164,7 +165,7 @@
     justify-between items-center text-base md:text-sm leading-8 md:leading-7 lg:text-base
     lg:leading-8 text-center md:text-start"
 	>
-		<div>
+		<div class="text-sm lg:text-base leading-7 lg:leading-8">
 			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F] tracking-tight">
 				Tarieven <br class="block" />
 				<Display class="text-3xl lg:text-5xl" {words} />
@@ -199,50 +200,4 @@
 	</section>
 </div>
 
-<div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
-
-		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<a href="https://hetdagelijksbestaan.nl/">
-				<img src="/logos/hetdagelijksbestaan.png" alt="hetdagelijksbestaan" />
-			</a>
-
-			<a href="https://www.lawspot.nl/">
-				<img src="/logos/lawspot.png" alt="lawspot" />
-			</a>
-
-			<a href="https://www.renefriso.nl/">
-				<img src="/logos/renefriso.png" alt="renefriso" />
-			</a>
-
-			<a href="https://www.sunwood.nl/">
-				<img src="/logos/sunwood.png" alt="sunwood" />
-			</a>
-
-			<a href="https://tallgrass.nl/">
-				<img src="/logos/tallgrass.png" alt="tallgrass" />
-			</a>
-
-			<a href="https://www.accentgrave.nl/">
-				<img src="/logos/accentgrave.png" alt="accentgrave" />
-			</a>
-
-			<a href="https://www.schimmel-tdi.nl/">
-				<img src="/logos/schimmeltechniek.png" alt="schimmeltechniek" />
-			</a>
-
-			<a href="https://www.heemlanden.nl/">
-				<img src="/logos/collegedeheemlanden.png" alt="collegedeheemlanden" />
-			</a>
-
-			<a href="https://hethoutens.nl/">
-				<img src="/logos/hethoutens.png" alt="hethoutens" />
-			</a>
-
-			<a href="https://www.arbec.nl/" class=" mx-auto col-auto sm:col-span-full md:col-auto">
-				<img src="/logos/arbec.png" alt="arbec" />
-			</a>
-		</div>
-	</section>
-</div>
+<Customers />

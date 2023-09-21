@@ -5,6 +5,7 @@
 	import Display from '$components/Animate.svelte'
 	import Table from '$components/Table.svelte'
 	import { goto } from '$app/navigation'
+	import Customers from '$components/Customers.svelte'
 
 	let words: string[] = ['regionummers', 'landelijke nummers', 'servicenummers']
 </script>
@@ -214,50 +215,4 @@
 	</section>
 </div>
 
-<div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-16">Een greep uit onze tevreden klanten</h2>
-
-		<div class="grid gap-4 sm:gap-y-4 sm:gap-x-0 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-			<a href="https://advocatenkantoorjansen.nl/">
-				<img src="/logos/advocatenkantoorjansen.png" alt="advocatenkantoorjansen" />
-			</a>
-
-			<a href="https://marmerbehandelen.nl/">
-				<img src="/logos/marmerbehandelen.png" alt="marmerbehandelen" />
-			</a>
-
-			<a href="https://www.guidato.nl/">
-				<img src="/logos/guidato.png" alt="guidato" />
-			</a>
-
-			<a href="https://www.viwecom.nl/">
-				<img src="/logos/viwecom.png" alt="viwecom" />
-			</a>
-
-			<a href="https://mediamansion.nl/">
-				<img src="/logos/mediamansion.png" alt="mediamansion" />
-			</a>
-
-			<a href="https://www.heemlanden.nl/">
-				<img src="/logos/collegedeheemlanden.png" alt="collegedeheemlanden" />
-			</a>
-
-			<a href="https://www.moventes.nl/">
-				<img src="/logos/moventes.png" alt="moventes" />
-			</a>
-
-			<a href="https://www.boomkwekerijheijmans.nl/">
-				<img src="/logos/boomkwekerij.png" alt="boomkwekerij" />
-			</a>
-
-			<a href="https://schimmel-tdi.nl/">
-				<img src="/logos/schimmeltechniek.png" alt="schimmeltechniek" />
-			</a>
-
-			<a href="https://www.cuentas.nl/" class=" mx-auto col-auto sm:col-span-full md:col-auto">
-				<img src="/logos/cuentas.png" alt="cuentas" />
-			</a>
-		</div>
-	</section>
-</div>
+<Customers />
