@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { goto } from '$app/navigation'
 	import Customers from '$components/Customers.svelte'
 	import WatVindenOnzeKlanten from '$components/Wat vinden onze klanten.svelte'	
 	import OverstappenZonderGedoe from '$components/Overstappen zonder gedoe.svelte'
@@ -7,9 +6,7 @@
 
 	import Animate from '$components/Animate.svelte'
 	import Button, { btnClasses } from '$components/Button.svelte'
-	import Link from '$components/Link.svelte'
-	import Carousel from '$components/Carousel.svelte'
-	import FeedbackHover from './FeedbackHover.svelte'
+
 
 	let words: string[][] = [
 		['het hoort', 'jij wilt', 'het kan'],
@@ -104,9 +101,9 @@
 		 md:text-start items-center justify-between"
 	>
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
-			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
+			<h2 class="block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
 				Echt vast/mobiel <br class="block" />
-				<Animate class="text-3xl lg:text-5xl" words={words[2]} />
+				<Animate class="block text-3xl lg:text-5xl" words={words[2]} />
 			</h2>
 			<p class="pb-5">
 				Vast-Mobiel integratie: je hoort er vaak over. Het is namelijk ideaal: met je mobiele

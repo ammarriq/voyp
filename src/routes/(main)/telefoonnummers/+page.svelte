@@ -2,7 +2,7 @@
 	import telefoonnummers from '$lib/data/telefoonnummers.json'
 
 	import Button from '$components/Button.svelte'
-	import Display from '$components/Animate.svelte'
+	import Animate from '$components/Animate.svelte'
 	import Table from '$components/Table.svelte'
 	import { goto } from '$app/navigation'
 	import Customers from '$components/Customers.svelte'
@@ -182,9 +182,9 @@
     lg:leading-8 text-center md:text-start"
 	>
 		<div>
-			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F] tracking-tight">
+			<h2 class="block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F] tracking-tight">
 				Tarieven <br class="block" />
-				<Display class="text-3xl lg:text-5xl" {words} />
+				<Animate class="text-3xl lg:text-5xl" {words} />
 			</h2>
 
 			<p class="pb-5">
