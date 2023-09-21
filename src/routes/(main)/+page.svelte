@@ -268,8 +268,9 @@
 	>
 		<img src="/hero/voip1.png" alt="voip1" class="w-52 lg:w-80 mx-auto pb-12 md:pb-0" />
 		<div class="text-sm lg:text-base leading-7 lg:leading-8">
-			<h2 class="inline-block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
-				Voice over IP <br class="block" /><Animate class="text-3xl lg:text-5xl" words={words[3]} />
+			<h2 class="block text-4xl lg:text-6xl sm:px-0 pb-8 text-[#54595F]">
+				Voice over IP <br />
+				<Animate words={words[3]} class="text-3xl lg:text-5xl" />
 			</h2>
 			<p>
 				Vroeger had je een analoge lijn of een ISDN centrale. Simpel gezegd gaat er dan een koper
