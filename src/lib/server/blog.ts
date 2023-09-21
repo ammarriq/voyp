@@ -1,4 +1,4 @@
-import { BLOG_PATH } from '../../../constants'
+const BLOG_PATH = './blog'
 
 export const get_blogs = async (page: number, per_page: number) => {
 	const blog_files = await get_blog_files()

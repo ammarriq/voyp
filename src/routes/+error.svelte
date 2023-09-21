@@ -1,6 +1,11 @@
+<script>
+	import { page } from '$app/stores'
+</script>
+
 <main class="container flex gap-12 items-center justify-between flex-col md:flex-row mb-12">
 	<section class="space-y-8">
 		<h3 class="text-primary text-4xl font-medium mt-12 md:mt-0">404 error</h3>
+		{$page.error?.message}
 
 		<p>
 			Vraag ons alles over telefonie, keuzemenu’s, wachtrijen en toestellen. Weten we namelijk alles
