@@ -11,12 +11,15 @@
 	let roller: any
 
 	onMount(() => {
-		roller = setInterval(() => {
-			inDelay = words[index].length * 100 + 200
+		roller = setInterval(
+			() => {
+				inDelay = words[index].length * 100 + 200
 
-			if (index === words.length - 1) index = 0
-			else index++
-		}, 4000 + currentWord.length * 100)
+				if (index === words.length - 1) index = 0
+				else index++
+			},
+			4000 + currentWord.length * 100
+		)
 	})
 
 	onDestroy(() => {
@@ -28,7 +31,7 @@
 </script>
 
 <div class="relative">
-	<p class="absolute left-0 word {clazz} text-[#6EC1E4]">
+	<p class="absolute inset-x-0 sm:left-0 word {clazz} text-[#6EC1E4]">
 		{#key index}
 			{#each currentWord as letter, i (i)}
 				<span
