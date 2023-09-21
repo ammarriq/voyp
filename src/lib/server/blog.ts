@@ -1,39 +1,28 @@
-import { BLOG_PATH } from '../../constants'
-
-export const get_blogs = async (page: number, per_page: number) => {
-	const blog_files = await get_blog_files()
-	const blogs = await get_markdown_files(blog_files, page, per_page)
+export const get_blogs = async (files: string[], page: number, per_page: number) => {
+	const blogs = await get_markdown_files(files, page, per_page)
 
 	return {
 		blogs: blogs.map(({ head, content }) => ({ ...extract_head(head), content })),
-		count: blog_files.length
+		count: files.length
 	}
 }
 
-const get_blog_files = async () => {
-	const { readdir } = await import('node:fs/promises')
-	const blog_files = await readdir(BLOG_PATH)
+export const get_markdown_files = async (files: string[], page = 0, per_page = 5) => {
+	// const from = page * per_page
 
-	return blog_files
-}
+	// const read_blogs = files
+	// 	.reverse()
+	// 	.slice(from, from + per_page)
+	// 	.map((f) => fetch(`/blog/${f}`).then((res) => res.text()))
 
-const get_markdown_files = async (blog_files: string[], page: number, per_page: number) => {
-	const { readFile } = await import('node:fs/promises')
-	const from = page * per_page
-
-	const read_blogs = blog_files
-		.reverse()
-		.slice(from, from + per_page)
-		.map((f) => readFile(`${BLOG_PATH}/${f}`, 'utf-8'))
-
-	const blogs = await Promise.all(read_blogs)
+	const blogs = await Promise.all(files.map((url) => fetch(url).then((r) => r.text())))
 
 	return blogs
 		.map((file) => file.split('---').filter(Boolean))
 		.map(([head, content]) => ({ head, content }))
 }
 
-const extract_head = (head: string) => {
+export const extract_head = (head: string) => {
 	const filtered_head = head.split('\r\n').filter(Boolean)
 
 	const title = extract_attr(filtered_head, 'title')
