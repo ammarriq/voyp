@@ -1,6 +1,4 @@
-import path from 'path'
-
-const get_path = () => path.join(process.cwd(), 'blog')
+import { BLOG_PATH } from '../../constants'
 
 export const get_blogs = async (page: number, per_page: number) => {
 	const blog_files = await get_blog_files()
@@ -14,7 +12,7 @@ export const get_blogs = async (page: number, per_page: number) => {
 
 const get_blog_files = async () => {
 	const { readdir } = await import('node:fs/promises')
-	const blog_files = await readdir(get_path())
+	const blog_files = await readdir(BLOG_PATH)
 
 	return blog_files
 }
@@ -26,7 +24,7 @@ const get_markdown_files = async (blog_files: string[], page: number, per_page: 
 	const read_blogs = blog_files
 		.reverse()
 		.slice(from, from + per_page)
-		.map((f) => readFile(`${get_path()}/${f}`, 'utf-8'))
+		.map((f) => readFile(`${BLOG_PATH}/${f}`, 'utf-8'))
 
 	const blogs = await Promise.all(read_blogs)
 
