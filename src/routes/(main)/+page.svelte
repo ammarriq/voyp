@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation'
 	import Customers from '$components/Customers.svelte'
+	import WatVindenOnzeKlanten from '$components/Wat vinden onze klanten.svelte'	
 
 	import Animate from '$components/Animate.svelte'
 	import Button, { btnClasses } from '$components/Button.svelte'
 	import Link from '$components/Link.svelte'
-	import Carousel from './Carousel.svelte'
+	import Carousel from '$components/Carousel.svelte'
 	import FeedbackHover from './FeedbackHover.svelte'
 
 	let words: string[][] = [
@@ -229,36 +230,7 @@
 </div>
 
 <div class="bg-white">
-	<section class="container mx-auto px-6 pt-24 pb-20 sm:pb-24 text-center">
-		<h2 class="text-3xl sm:text-4xl font-medium pb-10">Wat vinden onze klanten</h2>
-		<div class="flex items-center justify-center gap-3">
-			<span>9.4</span>
-			<span class="flex">
-				{#each Array(4) as _, i (i)}
-					<i class="icon-[mdi--star] text-yellow-400 w-7 h-7 space-x-0" />
-				{/each}
-				<i class="icon-[mdi--star-half] text-yellow-400 w-7 h-7" />
-			</span>
-
-			<span>65 reviews</span>
-			<FeedbackHover />
-		</div>
-
-		<p class="py-5">
-			Uiteraard vertellen wij je graag dat wij het goed doen. Dat het slim is om te gaan bellen via
-			Voyp.<br /> En dat je er goed aan doet om zo snel mogelijk over te stappen. Iedereen wil immers
-			bellen zonder gedoe.
-		</p>
-		<p class="pb-3">
-			Nog niet helemaal overtuigd? Onze klanten zijn dat gelukkig wel! Lees hier waarom.
-		</p>
-
-		<div class="border border-primary" />
-
-		<div class="pt-5">
-			<Carousel />
-		</div>
-	</section>
+	<WatVindenOnzeKlanten />
 </div>
 
 <div class="bg-secondary">
