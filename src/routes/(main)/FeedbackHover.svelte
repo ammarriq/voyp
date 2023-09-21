@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { createLinkPreview, melt } from '@melt-ui/svelte'
+	import { createLinkPreview } from '@melt-ui/svelte'
 	import { fly } from 'svelte/transition'
 
 	const {
@@ -13,7 +13,8 @@
 	href="https://www.feedbackcompany.com/nl-nl/reviews/voyp"
 	target="_blank"
 	rel="noopener noreferrer"
-	use:melt={$trigger}
+	{...$trigger}
+	use:trigger
 >
 	<svg
 		width="24px"
@@ -54,7 +55,8 @@
 
 {#if $open}
 	<div
-		use:melt={$content}
+		{...$content}
+		use:content
 		transition:fly={{ y: -20, duration: 150 }}
 		class="relative z-50 rounded-3xl bg-white shadow-2xl overflow-hidden"
 	>

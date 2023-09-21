@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { createTooltip, melt } from '@melt-ui/svelte'
+	import { createTooltip } from '@melt-ui/svelte'
 	import { fade } from 'svelte/transition'
 
 	export let href: string
@@ -15,17 +15,18 @@
 	})
 </script>
 
-<a {href} class="trigger" use:melt={$trigger}>
+<a {href} class="trigger" {...$trigger} use:trigger>
 	<slot name="trigger" />
 </a>
 
 {#if $open}
 	<div
-		use:melt={$content}
+		{...$content}
+		use:content
 		transition:fade={{ duration: 100 }}
 		class="z-10 rounded bg-black text-white shadow px-4"
 	>
-		<div use:melt={$arrow} />
+		<div {...$arrow} use:arrow />
 		<slot />
 	</div>
 {/if}

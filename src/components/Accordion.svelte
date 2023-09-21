@@ -1,41 +1,43 @@
 <script lang="ts">
-	import { createAccordion, melt } from '@melt-ui/svelte';
-	import { slide } from 'svelte/transition';
+	import { createAccordion } from '@melt-ui/svelte'
+	import { slide } from 'svelte/transition'
 
-	export let elements;
+	export let elements
 
 	const {
 		elements: { content, item, trigger, root },
 		helpers: { isSelected }
 	} = createAccordion({
 		defaultValue: ''
-	});
+	})
 
 	let items: Array<{
-		id: string;
-		question: string;
-		answer: Array<string>;
-	}> = elements;
+		id: string
+		question: string
+		answer: Array<string>
+	}> = elements
 
-	let className = '';
-	export { className as class };
+	let className = ''
+	export { className as class }
 </script>
 
 <div class="mx-auto max-w-2xl rounded-xl bg-white lg:w-[27rem]" {...$root}>
 	{#each items as { id, question, answer }, i}
 		<div
-			use:melt={$item(id)}
+			{...$item(id)}
+			use:item
 			class="overflow-hidden transition-colors first:rounded-t-xl
-            last:rounded-b-xl"
+      last:rounded-b-xl"
 		>
 			<h2 class="flex">
 				<button
-					use:melt={$trigger(id)}
+					{...$trigger(id)}
+					use:trigger
 					class="flex flex-1 cursor-pointer gap-3 items-center justify-start
-						 px-3.5 sm:px-5 py-4 text-xs sm:text-sm font-normal
-						 transition-colors focus:!ring-0
-						focus-visible:text-magnum-800 {className}
-						{i !== 0 && 'border-t border-t-white'}"
+					px-3.5 sm:px-5 py-4 text-xs sm:text-sm font-normal
+					transition-colors focus:!ring-0
+					focus-visible:text-magnum-800 {className}
+					{i !== 0 && 'border-t border-t-white'}"
 				>
 					{#if $isSelected(id)}
 						<span class="icon-[mdi--chevron-up] w-6 h-6 shrink-0" />
@@ -49,7 +51,8 @@
 			{#if $isSelected(id)}
 				<div
 					class="content overflow-hidden bg-secondary text-sm text-primary"
-					use:melt={$content(id)}
+					{...$content(id)}
+					use:content
 					transition:slide
 				>
 					<div class="text-start px-5 py-4 space-y-3">

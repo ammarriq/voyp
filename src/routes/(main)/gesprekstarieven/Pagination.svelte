@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Writable } from 'svelte/store'
-	import { createPagination, melt } from '@melt-ui/svelte'
+	import { createPagination } from '@melt-ui/svelte'
 
 	export let count: number
 
@@ -18,7 +18,7 @@
 	})
 </script>
 
-<nav class="flex justify-end" aria-label="pagination" use:melt={$root}>
+<nav class="flex justify-end" aria-label="pagination" {...$root} use:root>
 	<div class="flex items-center gap-2">
 		<button
 			class="flex items-center justify-center h-8 w-8 bg-white text-sm
@@ -34,7 +34,8 @@
 			class="grid h-8 w-8 place-items-center bg-white text-sm
       hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50
       data-[selected]:bg-gray-200 border"
-			use:melt={$prevButton}
+			{...$prevButton}
+			use:prevButton
 		>
 			<i class="icon-[mdi--chevron-left] w-4 h-4" />
 		</button>
@@ -46,7 +47,8 @@
 					class="grid h-8 w-8 place-items-center bg-white text-sm
           hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50
           data-[selected]:bg-gray-200 border"
-					use:melt={$pageTrigger(page)}
+					{...$pageTrigger(page)}
+					use:pageTrigger
 				>
 					{page.value}
 				</button>
@@ -56,7 +58,8 @@
 			class="grid h-8 w-8 place-items-center bg-white text-sm
       hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50
       data-[selected]:bg-gray-200 border"
-			use:melt={$nextButton}
+			{...$nextButton}
+			use:nextButton
 		>
 			<i class="icon-[mdi--chevron-right] w-4 h-4" />
 		</button>

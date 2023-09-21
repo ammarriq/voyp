@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { writable } from 'svelte/store'
-	import { createPagination, melt } from '@melt-ui/svelte'
+	import { createPagination } from '@melt-ui/svelte'
 	import { page } from '$app/stores'
 
 	export let count: number
@@ -21,7 +21,7 @@
 	$: $currPage = +($page.url.searchParams.get('page') ?? 1)
 </script>
 
-<nav class="flex mt-8" aria-label="pagination" use:melt={$root}>
+<nav class="flex mt-8" aria-label="pagination" {...$root} use:root>
 	<div class="flex items-center gap-2">
 		{#if $currPage !== 1}
 			<a
@@ -42,7 +42,6 @@
 					class="grid h-10 w-10 place-items-center bg-white text-sm
           hover:opacity-75 disabled:cursor-not-allowed disabled:opacity-50
           data-[selected]:bg-primary data-[selected]:text-white border"
-					use:melt={$pageTrigger(page)}
 				>
 					{page.value}
 				</a>
